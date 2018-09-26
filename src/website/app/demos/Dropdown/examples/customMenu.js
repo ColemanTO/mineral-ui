@@ -9,7 +9,7 @@ import Menu from '../../../../../library/Menu';
 import TextInput from '../../../../../library/TextInput';
 import Text from '../../../../../library/Text';
 import data from '../../Menu/components/menuData';
-import renderPropsDescription from '../../shared/renderPropsDescription';
+import renderPropsDescription from '../../common/renderPropsDescription';
 
 export default {
   id: 'custom-menu',

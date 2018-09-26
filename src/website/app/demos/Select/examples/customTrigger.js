@@ -4,7 +4,7 @@ import { createStyledComponent } from '../../../../../library/styles';
 import { Target } from 'react-popper';
 import Select from '../../../../../library/Select';
 import { basicData as data } from '../components/selectData';
-import renderPropsDescription from '../../shared/renderPropsDescription';
+import renderPropsDescription from '../../common/renderPropsDescription';
 
 export default {
   id: 'custom-trigger',

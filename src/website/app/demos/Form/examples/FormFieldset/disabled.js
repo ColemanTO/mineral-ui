@@ -1,7 +1,7 @@
 /* @flow */
 import { FormField, FormFieldset } from '../../../../../../library/Form';
 import TextInput from '../../../../../../library/TextInput';
-import DemoLayout from '../../../shared/DemoLayout';
+import DemoLayout from '../../../common/DemoLayout';
 
 export default {
   id: 'disabled',

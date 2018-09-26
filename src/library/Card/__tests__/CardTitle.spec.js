@@ -1,7 +1,8 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import CardTitle, { componentTheme } from '../../Card/CardTitle';
+import CardTitle from '../CardTitle';
+import { cardTitleTheme } from '../themes';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
@@ -25,7 +26,7 @@ describe('CardTitle', () => {
       <CardTitle subtitle="subtitle" secondaryText="secondary">
         children
       </CardTitle>,
-      getProcessedComponentThemeKeys(componentTheme, {
+      getProcessedComponentThemeKeys(cardTitleTheme, {
         excludeKeys: [
           'CardTitleAvatar_margin',
           'CardTitleAvatarSize',

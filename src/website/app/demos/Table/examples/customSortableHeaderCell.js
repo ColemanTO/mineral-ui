@@ -4,7 +4,7 @@ import { createThemedComponent } from '../../../../../library/themes';
 import Table from '../../../../../library/Table';
 import TableSortableHeaderCell from '../../../../../library/Table/TableSortableHeaderCell';
 import data from '../shared/data';
-import renderPropsDescription from '../../shared/renderPropsDescription';
+import renderPropsDescription from '../../common/renderPropsDescription';
 
 export default {
   id: 'custom-sortable-header-cell',

@@ -4,7 +4,7 @@ import { createStyledComponent } from '../../../../../library/styles';
 import { Target } from 'react-popper';
 import Popover from '../../../../../library/Popover';
 import DemoContent from '../components/DemoContent';
-import renderPropsDescription from '../../shared/renderPropsDescription';
+import renderPropsDescription from '../../common/renderPropsDescription';
 
 export default {
   id: 'custom-trigger',

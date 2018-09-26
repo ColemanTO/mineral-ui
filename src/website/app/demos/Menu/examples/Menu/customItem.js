@@ -8,7 +8,7 @@ import { mineralTheme } from '../../../../../../library/themes';
 import Menu, { MenuItem } from '../../../../../../library/Menu';
 import Avatar from '../../../../../../library/Avatar';
 import DemoLayout from '../../components/DemoLayout';
-import renderPropsDescription from '../../../shared/renderPropsDescription';
+import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {
   id: 'custom-item',

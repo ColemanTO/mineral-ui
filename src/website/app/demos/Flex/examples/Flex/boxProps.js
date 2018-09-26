@@ -1,5 +1,5 @@
 /* @flow */
-import Box from '../../../Box/components/Box';
+import Box from '../../../Box/common/DemoBox';
 import FlexItem from '../../components/FlexItem';
 import Flex from '../../components/Flex';
 

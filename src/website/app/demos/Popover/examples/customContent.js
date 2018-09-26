@@ -5,7 +5,7 @@ import Button from '../../../../../library/Button';
 import Popover from '../../../../../library/Popover';
 import Popper from '../../../../../library/Popover/RtlPopper';
 import DemoContent from '../components/DemoContent';
-import renderPropsDescription from '../../shared/renderPropsDescription';
+import renderPropsDescription from '../../common/renderPropsDescription';
 
 export default {
   id: 'custom-content',

@@ -1,9 +1,7 @@
 /* @flow */
 import React from 'react';
 import { createThemedComponent, mapComponentThemes } from '../themes';
-import ChoiceGroup, {
-  componentTheme as choiceGroupComponentTheme
-} from '../Choice/ChoiceGroup';
+import { ChoiceGroup, choiceGroupTheme } from '../Choice';
 import Radio from './Radio';
 
 type Props = {
@@ -36,7 +34,7 @@ export const componentTheme = (baseTheme: Object) =>
   mapComponentThemes(
     {
       name: 'ChoiceGroup',
-      theme: choiceGroupComponentTheme(baseTheme)
+      theme: choiceGroupTheme(baseTheme)
     },
     {
       name: 'RadioGroup',

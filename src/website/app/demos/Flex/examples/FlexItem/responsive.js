@@ -1,7 +1,7 @@
 /* @flow */
 import FlexItem from '../../components/FlexItem';
 import Flex from '../../components/Flex';
-import responsiveInstructions from '../../../Box/components/responsiveInstructions';
+import responsiveInstructions from '../../../Box/common/responsiveInstructions';
 
 export default {
   id: 'responsive',

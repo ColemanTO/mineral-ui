@@ -3,7 +3,7 @@ import { CardDivider } from '../../../../../../library/Card';
 import Tabs, { Tab } from '../../../../../../library/Tabs';
 import Text from '../../../../../../library/Text';
 import _content from '../../shared/content';
-import DemoLayout from '../../../shared/DemoLayout';
+import DemoLayout from '../../../common/DemoLayout';
 
 const content = (index: number) => {
   if (index % 3 === 0) {

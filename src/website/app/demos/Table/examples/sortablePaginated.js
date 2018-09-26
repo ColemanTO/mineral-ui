@@ -2,7 +2,7 @@
 import { Component } from 'react';
 import Pagination from '../../../../../library/Pagination';
 import Table, { defaultSortComparator } from '../../../../../library/Table';
-import DemoLayout from '../../shared/DemoLayout';
+import DemoLayout from '../../common/DemoLayout';
 import { columns, data } from '../../Pagination/shared/data';
 import { sortByLength } from './sortable';
 

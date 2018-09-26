@@ -22,7 +22,7 @@ export default {
     tableTitleComponentTheme
   ],
   doc,
-  additionalTypes: [
+  additionalPropDocs: [
     {
       title: 'Column',
       description:

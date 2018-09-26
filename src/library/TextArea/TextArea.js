@@ -4,9 +4,7 @@ import { canUseDOM } from 'exenv';
 import FontFaceObserver from 'fontfaceobserver';
 import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
-import FauxControl, {
-  componentTheme as fauxControlComponentTheme
-} from '../FauxControl/FauxControl';
+import FauxControl, { fauxControlTheme } from '../FauxControl';
 
 type Props = {
   /** Automatically adjust the height of the input to fit the content */
@@ -54,7 +52,7 @@ export const componentTheme = (baseTheme: Object) =>
   mapComponentThemes(
     {
       name: 'FauxControl',
-      theme: fauxControlComponentTheme(baseTheme)
+      theme: fauxControlTheme(baseTheme)
     },
     {
       name: 'TextArea',

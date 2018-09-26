@@ -3,7 +3,7 @@ import React from 'react';
 import { createStyledComponent, pxToEm } from '../../../../../library/styles';
 import Table from '../../../../../library/Table';
 import data from '../shared/data';
-import renderPropsDescription from '../../shared/renderPropsDescription';
+import renderPropsDescription from '../../common/renderPropsDescription';
 
 export default {
   id: 'custom-header-cell',

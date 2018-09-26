@@ -2,7 +2,7 @@
 import { Component } from 'react';
 import Pagination from '../../../../../library/Pagination';
 import Table from '../../../../../library/Table';
-import DemoLayout from '../../shared/DemoLayout';
+import DemoLayout from '../../common/DemoLayout';
 import { columns, data } from '../../Pagination/shared/data';
 
 export default {

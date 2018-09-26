@@ -2,32 +2,17 @@
 import { Component } from 'react';
 import { canUseDOM, canUseEventListeners } from 'exenv';
 
-type Listener = {
-  /** Target on which to add event listener. Can be a global such as `window` or `document` or any CSS selector */
-  target: string,
-  /** Type of event to listen for, e.g. click */
-  event: string,
-  /** Function called when the event is triggered */
-  handler: Function,
-  /** Options passed to addEventListener/removeEventListener */
-  options?: boolean | Object
-};
+import { eventListenerPropTypes } from './propTypes';
+import type { EventListenerPropsT, ListenersT, ListenerT } from './types';
 
-type Listeners = Array<Listener>;
-
-type Props = {
-  listeners: Listeners
-};
-
-/** Declarative event listener component */
-export default class EventListener extends Component<Props> {
-  props: Props;
+export default class EventListener extends Component<EventListenerPropsT> {
+  static propTypes = eventListenerPropTypes;
 
   componentDidMount() {
     this.addEventListeners();
   }
 
-  componentDidUpdate(prevProps: Props) {
+  componentDidUpdate(prevProps: EventListenerPropsT) {
     this.removeEventListeners(prevProps.listeners);
     this.addEventListeners();
   }
@@ -46,18 +31,18 @@ export default class EventListener extends Component<Props> {
     }
   }
 
-  addEventListeners(listeners: Listeners = this.props.listeners) {
+  addEventListeners(listeners: ListenersT = this.props.listeners) {
     if (canUseEventListeners) {
-      listeners.forEach(({ target, event, handler, options }: Listener) => {
+      listeners.forEach(({ target, event, handler, options }: ListenerT) => {
         const node = this.getTargetNode(target);
         node && node.addEventListener(event, handler, options);
       });
     }
   }
 
-  removeEventListeners(listeners: Listeners = this.props.listeners) {
+  removeEventListeners(listeners: ListenersT = this.props.listeners) {
     if (canUseEventListeners) {
-      listeners.forEach(({ target, event, handler, options }: Listener) => {
+      listeners.forEach(({ target, event, handler, options }: ListenerT) => {
         const node = this.getTargetNode(target);
         node && node.removeEventListener(event, handler, options);
       });

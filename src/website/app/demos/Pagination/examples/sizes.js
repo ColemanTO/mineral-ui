@@ -1,7 +1,7 @@
 /* @flow */
 import { Component } from 'react';
 import Pagination from '../../../../../library/Pagination';
-import DemoLayout from '../../shared/DemoLayout';
+import DemoLayout from '../../common/DemoLayout';
 
 export default {
   id: 'sizes',

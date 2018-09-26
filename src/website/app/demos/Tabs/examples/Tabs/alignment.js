@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import { CardDivider } from '../../../../../../library/Card';
 import Tabs, { Tab } from '../../../../../../library/Tabs';
 import Text from '../../../../../../library/Text';
-import DemoLayout from '../../../shared/DemoLayout';
+import DemoLayout from '../../../common/DemoLayout';
 import content from '../../shared/content';
 
 export default {

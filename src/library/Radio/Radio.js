@@ -1,9 +1,7 @@
 /* @flow */
 import React, { PureComponent } from 'react';
 import { createThemedComponent, mapComponentThemes } from '../themes';
-import Choice, {
-  componentTheme as choiceComponentTheme
-} from '../Choice/Choice';
+import Choice, { choiceTheme } from '../Choice';
 import IconChecked from '../Icon/IconRadioButtonCheck';
 
 type Props = {
@@ -52,7 +50,7 @@ export const componentTheme = (baseTheme: Object) =>
   mapComponentThemes(
     {
       name: 'Choice',
-      theme: choiceComponentTheme(baseTheme)
+      theme: choiceTheme(baseTheme)
     },
     {
       name: 'Radio',

@@ -1,7 +1,8 @@
 /* @flow */
 import React from 'react';
 import { shallow } from 'enzyme';
-import CardBlock, { componentTheme } from '../../Card/CardBlock';
+import CardBlock from '../../Card/CardBlock';
+import { cardBlockTheme } from '../themes';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
@@ -23,7 +24,7 @@ describe('CardBlock', () => {
   describe('theme overrides', () => {
     testThemeOverrides(
       <CardBlock>children</CardBlock>,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(cardBlockTheme)
     );
   });
 });

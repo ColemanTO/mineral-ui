@@ -2,9 +2,7 @@
 import React from 'react';
 import { createStyledComponent, getNormalizedValue } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
-import FauxControl, {
-  componentTheme as fauxControlComponentTheme
-} from '../FauxControl/FauxControl';
+import FauxControl, { fauxControlTheme } from '../FauxControl';
 
 type Props = {
   /** @Private CSS className */
@@ -65,7 +63,7 @@ export const componentTheme = (baseTheme: Object) =>
   mapComponentThemes(
     {
       name: 'FauxControl',
-      theme: fauxControlComponentTheme(baseTheme)
+      theme: fauxControlTheme(baseTheme)
     },
     {
       name: 'TextInput',

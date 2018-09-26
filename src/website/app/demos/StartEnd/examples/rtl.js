@@ -1,6 +1,6 @@
 /* @flow */
 import { ThemeProvider } from '../../../../../library/themes';
-import Box from '../../Box/components/Box';
+import Box from '../../Box/common/DemoBox';
 import StartEnd from '../components/StartEnd';
 
 export default {

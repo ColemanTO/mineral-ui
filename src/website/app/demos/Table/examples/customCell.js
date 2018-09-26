@@ -5,7 +5,7 @@ import { createStyledComponent } from '../../../../../library/styles';
 import Flex from '../../../../../library/Flex';
 import Table from '../../../../../library/Table';
 import data from '../shared/data';
-import renderPropsDescription from '../../shared/renderPropsDescription';
+import renderPropsDescription from '../../common/renderPropsDescription';
 
 export default {
   id: 'custom-cell',

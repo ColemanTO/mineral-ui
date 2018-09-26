@@ -2,7 +2,7 @@
 
 import Select from '../../../../../library/Select';
 import item from '../../Menu/components/customItem';
-import renderPropsDescription from '../../shared/renderPropsDescription';
+import renderPropsDescription from '../../common/renderPropsDescription';
 
 export default {
   id: 'custom-item',

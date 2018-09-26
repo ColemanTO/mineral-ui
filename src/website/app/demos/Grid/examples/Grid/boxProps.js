@@ -1,5 +1,5 @@
 /* @flow */
-import Box from '../../../Box/components/Box';
+import Box from '../../../Box/common/DemoBox';
 import GridItem from '../../components/GridItem';
 import Grid from '../../components/Grid';
 

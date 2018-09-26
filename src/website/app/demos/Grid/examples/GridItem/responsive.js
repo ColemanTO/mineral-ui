@@ -1,7 +1,7 @@
 /* @flow */
 import GridItem from '../../components/GridItem';
 import Grid from '../../components/Grid';
-import responsiveInstructions from '../../../Box/components/responsiveInstructions';
+import responsiveInstructions from '../../../Box/common/responsiveInstructions';
 
 export default {
   id: 'responsive',

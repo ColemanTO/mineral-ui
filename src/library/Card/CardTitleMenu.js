@@ -1,46 +1,13 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent, pxToEm } from '../styles';
-import Button from '../Button';
 import Dropdown from '../Dropdown';
 import IconMoreHoriz from '../Icon/IconMoreHoriz';
+import { CardTitleMenuButton as MenuButton } from './styled';
 
-import type { Items, ItemGroups } from '../Menu/Menu';
+import { cardTitleMenuPropTypes } from './propTypes';
+import type { CardTitleMenuPropsT } from './types';
 
-type Props = {
-  /** See the [Actions Menu](#actions-menu) example */
-  data?: Items | ItemGroups,
-  /** Title for the actions menu [Icon](/components/Icon) */
-  triggerTitle?: string
-};
-
-/*
- * A large Button, even with zero'd padding, is still a bit too large in this
- * context. These styles allow the Button to shrink, but the Icon remains the
- * same size.
- */
-const MenuButton = createStyledComponent(Button, ({ theme }) => ({
-  height: 'auto',
-  minWidth: 0,
-  overflow: 'hidden',
-  padding: 0,
-
-  // Inner
-  '& > span': {
-    display: 'block',
-    margin: `-${pxToEm(2)}`
-  },
-
-  // Icon
-  '& [role="img"]': {
-    color: theme.icon_color
-  }
-}));
-
-/**
- * CardTitleMenu
- */
-const CardTitleMenu = (props: Props) => {
+const CardTitleMenu = (props: CardTitleMenuPropsT) => {
   const { triggerTitle, ...restProps } = props;
   const rootProps = {
     placement: 'bottom-end',
@@ -61,5 +28,7 @@ const CardTitleMenu = (props: Props) => {
 CardTitleMenu.defaultProps = {
   triggerTitle: 'Card actions'
 };
+
+CardTitleMenu.propTypes = cardTitleMenuPropTypes;
 
 export default CardTitleMenu;
