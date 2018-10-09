@@ -1,7 +1,7 @@
 /* @flow */
-import Box from '../../Box/common/DemoBox';
-import StartEnd from '../components/StartEnd';
-import responsiveInstructions from '../../Box/common/responsiveInstructions';
+import Box from '../../../Box/common/DemoBox';
+import StartEnd from '../../common/DemoStartEnd';
+import responsiveInstructions from '../../../Box/common/responsiveInstructions';
 
 export default {
   id: 'responsive',

@@ -1,7 +1,7 @@
 /* @flow */
-import DemoLayout from '../components/DemoLayout';
-import Box from '../../Box/common/DemoBox';
-import StartEnd from '../components/StartEnd';
+import DemoLayout from '../../common/DemoLayout';
+import Box from '../../../Box/common/DemoBox';
+import StartEnd from '../../common/DemoStartEnd';
 
 export default {
   id: 'priority',

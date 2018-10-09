@@ -1,7 +1,7 @@
 /* @flow */
-import { ThemeProvider } from '../../../../../library/themes';
-import Box from '../../Box/common/DemoBox';
-import StartEnd from '../components/StartEnd';
+import { ThemeProvider } from '../../../../../../library/themes';
+import Box from '../../../Box/common/DemoBox';
+import StartEnd from '../../common/DemoStartEnd';
 
 export default {
   id: 'rtl',

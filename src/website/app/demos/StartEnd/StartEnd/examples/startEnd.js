@@ -1,6 +1,6 @@
 /* @flow */
-import StartEnd from '../components/StartEnd';
-import Box from '../../Box/common/DemoBox';
+import StartEnd from '../../common/DemoStartEnd';
+import Box from '../../../Box/common/DemoBox';
 
 export default {
   id: 'basic',

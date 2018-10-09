@@ -1,9 +1,11 @@
 /* @flow */
 import React from 'react';
-import StartEnd from '../../../../library/StartEnd';
-import Button from '../../../../library/Button';
+import StartEnd from '../../../../../library/StartEnd';
+import Button from '../../../../../library/Button';
 
-export default [
+import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+
+const bestPractices: BestPracticesT = [
   {
     type: 'do',
     description:
@@ -18,3 +20,5 @@ export default [
     )
   }
 ];
+
+export default bestPractices;

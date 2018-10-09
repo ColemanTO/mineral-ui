@@ -1,8 +1,8 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../library/styles';
-import Box from '../../Box/common/DemoBox';
-import DemoLayout from '../components/DemoLayout';
-import _StartEnd from '../components/StartEnd';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Box from '../../../Box/common/DemoBox';
+import DemoLayout from '../../common/DemoLayout';
+import _StartEnd from '../../common/DemoStartEnd';
 
 const StartEnd = createStyledComponent(_StartEnd, {
   height: '5rem'
