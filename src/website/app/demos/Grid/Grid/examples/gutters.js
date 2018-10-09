@@ -1,7 +1,7 @@
 /* @flow */
-import GridItem from '../../components/GridItem';
-import DemoLayout from '../../components/DemoLayout';
-import Grid from '../../components/Grid';
+import GridItem from '../../common/DemoGridItem';
+import DemoLayout from '../../common/DemoLayout';
+import Grid from '../../common/DemoGrid';
 
 export default {
   id: 'gutters',

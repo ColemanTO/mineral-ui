@@ -1,8 +1,8 @@
 /* @flow */
 import { createStyledComponent } from '../../../../../../library/styles';
-import GridItem from '../../components/GridItem';
-import _DemoLayout from '../../components/DemoLayout';
-import _Grid from '../../components/Grid';
+import GridItem from '../../common/DemoGridItem';
+import _DemoLayout from '../../common/DemoLayout';
+import _Grid from '../../common/DemoGrid';
 
 const DemoLayout = createStyledComponent(
   _DemoLayout,

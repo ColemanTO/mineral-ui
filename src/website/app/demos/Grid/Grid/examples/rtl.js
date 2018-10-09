@@ -1,7 +1,7 @@
 /* @flow */
 import { ThemeProvider } from '../../../../../../library/themes';
-import GridItem from '../../components/GridItem';
-import Grid from '../../components/Grid';
+import GridItem from '../../common/DemoGridItem';
+import Grid from '../../common/DemoGrid';
 
 export default {
   id: 'rtl',

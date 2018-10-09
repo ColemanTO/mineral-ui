@@ -1,8 +1,8 @@
 /* @flow */
-import DemoLayout from '../../components/DemoLayout';
-import GridItem from '../../components/GridItem';
-import Grid from '../../components/Grid';
-import renderGridItems from '../../components/renderGridItems';
+import DemoLayout from '../../common/DemoLayout';
+import GridItem from '../../common/DemoGridItem';
+import Grid from '../../common/DemoGrid';
+import renderGridItems from '../../common/renderGridItems';
 
 export default {
   id: 'columns',
