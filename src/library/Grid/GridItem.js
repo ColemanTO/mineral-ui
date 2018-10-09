@@ -2,7 +2,7 @@
 import React from 'react';
 import { createStyledComponent, getResponsiveStyles } from '../styles';
 import { FlexItem } from '../Flex';
-import type { Values } from '../Flex/Flex';
+import type { StyleValueT } from '../Flex/types';
 
 type Props = {
   /** Number of columns spanned [[Responsive-capable]](#responsive) */
@@ -31,7 +31,7 @@ const styles = {
 
     const mapValueToProperty = (
       property: string,
-      value: Values
+      value: StyleValueT
     ): number | string => {
       const map = {
         flexGrow: getFlexGrow,

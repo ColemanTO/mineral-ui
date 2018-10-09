@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
-import _FlexItem from '../../components/FlexItem';
-import Flex from '../../components/Flex';
+import _FlexItem from '../../common/DemoFlexItem';
+import Flex from '../../common/DemoFlex';
 
 const FlexItem = (props: {}) => <_FlexItem width="15em" {...props} />;
 

@@ -1,7 +1,7 @@
 /* @flow */
-import FlexItem from '../../components/FlexItem';
-import DemoLayout from '../../components/DemoLayout';
-import Flex from '../../components/Flex';
+import FlexItem from '../../common/DemoFlexItem';
+import DemoLayout from '../../common/DemoLayout';
+import Flex from '../../common/DemoFlex';
 
 export default {
   id: 'gutters',

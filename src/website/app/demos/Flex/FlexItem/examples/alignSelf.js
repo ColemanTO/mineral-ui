@@ -1,8 +1,8 @@
 /* @flow */
 import { createStyledComponent } from '../../../../../../library/styles';
-import FlexItem from '../../components/FlexItem';
-import DemoLayout from '../../components/DemoLayout';
-import _Flex from '../../components/Flex';
+import FlexItem from '../../common/DemoFlexItem';
+import DemoLayout from '../../common/DemoLayout';
+import _Flex from '../../common/DemoFlex';
 
 const Flex = createStyledComponent(_Flex, ({ direction }) => ({
   height: direction === 'column' ? null : '5rem'

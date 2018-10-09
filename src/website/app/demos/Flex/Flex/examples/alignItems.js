@@ -1,64 +1,65 @@
 /* @flow */
 import { createStyledComponent } from '../../../../../../library/styles';
-import FlexItem from '../../components/FlexItem';
-import _DemoLayout from '../../components/DemoLayout';
-import _Flex from '../../components/Flex';
+import FlexItem from '../../common/DemoFlexItem';
+import _DemoLayout from '../../common/DemoLayout';
+import _Flex from '../../common/DemoFlex';
 
 const DemoLayout = createStyledComponent(
   _DemoLayout,
   {},
-  { withProps: { lastRowStartsAt: 10 } }
+  { withProps: { lastRowStartsAt: 5 } }
 );
 
 const Flex = createStyledComponent(_Flex, ({ direction }) => {
   return direction === 'column'
     ? {
         float: 'left',
-        height: '15rem',
-        width: '30%',
+        height: '11rem',
+        width: '21%',
 
-        '&:not(:nth-child(3n))': {
+        '&:not(:last-child)': {
           marginRight: '5%'
         }
       }
-    : null;
+    : {
+        height: '5rem'
+      };
 });
 
 export default {
-  id: 'justify-content',
-  title: 'Justify Content',
-  description: `The \`justifyContent\` prop defines the alignment of items along
-the main axis (horizontal, if \`direction\` is \`row\`; vertical, if
+  id: 'align-items',
+  title: 'Align Items',
+  description: `The \`alignItems\` prop defines the alignment of items along
+the cross axis (vertical, if \`direction\` is \`row\`; horizontal, if
 \`direction\` is \`column\`).`,
   scope: { DemoLayout, Flex, FlexItem },
   source: `
     () => {
       const propValues = [
-        'start', // default
+        'stretch', // default
+        'start',
         'center',
-        'end',
-        'around',
-        'between',
-        'evenly'
+        'end'
       ];
 
-      const renderFlexes = ({ column }) =>
+      const renderFlexes = ({ column }) => (
         propValues.map((value, index) => (
           <Flex
-            justifyContent={value}
+            alignItems={value}
             direction={column ? 'column' : 'row'}
             key={column ? 'c-' + index : index}>
             <FlexItem>A</FlexItem>
             <FlexItem>B</FlexItem>
             <FlexItem>C</FlexItem>
           </Flex>
-        ));
+        ))
+      );
 
       return (
         <DemoLayout>
-          {renderFlexes({ column: false })}
-          {renderFlexes({ column: true })}
+          { renderFlexes({ column: false }) }
+          { renderFlexes({ column: true }) }
         </DemoLayout>
-      );
+      )
     }`
 };

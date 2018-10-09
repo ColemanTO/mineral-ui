@@ -1,7 +1,7 @@
 /* @flow */
 import Box from '../../../Box/common/DemoBox';
-import FlexItem from '../../components/FlexItem';
-import Flex from '../../components/Flex';
+import FlexItem from '../../common/DemoFlexItem';
+import Flex from '../../common/DemoFlex';
 
 export default {
   id: 'box-props',

@@ -1,8 +1,8 @@
 /* @flow */
 import { createStyledComponent } from '../../../../../../library/styles';
-import _FlexItem from '../../components/FlexItem';
+import _FlexItem from '../../common/DemoFlexItem';
 import Box from '../../../Box/common/DemoBox';
-import Flex from '../../components/Flex';
+import Flex from '../../common/DemoFlex';
 
 // Resetting some styles applied by _FlexItem's boxStyles
 const FlexItem = createStyledComponent(

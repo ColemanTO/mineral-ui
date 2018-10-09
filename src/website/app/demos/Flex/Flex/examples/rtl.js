@@ -1,7 +1,7 @@
 /* @flow */
 import { ThemeProvider } from '../../../../../../library/themes';
-import FlexItem from '../../components/FlexItem';
-import Flex from '../../components/Flex';
+import FlexItem from '../../common/DemoFlexItem';
+import Flex from '../../common/DemoFlex';
 
 export default {
   id: 'rtl',

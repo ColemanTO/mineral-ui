@@ -1,8 +1,8 @@
 /* @flow */
 import { createStyledComponent } from '../../../../../../library/styles';
-import _DemoLayout from '../../components/DemoLayout';
-import FlexItem from '../../components/FlexItem';
-import _Flex from '../../components/Flex';
+import _DemoLayout from '../../common/DemoLayout';
+import FlexItem from '../../common/DemoFlexItem';
+import _Flex from '../../common/DemoFlex';
 
 const DemoLayout = createStyledComponent(
   _DemoLayout,
