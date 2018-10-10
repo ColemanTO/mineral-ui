@@ -2,23 +2,16 @@
 import React, { Component } from 'react';
 import memoizeOne from 'memoize-one';
 import { createStyledComponent, getNormalizedValue } from '../styles';
+import { dialogRowTheme } from './themes';
 
 type Props = {
   children?: React$Node,
   element?: string
 };
 
-export const componentTheme = (baseTheme: Object) => ({
-  DialogRow_fontSize: baseTheme.fontSize_ui,
-  DialogRow_paddingHorizontal: baseTheme.space_inline_lg,
-  DialogRow_marginVertical: baseTheme.space_stack_lg,
-
-  ...baseTheme
-});
-
 const styles = {
   root: ({ theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
+    const theme = dialogRowTheme(baseTheme);
     const fontSize = theme.DialogRow_fontSize;
 
     return {

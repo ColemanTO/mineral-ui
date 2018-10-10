@@ -2,48 +2,12 @@
 import React, { cloneElement } from 'react';
 import Button from '../Button';
 import { findAllByType } from '../utils/children';
-import { createStyledComponent } from '../styles';
+import { DialogActions as Root } from './styled';
 
-type Props = {
-  /** Rendered [Button(s)](/components/button) */
-  children?: React$Element<*> | Array<React$Element<*>>,
-  /** Available variants */
-  variant?: 'danger' | 'success' | 'warning'
-};
+import { dialogActionsPropTypes } from './propTypes';
+import type { DialogActionsPropsT } from './types';
 
-export const componentTheme = (baseTheme: Object) => ({
-  DialogActionsItem_margin: baseTheme.space_stack_sm,
-
-  ...baseTheme
-});
-
-const Root = createStyledComponent(
-  'div',
-  ({ theme: baseTheme }) => {
-    const theme = componentTheme(baseTheme);
-    const marginProperty =
-      theme.direction === 'rtl' ? 'marginLeft' : 'marginRight';
-
-    return {
-      alignItems: 'center',
-      display: 'flex',
-      justifyContent: 'flex-end',
-
-      '& > *:not(:last-child)': {
-        [marginProperty]: theme.DialogActionsItem_margin
-      }
-    };
-  },
-  {
-    displayName: 'DialogActions'
-  }
-);
-
-/**
- * DialogActions renders primary and secondary actions inside
- * [Dialog](/components/dialog).
- */
-export default function DialogActions(props: Props) {
+const DialogActions = (props: DialogActionsPropsT) => {
   const { children, variant, ...rootProps } = props;
   let actions = findAllByType(children, Button);
   const lastIndex = actions.length - 1;
@@ -67,4 +31,8 @@ export default function DialogActions(props: Props) {
   });
 
   return <Root {...rootProps}>{actions}</Root>;
-}
+};
+
+DialogActions.propTypes = dialogActionsPropTypes;
+
+export default DialogActions;
