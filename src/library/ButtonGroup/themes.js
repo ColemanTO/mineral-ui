@@ -1,5 +1,7 @@
 /* @flow */
-export const buttonGroupTheme = (baseTheme: Object) => ({
+import type { ButtonGroupThemeFnT } from './types';
+
+export const buttonGroupTheme: ButtonGroupThemeFnT = (baseTheme) => ({
   ButtonGroupButton_backgroundColor_checkedDisabled: baseTheme.color_gray_40,
   ButtonGroupButton_border_disabled: `solid 1px ${baseTheme.borderColor}`,
   ButtonGroupButton_borderColor_active: baseTheme.borderColor_theme_active,

@@ -4,9 +4,11 @@ import wrapDisplayName from 'recompose/wrapDisplayName';
 import withTheme from './withTheme';
 import ThemeProvider from './ThemeProvider';
 
+import type { ThemeT } from './types';
+
 export default function createThemedComponent(
   WrappedComponent: React$ComponentType<*>,
-  theme: Object | ((props: Object, context?: Object) => Object)
+  theme: ThemeT<>
 ) {
   const Wrapper = (props, context) => {
     const outTheme =

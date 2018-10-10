@@ -1,5 +1,7 @@
 /* @flow */
-export default [
+import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+
+const bestPractices: BestPracticesT = [
   {
     type: 'do',
     description: `Try to keep global theme overrides all in one place, as they
@@ -50,3 +52,5 @@ layout as a system to provide turn-key consistency for your app.`,
 `
   }
 ];
+
+export default bestPractices;

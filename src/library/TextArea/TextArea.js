@@ -108,7 +108,7 @@ const styles = {
       // minHeight value is an attempt to display a single line of text.
       // It is needed when a user manually resizes a textarea.
       minHeight: `${parseFloat(paddingVerticalNormalized) * 2 +
-        parseFloat(theme.TextArea_fontSize) * theme.lineHeight +
+        parseFloat(theme.TextArea_fontSize) * parseFloat(theme.lineHeight) +
         parseFloat(pxToEm(parseFloat(theme.TextArea_borderWidth) * 2)) +
         parseFloat(pxToEm(2))}em`,
       minWidth: 0,

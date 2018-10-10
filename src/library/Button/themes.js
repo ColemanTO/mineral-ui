@@ -1,8 +1,10 @@
 /* @flow */
 import { pxToEm } from '../styles';
 
+import type { ButtonThemeFnT } from './types';
+
 // prettier-ignore
-export const buttonTheme = (baseTheme: Object) => ({
+export const buttonTheme: ButtonThemeFnT = (baseTheme) => ({
   Button_backgroundColor: baseTheme.backgroundColor,
   Button_backgroundColor_active: baseTheme.backgroundColor_active,
   Button_backgroundColor_focus: baseTheme.backgroundColor_focus,

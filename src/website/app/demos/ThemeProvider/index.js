@@ -1,15 +1,8 @@
 /* @flow */
-import bestPractices from './bestPractices';
-import examples from './examples';
+import themeProviderDoc from './ThemeProvider';
 
-const doc = require('!!react-docgen-loader!../../../../library/themes/ThemeProvider');
+import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
 
-export default {
-  bestPractices,
-  doc,
-  examples,
-  slug: 'theme-provider',
-  title: 'ThemeProvider',
-  whenHowToUse: `Wrap your app in a ThemeProvider in order for styles to be properly applied.
-    Additionally, it can be nested deeper in your component hierarchy to theme portions of your app.`
-};
+const componentDocs: ComponentDocsT = [themeProviderDoc];
+
+export default componentDocs;

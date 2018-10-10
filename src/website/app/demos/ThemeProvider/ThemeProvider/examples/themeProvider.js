@@ -1,7 +1,7 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../library/styles';
-import { ThemeProvider } from '../../../../../library/themes';
-import Sample from '../components/Sample';
+import { createStyledComponent } from '../../../../../../library/styles';
+import { ThemeProvider } from '../../../../../../library/themes';
+import Sample from '../../common/Sample';
 
 const DemoLayout = createStyledComponent('div', ({ theme }) => ({
   fontFamily: theme.fontFamily,

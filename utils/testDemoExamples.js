@@ -9,11 +9,6 @@ import type {
   ExamplesT
 } from '../src/website/app/pages/ComponentDoc/types';
 
-type OptionsT = {
-  exclude?: Array<string>, // Example id
-  contextPolyfill?: boolean
-};
-
 const mountExample = (example: ExampleT) => {
   const [, wrapper] = mountInThemeProvider(
     <LiveProvider
@@ -49,7 +44,10 @@ const ssrExample = (example: ExampleT) => {
 
 export default function testDemoExamples(
   examples: ExamplesT,
-  options: OptionsT = {}
+  options: {
+    exclude?: Array<string>, // Example id
+    contextPolyfill?: boolean
+  } = {}
 ) {
   const { exclude, contextPolyfill } = options;
 

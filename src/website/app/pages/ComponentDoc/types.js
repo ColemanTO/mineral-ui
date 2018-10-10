@@ -1,4 +1,6 @@
 /* @flow */
+import type { ThemeFnT } from '../../../../library/themes/types';
+
 export type BestPracticeT = {
   backgroundColor?: string,
   description: string,
@@ -7,8 +9,7 @@ export type BestPracticeT = {
 };
 export type BestPracticesT = Array<BestPracticeT>;
 
-type ThemeT = (theme: Object) => Object; // TODO: this should be defined elsewhere
-type ThemesT = Array<ThemeT>;
+type ThemesFnT = Array<ThemeFnT<>>;
 
 export type ExampleT = {
   backgroundColor?: string,
@@ -38,7 +39,7 @@ export type ComponentDocT = {
   propDocs?: ComponentPropDocsT,
   propsComment?: string | React$Element<*>,
   additionalPropDocs?: AdditionalPropDocsT,
-  theme?: ThemeT | ThemesT,
+  theme?: ThemeFnT<> | ThemesFnT,
   whenHowToUse?: string,
   bestPractices?: BestPracticesT
 };
