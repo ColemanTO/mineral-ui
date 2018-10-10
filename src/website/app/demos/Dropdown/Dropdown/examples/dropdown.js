@@ -1,7 +1,7 @@
 /* @flow */
-import Button from '../../../../../library/Button';
-import Dropdown from '../../../../../library/Dropdown';
-import data from '../../Menu/components/menuData';
+import Button from '../../../../../../library/Button';
+import Dropdown from '../../../../../../library/Dropdown';
+import data from '../../../Menu/components/menuData';
 
 export default {
   id: 'basic',

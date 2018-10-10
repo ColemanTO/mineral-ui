@@ -1,7 +1,7 @@
 /* @flow */
-import Button from '../../../../../library/Button';
+import Button from '../../../../../../library/Button';
 import IconCloud from 'mineral-ui-icons/IconCloud';
-import Dropdown from '../../../../../library/Dropdown';
+import Dropdown from '../../../../../../library/Dropdown';
 
 export default {
   id: 'data',

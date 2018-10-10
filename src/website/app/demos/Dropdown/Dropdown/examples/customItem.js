@@ -1,9 +1,9 @@
 /* @flow */
 
-import Button from '../../../../../library/Button';
-import Dropdown from '../../../../../library/Dropdown';
-import item from '../../Menu/components/customItem';
-import renderPropsDescription from '../../common/renderPropsDescription';
+import Button from '../../../../../../library/Button';
+import Dropdown from '../../../../../../library/Dropdown';
+import item from '../../../Menu/components/customItem';
+import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {
   id: 'custom-item',

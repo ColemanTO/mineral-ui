@@ -2,17 +2,18 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { mountInThemeProvider, spyOn } from '../../../../utils/enzymeUtils';
-import Dropdown, { componentTheme } from '../../Dropdown/Dropdown';
+import { dropdownTheme } from '../themes';
+import Dropdown from '../../Dropdown/Dropdown';
 import { DropdownContent, DropdownTrigger } from '../../Dropdown';
 import PopoverTrigger from '../../Popover/PopoverTrigger';
 import { MenuItem } from '../../Menu';
-import examples from '../../../website/app/demos/Dropdown/examples';
+import examples from '../../../website/app/demos/Dropdown/Dropdown/examples';
 import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
-import type { RenderFn } from '../Dropdown';
 import type { Items } from '../../Menu/Menu';
+import type { DropdownRenderFnT } from '../types';
 
 const data: Items = [
   {
@@ -97,12 +98,12 @@ describe('Dropdown', () => {
       <Dropdown data={data} id="test" isOpen>
         <button>trigger</button>
       </Dropdown>,
-      getProcessedComponentThemeKeys(componentTheme)
+      getProcessedComponentThemeKeys(dropdownTheme)
     );
   });
 
   describe('render props', () => {
-    let renderer: RenderFn = jest.fn(() => <div />);
+    let renderer: DropdownRenderFnT = jest.fn(() => <div />);
 
     beforeEach(() => {
       renderer.mockClear();

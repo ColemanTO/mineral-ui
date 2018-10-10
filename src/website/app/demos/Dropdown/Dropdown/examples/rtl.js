@@ -1,9 +1,12 @@
 /* @flow */
-import { createStyledComponent, pxToEm } from '../../../../../library/styles';
-import Button from '../../../../../library/Button';
-import Dropdown from '../../../../../library/Dropdown';
-import { ThemeProvider } from '../../../../../library/themes';
-import data from '../../Menu/components/menuData';
+import {
+  createStyledComponent,
+  pxToEm
+} from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button';
+import Dropdown from '../../../../../../library/Dropdown';
+import { ThemeProvider } from '../../../../../../library/themes';
+import data from '../../../Menu/components/menuData';
 
 const DemoLayout = createStyledComponent('div', {
   paddingBottom: pxToEm(130)

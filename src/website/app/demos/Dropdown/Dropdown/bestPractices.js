@@ -1,10 +1,11 @@
 /* @flow */
 import React from 'react';
-import Button from '../../../../library/Button';
 import IconMenu from 'mineral-ui-icons/IconMenu';
-import Dropdown from '../../../../library/Dropdown';
+import Button from '../../../../../library/Button';
+import Dropdown from '../../../../../library/Dropdown';
 
-import type { Items } from '../../../../library/Menu/Menu';
+import type { Items } from '../../../../../library/Menu/Menu';
+import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
 
 const data: Items = [
   { text: 'Settings' },
@@ -24,7 +25,7 @@ const navData: Items = [
   { text: 'Log in' }
 ];
 
-export default [
+const bestPractices: BestPracticesT = [
   {
     type: 'do',
     description: `Populate Dropdown with options that are related to the trigger,
@@ -58,3 +59,5 @@ a drawer with the [Menu](/components/menu).`,
     )
   }
 ];
+
+export default bestPractices;

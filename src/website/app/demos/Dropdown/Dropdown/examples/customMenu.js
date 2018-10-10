@@ -1,15 +1,15 @@
 /* @flow */
 
-import { createStyledComponent } from '../../../../../library/styles';
-import Button from '../../../../../library/Button/Button';
-import FormField from '../../../../../library/Form/FormField';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button/Button';
+import FormField from '../../../../../../library/Form/FormField';
 import IconSearch from 'mineral-ui-icons/IconSearch';
-import Dropdown from '../../../../../library/Dropdown';
-import Menu from '../../../../../library/Menu';
-import TextInput from '../../../../../library/TextInput';
-import Text from '../../../../../library/Text';
-import data from '../../Menu/components/menuData';
-import renderPropsDescription from '../../common/renderPropsDescription';
+import Dropdown from '../../../../../../library/Dropdown';
+import Menu from '../../../../../../library/Menu';
+import TextInput from '../../../../../../library/TextInput';
+import Text from '../../../../../../library/Text';
+import data from '../../../Menu/components/menuData';
+import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {
   id: 'custom-menu',

@@ -1,8 +1,8 @@
 /* @flow */
-import Button from '../../../../../library/Button';
-import { createStyledComponent } from '../../../../../library/styles';
-import Dropdown from '../../../../../library/Dropdown';
-import data from '../../Menu/components/menuData';
+import Button from '../../../../../../library/Button';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Dropdown from '../../../../../../library/Dropdown';
+import data from '../../../Menu/components/menuData';
 
 const DemoLayout = createStyledComponent('div', {
   height: '400px',

@@ -1,10 +1,10 @@
 /* @flow */
 import { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../../library/styles';
-import Button from '../../../../../library/Button';
-import Dropdown from '../../../../../library/Dropdown';
-import data from '../../Menu/components/menuData';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button';
+import Dropdown from '../../../../../../library/Dropdown';
+import data from '../../../Menu/components/menuData';
 
 const DemoLayout = createStyledComponent('div', {
   display: 'flex',

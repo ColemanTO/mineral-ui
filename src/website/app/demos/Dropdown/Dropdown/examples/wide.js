@@ -1,7 +1,7 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../library/styles';
-import Button from '../../../../../library/Button';
-import Dropdown from '../../../../../library/Dropdown';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button';
+import Dropdown from '../../../../../../library/Dropdown';
 
 const DemoLayout = createStyledComponent('div', {
   height: '210px'

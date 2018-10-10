@@ -1,10 +1,10 @@
 /* @flow */
 
-import { createStyledComponent } from '../../../../../library/styles';
+import { createStyledComponent } from '../../../../../../library/styles';
 import { Target } from 'react-popper';
-import Dropdown from '../../../../../library/Dropdown';
-import data from '../../Menu/components/menuData';
-import renderPropsDescription from '../../common/renderPropsDescription';
+import Dropdown from '../../../../../../library/Dropdown';
+import data from '../../../Menu/components/menuData';
+import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {
   id: 'custom-trigger',

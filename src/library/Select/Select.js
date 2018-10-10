@@ -8,9 +8,8 @@ import { createStyledComponent, pxToEm } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import ModifiersContext from '../Dialog/ModifiersContext';
-import Dropdown, {
-  componentTheme as dropdownComponentTheme
-} from '../Dropdown/Dropdown';
+import { dropdownTheme } from '../Dropdown/themes';
+import Dropdown from '../Dropdown/Dropdown';
 import ItemMatcher from '../Dropdown/ItemMatcher';
 import Menu, { getItems } from '../Menu/Menu';
 import MenuItem from '../Menu/MenuItem';
@@ -143,7 +142,7 @@ export const componentTheme = (baseTheme: Object) =>
   mapComponentThemes(
     {
       name: 'Dropdown',
-      theme: dropdownComponentTheme(baseTheme)
+      theme: dropdownTheme(baseTheme)
     },
     {
       name: 'Select',
