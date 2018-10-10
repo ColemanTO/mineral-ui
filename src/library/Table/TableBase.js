@@ -4,9 +4,8 @@ import createReactContext, { type Context } from 'create-react-context';
 import { createStyledComponent } from '../styles';
 import { createThemedComponent, mapComponentThemes } from '../themes';
 import { generateId } from '../utils';
-import _OverflowContainer, {
-  componentTheme as overflowContainerComponentTheme
-} from '../OverflowContainer/OverflowContainer';
+import { overflowContainerTheme } from '../OverflowContainer/themes';
+import _OverflowContainer from '../OverflowContainer/OverflowContainer';
 import TableDataRow from './TableDataRow';
 import TableHeaderRow from './TableHeaderRow';
 import TableBody from './TableBody';
@@ -49,7 +48,7 @@ export const componentTheme = (baseTheme: Object) =>
   mapComponentThemes(
     {
       name: 'OverflowContainer',
-      theme: overflowContainerComponentTheme(baseTheme)
+      theme: overflowContainerTheme(baseTheme)
     },
     {
       name: 'Table',

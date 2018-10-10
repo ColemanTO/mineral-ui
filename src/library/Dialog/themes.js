@@ -1,7 +1,7 @@
 /* @flow */
 import { pxToEm } from '../styles';
 import { mapComponentThemes } from '../themes';
-import { componentTheme as overflowContainerWithShadowsComponentTheme } from '../OverflowContainer/OverflowContainerWithShadows';
+import { overflowContainerWithShadowsTheme } from '../OverflowContainer/themes';
 
 export const dialogTheme = (baseTheme: Object) => ({
   Dialog_transitionDuration: '250ms',
@@ -42,7 +42,7 @@ export const dialogBodyTheme = (baseTheme: Object) =>
   mapComponentThemes(
     {
       name: 'OverflowContainerWithShadows',
-      theme: overflowContainerWithShadowsComponentTheme(baseTheme)
+      theme: overflowContainerWithShadowsTheme(baseTheme)
     },
     {
       name: 'DialogBody',
