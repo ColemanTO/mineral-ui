@@ -4,18 +4,18 @@ import IconMenu from 'mineral-ui-icons/IconMenu';
 import Button from '../../../../../library/Button';
 import Dropdown from '../../../../../library/Dropdown';
 
-import type { Items } from '../../../../../library/Menu/Menu';
+import type { MenuItems } from '../../../../../library/Menu/types';
 import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
 
-const data: Items = [
+const data: MenuItems = [
   { text: 'Settings' },
   { text: 'Help' },
   { text: 'Log out' }
 ];
 
-const shortData: Items = [{ text: 'Reload' }];
+const shortData: MenuItems = [{ text: 'Reload' }];
 
-const navData: Items = [
+const navData: MenuItems = [
   { text: 'Preferences' },
   { text: 'Account' },
   { text: 'About us' },

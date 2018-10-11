@@ -3,7 +3,7 @@
 import { createStyledComponent } from '../../../../../../library/styles';
 import { Target } from 'react-popper';
 import Dropdown from '../../../../../../library/Dropdown';
-import data from '../../../Menu/components/menuData';
+import data from '../../../Menu/common/menuData';
 import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {

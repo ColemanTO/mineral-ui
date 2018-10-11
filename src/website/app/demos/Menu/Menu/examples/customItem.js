@@ -7,7 +7,7 @@ import {
 import { mineralTheme } from '../../../../../../library/themes';
 import Menu, { MenuItem } from '../../../../../../library/Menu';
 import Avatar from '../../../../../../library/Avatar';
-import DemoLayout from '../../components/DemoLayout';
+import DemoLayout from '../../common/DemoLayout';
 import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {

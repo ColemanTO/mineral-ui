@@ -5,13 +5,15 @@ import {
   element,
   func,
   node,
+  number,
   oneOf,
+  oneOfType,
   shape,
   string
 } from 'prop-types';
 import { VARIANT } from './constants';
 
-export const itemPropType = shape({
+export const menuItemPropType = shape({
   iconEnd: element,
   iconStart: element,
   disabled: bool,
@@ -24,4 +26,42 @@ export const itemPropType = shape({
   variant: oneOf(Object.keys(VARIANT))
 });
 
-export const itemGroupPropType = arrayOf(itemPropType);
+export const menuItemsPropType = arrayOf(menuItemPropType);
+
+export const menuGroupPropType = shape({
+  items: menuItemPropType.isRequired,
+  title: node
+});
+
+export const menuItemGroupsPropType = arrayOf(menuGroupPropType);
+
+export const menuPropTypes = {
+  children: node,
+  data: oneOfType([menuItemsPropType, menuItemGroupsPropType]),
+  highlightedIndex: number,
+  item: func,
+  itemKey: string
+};
+
+export const menuDividerPropTypes = {};
+
+export const menuGroupPropTypes = {
+  children: node,
+  title: node
+};
+
+export const menuGroupTitlePropTypes = {};
+
+export const menuItemPropTypes = {
+  children: node,
+  disabled: bool,
+  iconEnd: element,
+  iconStart: element,
+  index: number,
+  isHighlighted: bool,
+  item: menuItemPropType,
+  onClick: func,
+  render: func,
+  secondaryText: node,
+  variant: oneOf(Object.keys(VARIANT))
+};

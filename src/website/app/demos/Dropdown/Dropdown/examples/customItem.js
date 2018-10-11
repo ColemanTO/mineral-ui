@@ -2,7 +2,7 @@
 
 import Button from '../../../../../../library/Button';
 import Dropdown from '../../../../../../library/Dropdown';
-import item from '../../../Menu/components/customItem';
+import item from '../../../Menu/common/customItem';
 import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {

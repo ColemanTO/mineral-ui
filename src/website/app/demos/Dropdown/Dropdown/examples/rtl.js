@@ -6,7 +6,7 @@ import {
 import Button from '../../../../../../library/Button';
 import Dropdown from '../../../../../../library/Dropdown';
 import { ThemeProvider } from '../../../../../../library/themes';
-import data from '../../../Menu/components/menuData';
+import data from '../../../Menu/common/menuData';
 
 const DemoLayout = createStyledComponent('div', {
   paddingBottom: pxToEm(130)

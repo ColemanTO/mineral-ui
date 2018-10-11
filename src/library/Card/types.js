@@ -1,7 +1,7 @@
 /* @flow */
 import { VARIANT } from './constants';
 
-import type { Items, ItemGroups } from '../Menu/Menu';
+import type { MenuItems, MenuItemGroups } from '../Menu/types';
 
 export type CardProps = {
   children: React$Node,
@@ -55,7 +55,7 @@ export type CardTitleProps = {
 };
 
 export type CardTitleMenuProps = {
-  data?: Items | ItemGroups,
+  data?: MenuItems | MenuItemGroups,
   triggerTitle?: string
 };
 

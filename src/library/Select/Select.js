@@ -17,14 +17,14 @@ import SelectTrigger, {
   componentTheme as selectTriggerComponentTheme
 } from './SelectTrigger';
 
-import type { Item, Items, ItemGroups } from '../Menu/Menu';
+import type { MenuItemType, MenuItems, MenuItemGroups } from '../Menu/types';
 
 type Props = {
   /**
    * Data from which the [Menu](/components/menu#data) will be constructed
    * (see [example](#data))
    */
-  data: Items | ItemGroups,
+  data: MenuItems | MenuItemGroups,
   /**
    * Index of item to be highlighted upon initialization. Primarily for
    * use with uncontrolled components.
@@ -39,7 +39,7 @@ type Props = {
    * Item selected upon initialization. Primarily for use with uncontrolled
    * components.
    */
-  defaultSelectedItem?: Item,
+  defaultSelectedItem?: MenuItemType,
   /** Disables the control */
   disabled?: boolean,
   /** Index of the highlighted item. For use with controlled components. */
@@ -79,13 +79,13 @@ type Props = {
    * Called when an item is selected and it is different than the previously
    * selected item.
    */
-  onChange?: (item: Item, event: SyntheticEvent<>) => void,
+  onChange?: (item: MenuItemType, event: SyntheticEvent<>) => void,
   /** Called when Select is closed */
   onClose?: (event: SyntheticEvent<>) => void,
   /** Called when Select is opened */
   onOpen?: (event: SyntheticEvent<>) => void,
   /** Called when an item is selected */
-  onSelect?: (item: Item, event: SyntheticEvent<>) => void,
+  onSelect?: (item: MenuItemType, event: SyntheticEvent<>) => void,
   /** Text displayed when there is no item selected */
   placeholder?: string,
   /** Placement of the Select menu */
@@ -95,7 +95,7 @@ type Props = {
   /** Indicates that the user must select a value before submitting a form */
   required?: boolean,
   /** The selected item. For use with controlled components. */
-  selectedItem?: Item,
+  selectedItem?: MenuItemType,
   /** Available sizes */
   size?: 'small' | 'medium' | 'large' | 'jumbo',
   /**
@@ -118,7 +118,7 @@ type Props = {
 type State = {
   highlightedIndex: ?number,
   isOpen: boolean,
-  selectedItem: ?Item
+  selectedItem: ?MenuItemType
 };
 
 type Helpers = {
@@ -215,7 +215,7 @@ export default class Select extends Component<Props, State> {
 
   itemMatcher: any;
 
-  items: Items;
+  items: MenuItems;
 
   getItems = memoizeOne(getItems, deepEqual);
 
@@ -553,7 +553,7 @@ export default class Select extends Component<Props, State> {
     highlightedItemNode && highlightedItemNode.click();
   };
 
-  onSelect = (item: Item, event: SyntheticEvent<>) => {
+  onSelect = (item: MenuItemType, event: SyntheticEvent<>) => {
     const prevSelectedItem = this.getControllableValue('selectedItem');
 
     let stateToSet;
@@ -579,8 +579,8 @@ export default class Select extends Component<Props, State> {
   };
 
   onSelectActions = (
-    item: Item,
-    prevSelectedItem: Item,
+    item: MenuItemType,
+    prevSelectedItem: MenuItemType,
     event: SyntheticEvent<>
   ) => {
     this.props.onSelect && this.props.onSelect(item, event);
@@ -593,7 +593,7 @@ export default class Select extends Component<Props, State> {
     this.focusTrigger();
   };
 
-  onChange = (item: Item, event: SyntheticEvent<>) => {
+  onChange = (item: MenuItemType, event: SyntheticEvent<>) => {
     this.props.onChange && this.props.onChange(item, event);
   };
 

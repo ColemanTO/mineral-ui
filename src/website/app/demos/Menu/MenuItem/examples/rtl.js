@@ -2,7 +2,7 @@
 import { mineralTheme, ThemeProvider } from '../../../../../../library/themes';
 import IconHelp from 'mineral-ui-icons/IconHelp';
 import Menu, { MenuItem } from '../../../../../../library/Menu';
-import DemoLayout from '../../components/DemoLayout';
+import DemoLayout from '../../common/DemoLayout';
 
 export default {
   id: 'rtl',

@@ -11,7 +11,7 @@ import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import FauxControl from '../FauxControl';
 import { componentTheme as textInputComponentTheme } from '../TextInput/TextInput';
 
-import type { Item } from '../Menu/Menu';
+import type { MenuItemType } from '../Menu/types';
 
 type Props = {
   /** Disables the control */
@@ -27,7 +27,7 @@ type Props = {
   /** Indicates that the user must fill in a value before submitting a form */
   required?: boolean,
   /** The selected item */
-  item?: Item,
+  item?: MenuItemType,
   /** Available sizes */
   size?: 'small' | 'medium' | 'large' | 'jumbo',
   /** Ref for the trigger */

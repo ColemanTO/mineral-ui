@@ -6,7 +6,7 @@ import Dropdown from '../../../../../../library/Dropdown';
 import Popover from '../../../../../../library/Popover';
 import { createStyledComponent } from '../../../../../../library/styles';
 import Tooltip from '../../../../../../library/Tooltip';
-import data from '../../../Menu/components/menuData';
+import data from '../../../Menu/common/menuData';
 import DemoContent from '../../../Popover/components/DemoContent';
 
 const FixedWidthLayout = createStyledComponent('div', {

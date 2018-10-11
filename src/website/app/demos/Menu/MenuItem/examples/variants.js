@@ -1,7 +1,7 @@
 /* @flow */
 import { mineralTheme } from '../../../../../../library/themes';
 import Menu, { MenuItem } from '../../../../../../library/Menu';
-import DemoLayout from '../../components/DemoLayout';
+import DemoLayout from '../../common/DemoLayout';
 
 export default {
   id: 'variants',

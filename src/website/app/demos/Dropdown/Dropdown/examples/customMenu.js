@@ -8,7 +8,7 @@ import Dropdown from '../../../../../../library/Dropdown';
 import Menu from '../../../../../../library/Menu';
 import TextInput from '../../../../../../library/TextInput';
 import Text from '../../../../../../library/Text';
-import data from '../../../Menu/components/menuData';
+import data from '../../../Menu/common/menuData';
 import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {

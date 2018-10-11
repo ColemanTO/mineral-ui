@@ -12,10 +12,10 @@ import testDemoExamples from '../../../../utils/testDemoExamples';
 import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
-import type { Items } from '../../Menu/Menu';
+import type { MenuItems } from '../../Menu/types';
 import type { DropdownRenderFn } from '../types';
 
-const data: Items = [
+const data: MenuItems = [
   {
     text: 'item 1',
     onClick: jest.fn()
@@ -438,7 +438,7 @@ describe('Dropdown', () => {
 
     describe('when data is grouped', () => {
       it('item ids increment across groups', () => {
-        const data: Items = [
+        const data: MenuItems = [
           {
             title: 'Group 1',
             items: [{ text: 'item 1' }, { text: 'item 2' }]

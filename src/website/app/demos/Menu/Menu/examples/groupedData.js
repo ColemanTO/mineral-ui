@@ -2,7 +2,7 @@
 import { mineralTheme } from '../../../../../../library/themes';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import Menu from '../../../../../../library/Menu';
-import DemoLayout from '../../components/DemoLayout';
+import DemoLayout from '../../common/DemoLayout';
 
 export default {
   id: 'grouped-data',

@@ -5,7 +5,7 @@ import Menu, {
   MenuGroup,
   MenuItem
 } from '../../../../../../library/Menu';
-import DemoLayout from '../../components/DemoLayout';
+import DemoLayout from '../../common/DemoLayout';
 
 export default {
   id: 'separating-items',

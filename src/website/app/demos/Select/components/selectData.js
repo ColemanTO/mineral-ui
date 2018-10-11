@@ -2,9 +2,9 @@
 import React from 'react';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 
-import type { Items } from '../../../../../library/Menu/Menu';
+import type { MenuItems } from '../../../../../library/Menu/types';
 
-export const basicData: Items = [
+export const basicData: MenuItems = [
   {
     text: 'Alpha',
     value: 'alpha'
@@ -19,7 +19,7 @@ export const basicData: Items = [
   }
 ];
 
-export const currencyData: Items = [
+export const currencyData: MenuItems = [
   { text: '$', value: '$' },
   { text: '€', value: '€' },
   { text: '¥', value: '¥' },
@@ -29,14 +29,14 @@ export const currencyData: Items = [
   { text: '₩', value: '₩' }
 ];
 
-export const foodData: Items = [
+export const foodData: MenuItems = [
   { text: 'Nachos', value: 'Nachos' },
   { text: 'Tacos', value: 'Tacos' },
   { text: 'Burritos', value: 'Burritos' },
   { text: 'Enchiladas', value: 'Enchiladas' }
 ];
 
-export const iconsData: Items = [
+export const iconsData: MenuItems = [
   {
     iconStart: <IconCloud />,
     text: 'Alpha',
@@ -54,7 +54,7 @@ export const iconsData: Items = [
   }
 ];
 
-export const mineralData: Items = [
+export const mineralData: MenuItems = [
   { text: 'Amethyst', value: 'Amethyst' },
   { text: 'Fluorite', value: 'Fluorite' },
   { text: 'Hematite', value: 'Hematite' },
@@ -62,7 +62,7 @@ export const mineralData: Items = [
   { text: 'Quartz', value: 'Quartz' }
 ];
 
-export const rtlData: Items = [
+export const rtlData: MenuItems = [
   {
     text: 'ألفا',
     value: 'alpha'
@@ -77,7 +77,7 @@ export const rtlData: Items = [
   }
 ];
 
-export const sizeData: Items = [
+export const sizeData: MenuItems = [
   { text: 'XS', value: 'XS' },
   { text: 'S', value: 'S' },
   { text: 'M', value: 'M' },
@@ -85,7 +85,7 @@ export const sizeData: Items = [
   { text: 'XL', value: 'XL' }
 ];
 
-export const statesData: Items = [
+export const statesData: MenuItems = [
   { text: 'Alabama', value: 'AL' },
   { text: 'Alaska', value: 'AK' },
   { text: 'Arizona', value: 'AZ' },
@@ -138,7 +138,7 @@ export const statesData: Items = [
   { text: 'Wyoming', value: 'WY' }
 ];
 
-export const wrappingData: Items = [
+export const wrappingData: MenuItems = [
   {
     text: 'Alfred Wegener',
     secondaryText: '1880-1930',

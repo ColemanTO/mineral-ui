@@ -11,11 +11,11 @@ import {
 } from 'prop-types';
 import { PLACEMENT } from './constants';
 
-import { itemPropType, itemGroupPropType } from '../Menu/propTypes';
+import { menuItemsPropType, menuItemGroupsPropType } from '../Menu/propTypes';
 
 export const dropdownPropTypes = {
   children: oneOfType([node, func]).isRequired,
-  data: oneOfType([itemPropType, itemGroupPropType]).isRequired,
+  data: oneOfType([menuItemsPropType, menuItemGroupsPropType]).isRequired,
   defaultHighlightedIndex: number,
   defaultIsOpen: bool,
   disabled: bool,

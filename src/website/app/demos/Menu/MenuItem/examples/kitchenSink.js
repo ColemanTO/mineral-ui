@@ -6,7 +6,7 @@ import {
 import { mineralTheme } from '../../../../../../library/themes';
 import IconCloud from 'mineral-ui-icons/IconCloud';
 import Menu, { MenuItem } from '../../../../../../library/Menu';
-import _DemoLayout from '../../components/DemoLayout';
+import _DemoLayout from '../../common/DemoLayout';
 
 const DemoLayout = createStyledComponent(_DemoLayout, {
   '& > div:last-child': {

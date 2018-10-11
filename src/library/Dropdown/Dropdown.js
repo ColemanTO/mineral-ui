@@ -12,8 +12,8 @@ import { PLACEMENT } from './constants';
 import DropdownContent from './DropdownContent';
 import ItemMatcher from './ItemMatcher';
 
+import type { MenuItems } from '../Menu/types';
 import { dropdownPropTypes } from './propTypes';
-import type { Items } from '../Menu/Menu';
 import type {
   DropdownDefaultProps,
   DropdownPropGetter,
@@ -23,10 +23,7 @@ import type {
   DropdownState
 } from './types';
 
-export default class Dropdown extends Component<
-  DropdownProps,
-  DropdownState
-> {
+export default class Dropdown extends Component<DropdownProps, DropdownState> {
   static defaultProps: DropdownDefaultProps = {
     itemKey: 'text',
     placement: PLACEMENT['bottom-start']
@@ -47,7 +44,7 @@ export default class Dropdown extends Component<
 
   itemMatcher: any;
 
-  items: Items;
+  items: MenuItems;
 
   getItems = memoizeOne(getItems, deepEqual);
 

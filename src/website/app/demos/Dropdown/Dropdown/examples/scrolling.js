@@ -2,7 +2,7 @@
 import Button from '../../../../../../library/Button';
 import Dropdown from '../../../../../../library/Dropdown';
 import ScrollParent from '../../../Popover/components/ScrollBox';
-import data from '../../../Menu/components/menuData';
+import data from '../../../Menu/common/menuData';
 
 export default {
   id: 'scrolling-container',

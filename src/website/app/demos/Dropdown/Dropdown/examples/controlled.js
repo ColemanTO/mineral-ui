@@ -4,7 +4,7 @@ import { findDOMNode } from 'react-dom';
 import { createStyledComponent } from '../../../../../../library/styles';
 import Button from '../../../../../../library/Button';
 import Dropdown from '../../../../../../library/Dropdown';
-import data from '../../../Menu/components/menuData';
+import data from '../../../Menu/common/menuData';
 
 const DemoLayout = createStyledComponent('div', {
   display: 'flex',

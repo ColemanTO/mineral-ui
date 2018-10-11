@@ -8,12 +8,12 @@ import Card, {
 } from '../../../../../library/Card';
 import loremIpsum from '../common/loremIpsum';
 
-import type { Items } from '../../../../../library/Menu/Menu';
+import type { MenuItems } from '../../../../../library/Menu/types';
 import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
 
 const backgroundColor = mineralTheme.color_gray_10;
 
-const actionMenuData: Items = [
+const actionMenuData: MenuItems = [
   { text: 'Rename' },
   { text: 'Copy' },
   { divider: true },

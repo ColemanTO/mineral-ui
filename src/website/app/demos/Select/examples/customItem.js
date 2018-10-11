@@ -1,7 +1,7 @@
 /* @flow */
 
 import Select from '../../../../../library/Select';
-import item from '../../Menu/components/customItem';
+import item from '../../Menu/common/customItem';
 import renderPropsDescription from '../../common/renderPropsDescription';
 
 export default {
