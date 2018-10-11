@@ -4,10 +4,8 @@ import { DIRECTION, PRIORITY } from './constants';
 export type StartEndPropsT = {
   breakpoints?: Array<number | string>,
   children: React$Node,
-  direction?:
-    | $Values<typeof DIRECTION>
-    | Array<$Values<typeof DIRECTION> | null>,
+  direction?: $Keys<typeof DIRECTION> | Array<$Keys<typeof DIRECTION> | null>,
   justifyContent?: any,
-  priority?: $Values<typeof PRIORITY>,
+  priority?: $Keys<typeof PRIORITY>,
   wrap?: any
 };

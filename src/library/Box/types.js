@@ -40,18 +40,18 @@ export type SpacingValueT =
   | null
   | number
   | string
-  | $Values<typeof SPACING_SIZE>;
+  | $Keys<typeof SPACING_SIZE>;
 
 type HeightOrWidthPropT = number | string | Array<number | string | null>;
 
 type SpacingPropT =
   | number
   | string
-  | $Values<typeof SPACING_SIZE>
-  | Array<null | number | string | $Values<typeof SPACING_SIZE>>;
+  | $Keys<typeof SPACING_SIZE>
+  | Array<null | number | string | $Keys<typeof SPACING_SIZE>>;
 
 type InsetSpacingPropT =
   | number
   | string
-  | $Values<typeof INSET_SPACING_SIZE>
-  | Array<null | number | string | $Values<typeof INSET_SPACING_SIZE>>;
+  | $Keys<typeof INSET_SPACING_SIZE>
+  | Array<null | number | string | $Keys<typeof INSET_SPACING_SIZE>>;

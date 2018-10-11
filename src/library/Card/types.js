@@ -27,7 +27,7 @@ export type CardFooterPropsT = {
   onOpen?: (event: SyntheticEvent<>) => void,
   title?: string | React$Element<*>,
   triggerTitle?: (isOpen: boolean) => string,
-  variant?: $Values<typeof VARIANT>
+  variant?: $Keys<typeof VARIANT>
 };
 
 export type CardFooterDefaultPropsT = {
@@ -42,7 +42,7 @@ export type CardImagePropsT = {};
 
 export type CardStatusPropsT = {
   children: string,
-  variant: $Values<typeof VARIANT>
+  variant: $Keys<typeof VARIANT>
 };
 
 export type CardTitlePropsT = {
@@ -51,7 +51,7 @@ export type CardTitlePropsT = {
   children: React$Node,
   secondaryText?: string | React$Element<*>,
   subtitle?: React$Node,
-  variant?: $Values<typeof VARIANT>
+  variant?: $Keys<typeof VARIANT>
 };
 
 export type CardTitleMenuPropsT = {

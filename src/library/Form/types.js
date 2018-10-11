@@ -35,7 +35,7 @@ export type FormFieldPropsT = {
    */
   secondaryText?: string | React$Element<*>,
   /** Available variants */
-  variant?: $Values<typeof VARIANT>
+  variant?: $Keys<typeof VARIANT>
 };
 
 export type FormFieldDefaultPropsT = {

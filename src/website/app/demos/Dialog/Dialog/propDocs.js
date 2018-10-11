@@ -16,7 +16,7 @@ const propDocs: ComponentPropDocsT = {
       name: 'array',
       value: `Array<{
   text: string,
-  size?: $Values<typeof ACTIONS_SIZE>
+  size?: $Keys<typeof ACTIONS_SIZE>
 }>`
     }
   },

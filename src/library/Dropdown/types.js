@@ -3,7 +3,7 @@ import { PLACEMENT } from './constants';
 
 import type { Items, ItemGroups } from '../Menu/Menu';
 
-type PlacementT = $Values<typeof PLACEMENT>;
+type PlacementT = $Keys<typeof PLACEMENT>;
 
 export type DropdownPropsT = {
   /**

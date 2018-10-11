@@ -12,13 +12,13 @@ export type ButtonPropsT = {
   minimal?: boolean,
   onClick?: (event: SyntheticEvent<>) => void,
   primary?: boolean,
-  size?: $Values<typeof SIZE>,
+  size?: $Keys<typeof SIZE>,
   type?: string,
-  variant?: $Values<typeof VARIANT>
+  variant?: $Keys<typeof VARIANT>
 };
 
 export type ButtonDefaultPropsT = {
   element: $FlowFixMe, // Should allow string | React$ComponentType<*>
-  size: $Values<typeof SIZE>,
+  size: $Keys<typeof SIZE>,
   type: string
 };

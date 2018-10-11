@@ -8,11 +8,11 @@ export type ButtonGroupPropsT = {
   defaultChecked?: number | Array<number>,
   disabled?: boolean,
   fullWidth?: boolean,
-  mode?: $Values<typeof MODE>,
+  mode?: $Keys<typeof MODE>,
   onChange?: (event: SyntheticEvent<HTMLButtonElement>) => void,
   onClick?: (event: SyntheticEvent<HTMLButtonElement>) => void,
-  size?: $Values<typeof SIZE>,
-  variant?: $Values<typeof VARIANT>
+  size?: $Keys<typeof SIZE>,
+  variant?: $Keys<typeof VARIANT>
 };
 
 export type ButtonGroupStateT = {

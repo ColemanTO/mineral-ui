@@ -4,7 +4,7 @@ import { LABEL_POSITION, SIZE, TYPE } from './constants';
 export type ChoicePropsT = {
   checked?: boolean,
   className?: string,
-  labelPosition?: $Values<typeof LABEL_POSITION>,
+  labelPosition?: $Keys<typeof LABEL_POSITION>,
   defaultChecked?: boolean,
   disabled?: boolean,
   justify?: boolean,
@@ -17,14 +17,14 @@ export type ChoicePropsT = {
   name?: string,
   onChange?: (event: SyntheticInputEvent<>) => void,
   required?: boolean,
-  size?: $Values<typeof SIZE>,
-  type: $Values<typeof TYPE>,
+  size?: $Keys<typeof SIZE>,
+  type: $Keys<typeof TYPE>,
   value?: string
 };
 
 export type ChoiceDefaultPropsT = {
-  labelPosition: $Values<typeof LABEL_POSITION>,
-  size: $Values<typeof SIZE>
+  labelPosition: $Keys<typeof LABEL_POSITION>,
+  size: $Keys<typeof SIZE>
 };
 
 export type ChoiceGroupPropsT = {
@@ -40,11 +40,11 @@ export type ChoiceGroupPropsT = {
   required?: boolean,
   role?: string,
   rootProps?: Object,
-  size?: $Values<typeof SIZE>,
-  type: $Values<typeof TYPE>
+  size?: $Keys<typeof SIZE>,
+  type: $Keys<typeof TYPE>
 };
 
 export type ChoiceGroupDefaultPropsT = {
   role: string,
-  size: $Values<typeof SIZE>
+  size: $Keys<typeof SIZE>
 };

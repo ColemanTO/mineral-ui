@@ -4,7 +4,7 @@ import { ACTIONS_SIZE, APPEARANCE, ELEMENT, SIZE, VARIANT } from './constants';
 export type DialogPropsT = {
   actions?: Array<{
     text: string,
-    size?: $Values<typeof ACTIONS_SIZE>
+    size?: $Keys<typeof ACTIONS_SIZE>
   }>,
   appSelector?: string,
   'aria-label'?: string,
@@ -22,17 +22,17 @@ export type DialogPropsT = {
   onOpen?: () => void,
   preventCloseButtonClose?: boolean,
   showCloseButton?: boolean,
-  size?: $Values<typeof SIZE>,
+  size?: $Keys<typeof SIZE>,
   title?: string | React$Element<*>,
   usePortal?: boolean,
-  variant?: $Values<typeof VARIANT>
+  variant?: $Keys<typeof VARIANT>
 };
 
 export type DialogDefaultPropsT = {
   closeButtonLabel: string,
   closeOnClickOutside: boolean,
   closeOnEscape: boolean,
-  size: $Values<typeof SIZE>,
+  size: $Keys<typeof SIZE>,
   usePortal: boolean
 };
 
@@ -45,7 +45,7 @@ export type DialogActionsPropsT = {
   /** Rendered [Button(s)](/components/button) */
   children?: React$Element<*> | Array<React$Element<*>>,
   /** Available variants */
-  variant?: $Values<typeof VARIANT>
+  variant?: $Keys<typeof VARIANT>
 };
 
 export type DialogBodyPropsT = {
@@ -72,11 +72,11 @@ export type DialogHeaderPropsT = {
 
 export type DialogTitlePropsT = {
   /** Available styles */
-  appearance?: $Values<typeof APPEARANCE>,
+  appearance?: $Keys<typeof APPEARANCE>,
   /** Rendered DialogTitle content */
   children: React$Node,
   /** Available HTML elements; styles can be overridden with `appearance` */
-  element?: $Values<typeof ELEMENT>,
+  element?: $Keys<typeof ELEMENT>,
   /** Id of the DialogTitle */
   id?: string,
   /** @Private App theme; see [Theming](/theming) */
@@ -86,6 +86,6 @@ export type DialogTitlePropsT = {
 };
 
 export type DialogTitleDefaultPropsT = {
-  appearance: $Values<typeof APPEARANCE>,
-  element: $Values<typeof ELEMENT>
+  appearance: $Keys<typeof APPEARANCE>,
+  element: $Keys<typeof ELEMENT>
 };

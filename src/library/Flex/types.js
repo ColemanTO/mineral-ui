@@ -7,11 +7,11 @@ import {
   JUSTIFY_CONTENT
 } from './constants';
 
-type StringOrArrayOfStringsT<T> = $Values<T> | Array<$Values<T> | null>;
+type StringOrArrayOfStringsT<T> = $Keys<T> | Array<$Keys<T> | null>;
 
 type AlignItemsT = StringOrArrayOfStringsT<typeof ALIGN_ITEMS>;
 type DirectionT = StringOrArrayOfStringsT<typeof DIRECTION>;
-type GutterWidthT = $Values<typeof GUTTER_WIDTH> | number | string;
+type GutterWidthT = $Keys<typeof GUTTER_WIDTH> | number | string;
 type JustifyContentT = StringOrArrayOfStringsT<typeof JUSTIFY_CONTENT>;
 
 export type FlexPropsT = {
@@ -27,7 +27,7 @@ export type FlexPropsT = {
 export type FlexDefaultPropsT = {
   alignItems: AlignItemsT,
   direction: DirectionT,
-  gutterWidth: $Values<typeof GUTTER_WIDTH> | number | string,
+  gutterWidth: $Keys<typeof GUTTER_WIDTH> | number | string,
   justifyContent: JustifyContentT
 };
 

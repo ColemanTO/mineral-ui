@@ -13,19 +13,19 @@ export type CheckboxPropsT = {
   invalid?: boolean,
   justify?: boolean,
   label: string | React$Element<*>,
-  labelPosition?: $Values<typeof LABEL_POSITION>,
+  labelPosition?: $Keys<typeof LABEL_POSITION>,
   name?: string,
   onChange?: (event: SyntheticInputEvent<>) => void,
   onClick?: (event: SyntheticInputEvent<>) => void,
   required?: boolean,
   rootProps?: Object,
-  size?: $Values<typeof SIZE>,
+  size?: $Keys<typeof SIZE>,
   value?: string
 };
 
 export type CheckboxDefaultPropsT = {
-  labelPosition: string,
-  size: $Values<typeof SIZE>
+  labelPosition: $Keys<typeof LABEL_POSITION>,
+  size: $Keys<typeof SIZE>
 };
 
 export type CheckboxGroupPropsT = {

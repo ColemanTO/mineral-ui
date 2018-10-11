@@ -1,10 +1,10 @@
 /* @flow */
 import { ALIGN_ITEMS, GUTTER_WIDTH } from './constants';
 
-type StringOrArrayOfStringsT<T> = $Values<T> | Array<$Values<T> | null>;
+type StringOrArrayOfStringsT<T> = $Keys<T> | Array<$Keys<T> | null>;
 
 type AlignItemsT = StringOrArrayOfStringsT<typeof ALIGN_ITEMS>;
-type GutterWidthT = $Values<typeof GUTTER_WIDTH> | number | string;
+type GutterWidthT = $Keys<typeof GUTTER_WIDTH> | number | string;
 
 export type GridPropsT = {
   alignItems?: AlignItemsT,
@@ -17,7 +17,7 @@ export type GridPropsT = {
 export type GridDefaultPropsT = {
   alignItems: AlignItemsT,
   columns: number,
-  gutterWidth: $Values<typeof GUTTER_WIDTH> | number | string
+  gutterWidth: $Keys<typeof GUTTER_WIDTH> | number | string
 };
 
 export type GridItemPropsT = {

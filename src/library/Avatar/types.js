@@ -6,11 +6,11 @@ export type AvatarPropsT = {
   background?: string,
   children: React$Node,
   color?: string,
-  shape?: $Values<typeof SHAPE>,
-  size?: $Values<typeof SIZE>
+  shape?: $Keys<typeof SHAPE>,
+  size?: $Keys<typeof SIZE>
 };
 
 export type AvatarDefaultPropsT = {
-  shape: $Values<typeof SHAPE>,
-  size: $Values<typeof SIZE>
+  shape: $Keys<typeof SHAPE>,
+  size: $Keys<typeof SIZE>
 };

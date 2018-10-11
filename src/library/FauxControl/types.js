@@ -13,11 +13,11 @@ export type FauxControlPropsT = {
   iconEnd?: React$Element<*>,
   prefix?: React$Node,
   readOnly?: boolean,
-  size?: $Values<typeof SIZE>,
+  size?: $Keys<typeof SIZE>,
   suffix?: React$Node,
-  variant?: $Values<typeof VARIANT>
+  variant?: $Keys<typeof VARIANT>
 };
 
 export type VariantIconsT = {
-  [key: $Values<typeof VARIANT>]: React$Element<*>
+  [key: $Keys<typeof VARIANT>]: React$Element<*>
 };
