@@ -2,17 +2,14 @@
 import { Component } from 'react';
 import { canUseDOM, canUseEventListeners } from 'exenv';
 
-import { eventListenerPropTypes } from './propTypes';
-import type { EventListenerPropsT, ListenersT, ListenerT } from './types';
+import type { EventListenerProps, Listeners, Listener } from './types';
 
-export default class EventListener extends Component<EventListenerPropsT> {
-  static propTypes = eventListenerPropTypes;
-
+export default class EventListener extends Component<EventListenerProps> {
   componentDidMount() {
     this.addEventListeners();
   }
 
-  componentDidUpdate(prevProps: EventListenerPropsT) {
+  componentDidUpdate(prevProps: EventListenerProps) {
     this.removeEventListeners(prevProps.listeners);
     this.addEventListeners();
   }
@@ -31,18 +28,18 @@ export default class EventListener extends Component<EventListenerPropsT> {
     }
   }
 
-  addEventListeners(listeners: ListenersT = this.props.listeners) {
+  addEventListeners(listeners: Listeners = this.props.listeners) {
     if (canUseEventListeners) {
-      listeners.forEach(({ target, event, handler, options }: ListenerT) => {
+      listeners.forEach(({ target, event, handler, options }: Listener) => {
         const node = this.getTargetNode(target);
         node && node.addEventListener(event, handler, options);
       });
     }
   }
 
-  removeEventListeners(listeners: ListenersT = this.props.listeners) {
+  removeEventListeners(listeners: Listeners = this.props.listeners) {
     if (canUseEventListeners) {
-      listeners.forEach(({ target, event, handler, options }: ListenerT) => {
+      listeners.forEach(({ target, event, handler, options }: Listener) => {
         const node = this.getTargetNode(target);
         node && node.removeEventListener(event, handler, options);
       });

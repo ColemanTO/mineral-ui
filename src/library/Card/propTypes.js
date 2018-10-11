@@ -35,14 +35,14 @@ export const cardFooterPropTypes = {
   onOpen: func,
   title: oneOfType([string, element]),
   triggerTitle: func,
-  variant: oneOf(Object.values(VARIANT))
+  variant: oneOf(Object.keys(VARIANT))
 };
 
 export const cardImagePropTypes = {};
 
 export const cardStatusPropTypes = {
   status: string,
-  variant: oneOf(Object.values(VARIANT))
+  variant: oneOf(Object.keys(VARIANT))
 };
 
 export const cardTitlePropTypes = {
@@ -51,7 +51,7 @@ export const cardTitlePropTypes = {
   children: node.isRequired,
   secondaryText: oneOfType([string, element]),
   subtitle: node,
-  variant: oneOf(Object.values(VARIANT))
+  variant: oneOf(Object.keys(VARIANT))
 };
 
 export const cardTitleMenuPropTypes = {

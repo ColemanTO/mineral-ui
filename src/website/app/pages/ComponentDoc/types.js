@@ -1,5 +1,5 @@
 /* @flow */
-import type { ThemeFnT } from '../../../../library/themes/types';
+import type { ThemeFn } from '../../../../library/themes/types';
 
 export type BestPracticeT = {
   backgroundColor?: string,
@@ -9,7 +9,7 @@ export type BestPracticeT = {
 };
 export type BestPracticesT = Array<BestPracticeT>;
 
-type ThemesFnT = Array<ThemeFnT<>>;
+type ThemesFnT = Array<ThemeFn<>>;
 
 export type ExampleT = {
   backgroundColor?: string,
@@ -39,7 +39,7 @@ export type ComponentDocT = {
   propDocs?: ComponentPropDocsT,
   propsComment?: string | React$Element<*>,
   additionalPropDocs?: AdditionalPropDocsT,
-  theme?: ThemeFnT<> | ThemesFnT,
+  theme?: ThemeFn<> | ThemesFnT,
   whenHowToUse?: string,
   bestPractices?: BestPracticesT
 };

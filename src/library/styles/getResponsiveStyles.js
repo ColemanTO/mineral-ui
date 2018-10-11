@@ -1,11 +1,11 @@
 /* @flow */
-import type { ThemeObjT } from '../themes/types';
+import type { ThemeObj } from '../themes/types';
 
 type Args = {
   breakpoints?: Breakpoints,
   mapValueToProperty?: MapValueToProperty,
   styles: MaybeArrayStyles,
-  theme: ThemeObjT
+  theme: ThemeObj
 };
 type Breakpoints = Array<number | string>;
 type MapValueToProperty = (string, Values) => Values;
@@ -36,7 +36,7 @@ type Values = boolean | null | number | string;
  */
 const getMediaQueries = (
   breakpoints: Breakpoints,
-  theme: ThemeObjT
+  theme: ThemeObj
 ): MediaQueries => {
   let queries = [];
 

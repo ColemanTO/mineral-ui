@@ -25,13 +25,13 @@ export const checkboxPropTypes = {
   invalid: bool,
   justify: bool,
   label: oneOfType([string, element]),
-  labelPosition: oneOf(Object.values(LABEL_POSITION)),
+  labelPosition: oneOf(Object.keys(LABEL_POSITION)),
   name: string,
   onChange: func,
   onClick: func,
   required: bool,
   rootProps: object,
-  size: oneOf(Object.values(SIZE)),
+  size: oneOf(Object.keys(SIZE)),
   value: string
 };
 

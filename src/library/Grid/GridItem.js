@@ -3,9 +3,9 @@ import React from 'react';
 import { GridItem as Root } from './styled';
 
 import { gridPropTypes } from './propTypes';
-import type { GridItemPropsT } from './types';
+import type { GridItemProps } from './types';
 
-const GridItem = (props: GridItemPropsT) => <Root {...props} />;
+const GridItem = (props: GridItemProps) => <Root {...props} />;
 
 GridItem.propTypes = gridPropTypes;
 

@@ -1,5 +1,5 @@
 /* @flow */
-import type { ThemeObjT } from '../themes/types';
+import type { ThemeObj } from '../themes/types';
 /**
  * Generates a new component theme based on the theme of another component.
  *
@@ -20,11 +20,11 @@ import type { ThemeObjT } from '../themes/types';
  *     source component and not by override component
  */
 export default function mapComponentThemes(
-  source: { name: string, theme: ThemeObjT },
-  override: { name: string, theme: ThemeObjT },
-  baseTheme: ThemeObjT,
+  source: { name: string, theme: ThemeObj },
+  override: { name: string, theme: ThemeObj },
+  baseTheme: ThemeObj,
   preserveKeys?: Array<string>
-): ThemeObjT {
+): ThemeObj {
   const REGEXP_SOURCE_NAME = new RegExp(`^${source.name}`);
   const sourceThemeWithRenamedKeys = Object.keys(source.theme).reduce(
     (acc, sourceKey) => {

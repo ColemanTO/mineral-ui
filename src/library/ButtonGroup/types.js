@@ -2,12 +2,12 @@
 import { MODE, SIZE, VARIANT } from './constants';
 
 import type {
-  ComponentThemeT,
-  ComponentThemeFnT,
-  ThemeValueT
+  ComponentTheme,
+  ComponentThemeFn,
+  ThemeValue
 } from '../themes/types';
 
-export type ButtonGroupPropsT = {
+export type ButtonGroupProps = {
   'aria-label': string,
   checked?: number | Array<number>,
   children: React$Node,
@@ -21,18 +21,18 @@ export type ButtonGroupPropsT = {
   variant?: $Keys<typeof VARIANT>
 };
 
-export type ButtonGroupStateT = {
+export type ButtonGroupState = {
   checked: Set<number>
 };
 
-export type ButtonGroupThemeFnT = ComponentThemeFnT<ButtonGroupThemeT>;
-export type ButtonGroupThemeT = ComponentThemeT<ButtonGroupThemeKeysT>;
-type ButtonGroupThemeKeysT = {|
-  ButtonGroupButton_backgroundColor_checkedDisabled: ThemeValueT,
-  ButtonGroupButton_border_disabled: ThemeValueT,
-  ButtonGroupButton_borderColor_active: ThemeValueT,
-  ButtonGroupButton_borderColor_hover: ThemeValueT,
-  ButtonGroupButton_borderStartColor: ThemeValueT,
-  ButtonGroupButton_borderStartColor_checked: ThemeValueT,
-  ButtonGroupButton_color_checkedDisabled: ThemeValueT
+export type ButtonGroupThemeFn = ComponentThemeFn<ButtonGroupTheme>;
+export type ButtonGroupTheme = ComponentTheme<ButtonGroupThemeKeys>;
+type ButtonGroupThemeKeys = {|
+  ButtonGroupButton_backgroundColor_checkedDisabled: ThemeValue,
+  ButtonGroupButton_border_disabled: ThemeValue,
+  ButtonGroupButton_borderColor_active: ThemeValue,
+  ButtonGroupButton_borderColor_hover: ThemeValue,
+  ButtonGroupButton_borderStartColor: ThemeValue,
+  ButtonGroupButton_borderStartColor_checked: ThemeValue,
+  ButtonGroupButton_color_checkedDisabled: ThemeValue
 |};

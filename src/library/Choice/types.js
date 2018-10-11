@@ -1,7 +1,7 @@
 /* @flow */
 import { LABEL_POSITION, SIZE, TYPE } from './constants';
 
-export type ChoicePropsT = {
+export type ChoiceProps = {
   checked?: boolean,
   className?: string,
   labelPosition?: $Keys<typeof LABEL_POSITION>,
@@ -22,12 +22,12 @@ export type ChoicePropsT = {
   value?: string
 };
 
-export type ChoiceDefaultPropsT = {
+export type ChoiceDefaultProps = {
   labelPosition: $Keys<typeof LABEL_POSITION>,
   size: $Keys<typeof SIZE>
 };
 
-export type ChoiceGroupPropsT = {
+export type ChoiceGroupProps = {
   checked?: string | Array<string>,
   children?: React$Node,
   data?: Array<{ label: string | React$Element<*>, value: string }>,
@@ -44,7 +44,7 @@ export type ChoiceGroupPropsT = {
   type: $Keys<typeof TYPE>
 };
 
-export type ChoiceGroupDefaultPropsT = {
+export type ChoiceGroupDefaultProps = {
   role: string,
   size: $Keys<typeof SIZE>
 };

@@ -6,7 +6,7 @@ import IconWarningSimple from '../Icon/IconWarningSimple';
 import { CardStatus as Root } from './styled';
 
 import { cardStatusPropTypes } from './propTypes';
-import type { CardStatusPropsT } from './types';
+import type { CardStatusProps } from './types';
 
 const statusIcons = {
   danger: <IconDangerSimple />,
@@ -14,7 +14,7 @@ const statusIcons = {
   warning: <IconWarningSimple />
 };
 
-export default function CardStatus(props: CardStatusPropsT) {
+export default function CardStatus(props: CardStatusProps) {
   const { children, variant, ...restProps } = props;
   const rootProps = {
     variant,

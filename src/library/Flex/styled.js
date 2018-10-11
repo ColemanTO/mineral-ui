@@ -3,7 +3,7 @@ import { createStyledComponent, getResponsiveStyles } from '../styles';
 import Box from '../Box';
 import ActualFlex from './Flex';
 
-import type { FlexItemPropsT, StyleValueT } from './types';
+import type { FlexItemProps, StyleValue } from './types';
 
 const getAlignment = (value: string): string =>
   ['start', 'end'].indexOf(value) !== -1 ? `flex-${value}` : value;
@@ -15,7 +15,7 @@ const getJustification = (value: string): string =>
 
 const flexMapValueToProperty = (
   property: string,
-  value: StyleValueT
+  value: StyleValue
 ): number | string => {
   const map = {
     alignItems: getAlignment,
@@ -60,7 +60,7 @@ export const Flex = createStyledComponent(
 
 const flexItemMapValueToProperty = (
   property: string,
-  value: StyleValueT
+  value: StyleValue
 ): number | string => {
   const map = {
     alignSelf: (value) =>
@@ -76,7 +76,7 @@ const flexItemMapValueToProperty = (
   return map[property](value);
 };
 
-export const createFlexItemRootNode = (props: FlexItemPropsT) => {
+export const createFlexItemRootNode = (props: FlexItemProps) => {
   const component = props.flex ? ActualFlex : Box;
 
   return createStyledComponent(

@@ -11,7 +11,7 @@ const propDocs: ComponentPropDocsT = {
       'Trigger for the Dropdown. Optionally provides custom rendering control. See the [custom trigger example](/components/dropdown#custom-trigger) and our [render props guide](/render-props).',
     type: {
       name: 'union',
-      value: 'React$Node | DropdownRenderFnT'
+      value: 'React$Node | DropdownRenderFn'
     },
     required: true
   },

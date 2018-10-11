@@ -2,14 +2,12 @@
 import { SIZE, VARIANT } from './constants';
 
 import type {
-  ComponentThemeT,
-  ComponentThemeFnT,
-  ThemeValueT
+  ComponentTheme,
+  ComponentThemeFn,
+  ThemeValue
 } from '../themes/types';
 
-export type ButtonT = React$ComponentType<ButtonPropsT>;
-
-export type ButtonPropsT = {
+export type ButtonProps = {
   children?: React$Node,
   circular?: boolean,
   disabled?: boolean,
@@ -25,47 +23,47 @@ export type ButtonPropsT = {
   variant?: $Keys<typeof VARIANT>
 };
 
-export type ButtonDefaultPropsT = {
+export type ButtonDefaultProps = {
   element: $FlowFixMe, // Should allow string | React$ComponentType<*>
   size: $Keys<typeof SIZE>,
   type: string
 };
 
-export type ButtonThemeFnT = ComponentThemeFnT<ButtonThemeT>;
-export type ButtonThemeT = ComponentThemeT<ButtonThemeKeysT>;
-type ButtonThemeKeysT = {|
-  Button_backgroundColor: ThemeValueT,
-  Button_backgroundColor_active: ThemeValueT,
-  Button_backgroundColor_focus: ThemeValueT,
-  Button_backgroundColor_hover: ThemeValueT,
-  Button_backgroundColor_minimal_active: ThemeValueT,
-  Button_backgroundColor_minimal_hover: ThemeValueT,
-  Button_backgroundColor_primary: ThemeValueT,
-  Button_backgroundColor_primary_active: ThemeValueT,
-  Button_backgroundColor_primary_focus: ThemeValueT,
-  Button_backgroundColor_primary_hover: ThemeValueT,
-  Button_borderColor: ThemeValueT,
-  Button_borderColor_active: ThemeValueT,
-  Button_borderColor_focus: ThemeValueT,
-  Button_borderColor_hover: ThemeValueT,
-  Button_borderRadius: ThemeValueT,
-  Button_borderWidth: ThemeValueT,
-  Button_boxShadow_focus: ThemeValueT,
-  Button_color: ThemeValueT,
-  Button_color_minimal: ThemeValueT,
-  Button_color_primary: ThemeValueT,
-  Button_fontWeight: ThemeValueT,
-  Button_paddingHorizontal: ThemeValueT,
-  Button_paddingIconOnly_small: ThemeValueT,
-  Button_paddingIconOnly_medium: ThemeValueT,
-  Button_paddingIconOnly_large: ThemeValueT,
-  Button_paddingIconOnly_jumbo: ThemeValueT,
-  Button_height_small: ThemeValueT,
-  Button_height_medium: ThemeValueT,
-  Button_height_large: ThemeValueT,
-  Button_height_jumbo: ThemeValueT,
-  ButtonContent_fontSize: ThemeValueT,
-  ButtonContent_fontSize_small: ThemeValueT,
-  ButtonIcon_color: ThemeValueT,
-  ButtonIcon_margin: ThemeValueT
+export type ButtonThemeFn = ComponentThemeFn<ButtonTheme>;
+export type ButtonTheme = ComponentTheme<ButtonThemeKeys>;
+type ButtonThemeKeys = {|
+  Button_backgroundColor: ThemeValue,
+  Button_backgroundColor_active: ThemeValue,
+  Button_backgroundColor_focus: ThemeValue,
+  Button_backgroundColor_hover: ThemeValue,
+  Button_backgroundColor_minimal_active: ThemeValue,
+  Button_backgroundColor_minimal_hover: ThemeValue,
+  Button_backgroundColor_primary: ThemeValue,
+  Button_backgroundColor_primary_active: ThemeValue,
+  Button_backgroundColor_primary_focus: ThemeValue,
+  Button_backgroundColor_primary_hover: ThemeValue,
+  Button_borderColor: ThemeValue,
+  Button_borderColor_active: ThemeValue,
+  Button_borderColor_focus: ThemeValue,
+  Button_borderColor_hover: ThemeValue,
+  Button_borderRadius: ThemeValue,
+  Button_borderWidth: ThemeValue,
+  Button_boxShadow_focus: ThemeValue,
+  Button_color: ThemeValue,
+  Button_color_minimal: ThemeValue,
+  Button_color_primary: ThemeValue,
+  Button_fontWeight: ThemeValue,
+  Button_paddingHorizontal: ThemeValue,
+  Button_paddingIconOnly_small: ThemeValue,
+  Button_paddingIconOnly_medium: ThemeValue,
+  Button_paddingIconOnly_large: ThemeValue,
+  Button_paddingIconOnly_jumbo: ThemeValue,
+  Button_height_small: ThemeValue,
+  Button_height_medium: ThemeValue,
+  Button_height_large: ThemeValue,
+  Button_height_jumbo: ThemeValue,
+  ButtonContent_fontSize: ThemeValue,
+  ButtonContent_fontSize_small: ThemeValue,
+  ButtonIcon_color: ThemeValue,
+  ButtonIcon_margin: ThemeValue
 |};

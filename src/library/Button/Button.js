@@ -5,10 +5,10 @@ import { createRootNode, Content, Inner } from './styled';
 import { ICON_SIZE, SIZE } from './constants';
 
 import { buttonPropTypes } from './propTypes';
-import type { ButtonDefaultPropsT, ButtonPropsT } from './types';
+import type { ButtonDefaultProps, ButtonProps } from './types';
 
-export default class Button extends Component<ButtonPropsT> {
-  static defaultProps: ButtonDefaultPropsT = {
+export default class Button extends Component<ButtonProps> {
+  static defaultProps: ButtonDefaultProps = {
     element: 'button',
     size: SIZE.large,
     type: 'button'
@@ -19,7 +19,7 @@ export default class Button extends Component<ButtonPropsT> {
   // Must be an instance method to avoid affecting other instances memoized keys
   getRootNode = memoizeOne(
     createRootNode,
-    (nextProps: ButtonPropsT, prevProps: ButtonPropsT) =>
+    (nextProps: ButtonProps, prevProps: ButtonProps) =>
       nextProps.element === prevProps.element
   );
 

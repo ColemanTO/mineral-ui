@@ -6,5 +6,5 @@ export const linkPropTypes = {
   children: node,
   href: string,
   element: oneOfType([string, func]),
-  variant: oneOf(Object.values(VARIANT))
+  variant: oneOf(Object.keys(VARIANT))
 };

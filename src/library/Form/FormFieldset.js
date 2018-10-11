@@ -3,9 +3,9 @@ import React from 'react';
 import { FormFieldset as Root } from './styled';
 
 import { formFieldsetPropTypes } from './propTypes';
-import type { FormFieldsetPropsT } from './types';
+import type { FormFieldsetProps } from './types';
 
-const FormFieldset = (props: FormFieldsetPropsT) => {
+const FormFieldset = (props: FormFieldsetProps) => {
   const { children, legend, ...restProps } = props;
   return (
     <Root {...restProps}>

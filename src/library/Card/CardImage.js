@@ -3,9 +3,9 @@ import React from 'react';
 import { CardImage as Root } from './styled';
 
 import { cardImagePropTypes } from './propTypes';
-import type { CardImagePropsT } from './types';
+import type { CardImageProps } from './types';
 
-export default function CardImage(props: CardImagePropsT) {
+export default function CardImage(props: CardImageProps) {
   return <Root {...props} />;
 }
 

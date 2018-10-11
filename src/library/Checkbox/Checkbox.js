@@ -8,7 +8,7 @@ import { Checkbox as Root } from './styled';
 import { LABEL_POSITION, SIZE } from './constants';
 
 import { checkboxPropTypes } from './propTypes';
-import type { CheckboxPropsT, CheckboxDefaultPropsT } from './types';
+import type { CheckboxProps, CheckboxDefaultProps } from './types';
 
 // Detect if browser triggers change event when click indeterminate checkbox
 // IE/Edge/other? do not
@@ -33,8 +33,8 @@ const indeterminateClickTriggersChangeEvent = (() => {
   return supportsOnChange;
 })();
 
-export default class Checkbox extends PureComponent<CheckboxPropsT> {
-  static defaultProps: CheckboxDefaultPropsT = {
+export default class Checkbox extends PureComponent<CheckboxProps> {
+  static defaultProps: CheckboxDefaultProps = {
     labelPosition: LABEL_POSITION.end,
     size: SIZE.large
   };
@@ -61,7 +61,7 @@ export default class Checkbox extends PureComponent<CheckboxPropsT> {
     this.updateState(isIndeterminate, isChecked);
   }
 
-  componentDidUpdate(prevProps: CheckboxPropsT) {
+  componentDidUpdate(prevProps: CheckboxProps) {
     const { checked, indeterminate } = this.props;
 
     if (

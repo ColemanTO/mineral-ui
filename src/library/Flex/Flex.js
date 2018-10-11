@@ -12,7 +12,7 @@ import {
 import { Flex as Root } from './styled';
 
 import { flexPropTypes } from './propTypes';
-import type { FlexDefaultPropsT, FlexPropsT } from './types';
+import type { FlexDefaultProps, FlexProps } from './types';
 
 const getGutterSize = (
   theme: Object,
@@ -157,9 +157,9 @@ const ThemedRoot = withTheme(
   }
 );
 
-const Flex = (props: FlexPropsT) => <ThemedRoot {...props} />;
+const Flex = (props: FlexProps) => <ThemedRoot {...props} />;
 
-const defaultProps: FlexDefaultPropsT = {
+const defaultProps: FlexDefaultProps = {
   alignItems: ALIGN_ITEMS.stretch,
   direction: DIRECTION.row,
   gutterWidth: GUTTER_WIDTH.md,

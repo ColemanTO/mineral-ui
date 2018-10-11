@@ -4,7 +4,7 @@ import { createStyledComponent, getNormalizedValue } from '../styles';
 
 import { fauxControlTheme } from './themes';
 
-import type { FauxControlPropsT } from './types';
+import type { FauxControlProps } from './types';
 
 export const FauxControl = createStyledComponent(
   'div',
@@ -149,7 +149,7 @@ export const Underlay = createStyledComponent(
   }
 );
 
-export const createControlNode = (props: FauxControlPropsT) => {
+export const createControlNode = (props: FauxControlProps) => {
   return createStyledComponent(
     props.control,
     ({

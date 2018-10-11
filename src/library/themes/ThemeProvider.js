@@ -3,9 +3,9 @@ import React, { Children } from 'react';
 import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming';
 import mineralTheme from './mineralTheme';
 
-import type { ThemeProviderPropsT } from './types';
+import type { ThemeProviderProps } from './types';
 
-const ThemeProvider = (props: ThemeProviderPropsT) => {
+const ThemeProvider = (props: ThemeProviderProps) => {
   const { children, theme } = props;
   return (
     <EmotionThemeProvider theme={theme}>

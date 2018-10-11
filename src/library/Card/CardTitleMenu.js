@@ -5,9 +5,9 @@ import IconMoreHoriz from '../Icon/IconMoreHoriz';
 import { CardTitleMenuButton as MenuButton } from './styled';
 
 import { cardTitleMenuPropTypes } from './propTypes';
-import type { CardTitleMenuPropsT } from './types';
+import type { CardTitleMenuProps } from './types';
 
-const CardTitleMenu = (props: CardTitleMenuPropsT) => {
+const CardTitleMenu = (props: CardTitleMenuProps) => {
   const { triggerTitle, ...restProps } = props;
   const rootProps = {
     placement: 'bottom-end',

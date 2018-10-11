@@ -3,7 +3,7 @@ import { createStyledComponent, getResponsiveStyles } from '../styles';
 import { SPACING_TYPES } from './constants';
 import Box from './Box';
 
-import type { BoxPropsT, SpacingStylesT, SpacingValueT } from './types';
+import type { BoxProps, SpacingStyles, SpacingValue } from './types';
 
 const getMeasurement = (value: number | string) =>
   typeof value === 'number' && value < 1 && value !== 0
@@ -21,7 +21,7 @@ const getSpacingStyles = (
   property: string,
   restProps: Object,
   rtl: boolean
-): SpacingStylesT => {
+): SpacingStyles => {
   // prettier-ignore
   const spacingPropKeys = ['', 'Horizontal', 'Vertical', 'Start', 'End', 'Bottom', 'Left', 'Right', 'Top']
     .map(suffix => `${property}${suffix}`)
@@ -30,7 +30,7 @@ const getSpacingStyles = (
   const setStyles = (
     directions: Array<string>,
     key: string,
-    styles: SpacingStylesT
+    styles: SpacingStyles
   ) => {
     directions.forEach((direction) => {
       styles[`${property}${direction}`] = restProps[key];
@@ -55,7 +55,7 @@ const getSpacingStyles = (
   }, {});
 };
 
-export const createRootNode = (props: BoxPropsT) => {
+export const createRootNode = (props: BoxProps) => {
   const { element = Box.defaultProps.element } = props;
 
   return createStyledComponent(
@@ -65,7 +65,7 @@ export const createRootNode = (props: BoxPropsT) => {
 
       const mapValueToProperty = (
         property: string,
-        value: SpacingValueT
+        value: SpacingValue
       ): number | string => {
         const map = {
           display: (value) => (value ? 'inline-block' : 'block'),

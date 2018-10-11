@@ -4,9 +4,9 @@ import memoizeOne from 'memoize-one';
 import { createRootNode } from './styled';
 
 import { linkPropTypes } from './propTypes';
-import type { LinkPropsT } from './types';
+import type { LinkProps } from './types';
 
-export default class Link extends Component<LinkPropsT> {
+export default class Link extends Component<LinkProps> {
   static defaultProps = {
     element: 'a'
   };
@@ -16,7 +16,7 @@ export default class Link extends Component<LinkPropsT> {
   // Must be an instance method to avoid affecting other instances memoized keys
   getRootNode = memoizeOne(
     createRootNode,
-    (nextProps: LinkPropsT, prevProps: LinkPropsT) =>
+    (nextProps: LinkProps, prevProps: LinkProps) =>
       nextProps.element === prevProps.element
   );
 

@@ -1,7 +1,7 @@
 /* @flow */
 import { SIZE, VARIANT } from './constants';
 
-export type FauxControlPropsT = {
+export type FauxControlProps = {
   afterItems?: React$Node,
   beforeItems?: React$Node,
   children?: React$Node,
@@ -18,6 +18,6 @@ export type FauxControlPropsT = {
   variant?: $Keys<typeof VARIANT>
 };
 
-export type VariantIconsT = {
+export type VariantIcons = {
   [key: $Keys<typeof VARIANT>]: React$Element<*>
 };

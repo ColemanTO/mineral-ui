@@ -7,43 +7,43 @@ import {
   JUSTIFY_CONTENT
 } from './constants';
 
-type StringOrArrayOfStringsT<T> = $Keys<T> | Array<$Keys<T> | null>;
+type StringOrArrayOfStrings<T> = $Keys<T> | Array<$Keys<T> | null>;
 
-type AlignItemsT = StringOrArrayOfStringsT<typeof ALIGN_ITEMS>;
-type DirectionT = StringOrArrayOfStringsT<typeof DIRECTION>;
-type GutterWidthT = $Keys<typeof GUTTER_WIDTH> | number | string;
-type JustifyContentT = StringOrArrayOfStringsT<typeof JUSTIFY_CONTENT>;
+type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
+type Direction = StringOrArrayOfStrings<typeof DIRECTION>;
+type GutterWidth = $Keys<typeof GUTTER_WIDTH> | number | string;
+type JustifyContent = StringOrArrayOfStrings<typeof JUSTIFY_CONTENT>;
 
-export type FlexPropsT = {
-  alignItems?: AlignItemsT,
+export type FlexProps = {
+  alignItems?: AlignItems,
   breakpoints?: Array<number | string>,
   children: React$Node,
-  direction?: DirectionT,
-  gutterWidth?: GutterWidthT,
-  justifyContent?: JustifyContentT,
+  direction?: Direction,
+  gutterWidth?: GutterWidth,
+  justifyContent?: JustifyContent,
   wrap?: boolean | Array<boolean | null>
 };
 
-export type FlexDefaultPropsT = {
-  alignItems: AlignItemsT,
-  direction: DirectionT,
+export type FlexDefaultProps = {
+  alignItems: AlignItems,
+  direction: Direction,
   gutterWidth: $Keys<typeof GUTTER_WIDTH> | number | string,
-  justifyContent: JustifyContentT
+  justifyContent: JustifyContent
 };
 
-type GrowOrShrinkT = 0 | 1 | number | Array<0 | 1 | number | null>;
+type GrowOrShrink = 0 | 1 | number | Array<0 | 1 | number | null>;
 
-export type FlexItemPropsT = {
-  alignSelf?: StringOrArrayOfStringsT<typeof ALIGN_SELF>,
+export type FlexItemProps = {
+  alignSelf?: StringOrArrayOfStrings<typeof ALIGN_SELF>,
   breakpoints?: Array<number | string>,
   flex?: boolean,
-  grow?: GrowOrShrinkT,
-  shrink?: GrowOrShrinkT
+  grow?: GrowOrShrink,
+  shrink?: GrowOrShrink
 };
 
-export type FlexItemDefaultPropsT = {
-  grow: GrowOrShrinkT,
-  shrink: GrowOrShrinkT
+export type FlexItemDefaultProps = {
+  grow: GrowOrShrink,
+  shrink: GrowOrShrink
 };
 
-export type StyleValueT = boolean | null | number | string;
+export type StyleValue = boolean | null | number | string;

@@ -7,6 +7,6 @@ export const avatarPropTypes = {
   background: string,
   children: node.isRequired,
   color: string,
-  shape: oneOf(Object.values(SHAPE)),
-  size: oneOf(Object.values(SIZE))
+  shape: oneOf(Object.keys(SHAPE)),
+  size: oneOf(Object.keys(SIZE))
 };

@@ -9,12 +9,12 @@ import {
 } from './styled';
 
 import { formFieldPropTypes } from './propTypes';
-import type { FormFieldDefaultPropsT, FormFieldPropsT } from './types';
+import type { FormFieldDefaultProps, FormFieldProps } from './types';
 
 const REGEX_GROUP = /(Checkbox|Radio|Group)/i;
 
-export default class FormField extends Component<FormFieldPropsT> {
-  static defaultProps: FormFieldDefaultPropsT = {
+export default class FormField extends Component<FormFieldProps> {
+  static defaultProps: FormFieldDefaultProps = {
     requiredText: 'Required'
   };
 

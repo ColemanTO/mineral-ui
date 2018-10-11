@@ -1,7 +1,7 @@
 /* @flow */
 import { SHAPE, SIZE } from './constants';
 
-export type AvatarPropsT = {
+export type AvatarProps = {
   abbr?: string,
   background?: string,
   children: React$Node,
@@ -10,7 +10,7 @@ export type AvatarPropsT = {
   size?: $Keys<typeof SIZE>
 };
 
-export type AvatarDefaultPropsT = {
+export type AvatarDefaultProps = {
   shape: $Keys<typeof SHAPE>,
   size: $Keys<typeof SIZE>
 };

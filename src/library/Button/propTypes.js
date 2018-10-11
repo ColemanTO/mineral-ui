@@ -21,7 +21,7 @@ export const buttonPropTypes = {
   minimal: bool,
   onClick: func,
   primary: bool,
-  size: oneOf(Object.values(SIZE)),
+  size: oneOf(Object.keys(SIZE)),
   type: string,
-  variant: oneOf(Object.values(VARIANT))
+  variant: oneOf(Object.keys(VARIANT))
 };

@@ -5,9 +5,9 @@ import { findAllByType } from '../utils/children';
 import { DialogActions as Root } from './styled';
 
 import { dialogActionsPropTypes } from './propTypes';
-import type { DialogActionsPropsT } from './types';
+import type { DialogActionsProps } from './types';
 
-const DialogActions = (props: DialogActionsPropsT) => {
+const DialogActions = (props: DialogActionsProps) => {
   const { children, variant, ...rootProps } = props;
   let actions = findAllByType(children, Button);
   const lastIndex = actions.length - 1;

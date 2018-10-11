@@ -1,25 +1,25 @@
 /* @flow */
 import { ALIGN_ITEMS, GUTTER_WIDTH } from './constants';
 
-type StringOrArrayOfStringsT<T> = $Keys<T> | Array<$Keys<T> | null>;
+type StringOrArrayOfStrings<T> = $Keys<T> | Array<$Keys<T> | null>;
 
-type AlignItemsT = StringOrArrayOfStringsT<typeof ALIGN_ITEMS>;
-type GutterWidthT = $Keys<typeof GUTTER_WIDTH> | number | string;
+type AlignItems = StringOrArrayOfStrings<typeof ALIGN_ITEMS>;
+type GutterWidth = $Keys<typeof GUTTER_WIDTH> | number | string;
 
 export type GridPropsT = {
-  alignItems?: AlignItemsT,
+  alignItems?: AlignItems,
   breakpoints?: Array<number | string>,
   children: React$Node,
   columns?: number,
-  gutterWidth?: GutterWidthT
+  gutterWidth?: GutterWidth
 };
 
-export type GridDefaultPropsT = {
-  alignItems: AlignItemsT,
+export type GridDefaultProps = {
+  alignItems: AlignItems,
   columns: number,
   gutterWidth: $Keys<typeof GUTTER_WIDTH> | number | string
 };
 
-export type GridItemPropsT = {
+export type GridItemProps = {
   span?: number | Array<number | null>
 };

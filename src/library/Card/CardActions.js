@@ -4,9 +4,9 @@ import Button from '../Button';
 import { CardAction as Action, CardActions as Root } from './styled';
 
 import { cardActionsPropTypes } from './propTypes';
-import type { CardActionsPropsT } from './types';
+import type { CardActionsProps } from './types';
 
-export default function CardActions(props: CardActionsPropsT) {
+export default function CardActions(props: CardActionsProps) {
   const { children, ...restProps } = props;
   const actions = Children.map(children, (child, index) => {
     if (child.type === Button) {

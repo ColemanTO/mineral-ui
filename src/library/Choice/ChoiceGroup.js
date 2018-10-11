@@ -2,8 +2,7 @@
 import React, { Children, cloneElement, createElement } from 'react';
 import { ChoiceGroup as Root } from './styled';
 
-import { choiceGroupPropTypes } from './propTypes';
-import type { ChoiceGroupPropsT } from './types';
+import type { ChoiceGroupDefaultProps, ChoiceGroupProps } from './types';
 
 const isChecked = (checked: string | Array<string>, value) => {
   return Array.isArray(checked)
@@ -11,7 +10,7 @@ const isChecked = (checked: string | Array<string>, value) => {
     : checked === value;
 };
 
-const ChoiceGroup = (props: ChoiceGroupPropsT) => {
+const ChoiceGroup = (props: ChoiceGroupProps) => {
   const {
     checked,
     children,
@@ -67,11 +66,11 @@ const ChoiceGroup = (props: ChoiceGroupPropsT) => {
   return <Root {...rootProps}>{inputs}</Root>;
 };
 
-ChoiceGroup.defaultProps = {
+const defaultProps: ChoiceGroupDefaultProps = {
   role: 'group',
   size: 'large'
 };
 
-ChoiceGroup.propTypes = choiceGroupPropTypes;
+ChoiceGroup.defaultProps = defaultProps;
 
 export default ChoiceGroup;

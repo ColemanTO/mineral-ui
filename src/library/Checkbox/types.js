@@ -1,7 +1,7 @@
 /* @flow */
 import { SIZE, LABEL_POSITION } from './constants';
 
-export type CheckboxPropsT = {
+export type CheckboxProps = {
   checked?: boolean,
   className?: string,
   defaultChecked?: boolean,
@@ -23,12 +23,12 @@ export type CheckboxPropsT = {
   value?: string
 };
 
-export type CheckboxDefaultPropsT = {
+export type CheckboxDefaultProps = {
   labelPosition: $Keys<typeof LABEL_POSITION>,
   size: $Keys<typeof SIZE>
 };
 
-export type CheckboxGroupPropsT = {
+export type CheckboxGroupProps = {
   checked?: Array<string>,
   children?: React$Node,
   data?: Array<{ label: string | React$Element<*>, value: string }>,

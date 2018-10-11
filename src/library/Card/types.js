@@ -3,22 +3,22 @@ import { VARIANT } from './constants';
 
 import type { Items, ItemGroups } from '../Menu/Menu';
 
-export type CardPropsT = {
+export type CardProps = {
   children: React$Node,
   onClick?: (event: SyntheticEvent<>) => void
 };
 
-export type CardActionsPropsT = {
+export type CardActionsProps = {
   children: React$Node
 };
 
-export type CardBlockPropsT = {
+export type CardBlockProps = {
   children: React$Node
 };
 
-export type CardDividerPropsT = {};
+export type CardDividerProps = {};
 
-export type CardFooterPropsT = {
+export type CardFooterProps = {
   children?: React$Node,
   defaultIsOpen?: boolean,
   expandable?: boolean,
@@ -30,22 +30,22 @@ export type CardFooterPropsT = {
   variant?: $Keys<typeof VARIANT>
 };
 
-export type CardFooterDefaultPropsT = {
+export type CardFooterDefaultProps = {
   triggerTitle: (isOpen: boolean) => string
 };
 
-export type CardFooterStateT = {
+export type CardFooterState = {
   isOpen?: boolean
 };
 
-export type CardImagePropsT = {};
+export type CardImageProps = {};
 
-export type CardStatusPropsT = {
+export type CardStatusProps = {
   children: string,
   variant: $Keys<typeof VARIANT>
 };
 
-export type CardTitlePropsT = {
+export type CardTitleProps = {
   actions?: React$Node,
   avatar?: string | React$Element<*>,
   children: React$Node,
@@ -54,11 +54,11 @@ export type CardTitlePropsT = {
   variant?: $Keys<typeof VARIANT>
 };
 
-export type CardTitleMenuPropsT = {
+export type CardTitleMenuProps = {
   data?: Items | ItemGroups,
   triggerTitle?: string
 };
 
-export type CardTitleMenuDefaultPropsT = {
+export type CardTitleMenuDefaultProps = {
   triggerTitle?: string
 };

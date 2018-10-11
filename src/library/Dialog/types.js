@@ -1,7 +1,7 @@
 /* @flow */
 import { ACTIONS_SIZE, APPEARANCE, ELEMENT, SIZE, VARIANT } from './constants';
 
-export type DialogPropsT = {
+export type DialogProps = {
   actions?: Array<{
     text: string,
     size?: $Keys<typeof ACTIONS_SIZE>
@@ -28,7 +28,7 @@ export type DialogPropsT = {
   variant?: $Keys<typeof VARIANT>
 };
 
-export type DialogDefaultPropsT = {
+export type DialogDefaultProps = {
   closeButtonLabel: string,
   closeOnClickOutside: boolean,
   closeOnEscape: boolean,
@@ -36,56 +36,40 @@ export type DialogDefaultPropsT = {
   usePortal: boolean
 };
 
-export type DialogStateT = {
+export type DialogState = {
   isExited: boolean,
   isExiting: boolean
 };
 
-export type DialogActionsPropsT = {
-  /** Rendered [Button(s)](/components/button) */
+export type DialogActionsProps = {
   children?: React$Element<*> | Array<React$Element<*>>,
-  /** Available variants */
   variant?: $Keys<typeof VARIANT>
 };
 
-export type DialogBodyPropsT = {
-  /** Rendered DialogBody content */
+export type DialogBodyProps = {
   children?: React$Node
 };
 
-export type DialogFooterPropsT = {
-  /** Rendered DialogFooter content */
+export type DialogFooterProps = {
   children?: React$Node
 };
 
-export type DialogHeaderPropsT = {
-  /**
-   * Rendered Dialog title; use of [DialogTitle](/components/dialog-title) is
-   * recommended
-   */
+export type DialogHeaderProps = {
   children?: React$Node,
-  /** Rendered close button */
   closeButton?: React$Node,
-  /** @Private */
   titleProps?: Object
 };
 
-export type DialogTitlePropsT = {
-  /** Available styles */
+export type DialogTitleProps = {
   appearance?: $Keys<typeof APPEARANCE>,
-  /** Rendered DialogTitle content */
   children: React$Node,
-  /** Available HTML elements; styles can be overridden with `appearance` */
   element?: $Keys<typeof ELEMENT>,
-  /** Id of the DialogTitle */
   id?: string,
-  /** @Private App theme; see [Theming](/theming) */
   theme: Object,
-  /** Available variants */
-  variant?: 'danger' | 'success' | 'warning'
+  variant?: $Keys<typeof VARIANT>
 };
 
-export type DialogTitleDefaultPropsT = {
+export type DialogTitleDefaultProps = {
   appearance: $Keys<typeof APPEARANCE>,
   element: $Keys<typeof ELEMENT>
 };

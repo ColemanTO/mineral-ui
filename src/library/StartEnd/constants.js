@@ -1,9 +1,7 @@
 /* @flow */
 export const DIRECTION = {
   column: 'column',
-  'column-reverse': 'column-reverse',
-  row: 'row',
-  'row-reverse': 'row-reverse'
+  row: 'row'
 };
 
 export const PRIORITY = {

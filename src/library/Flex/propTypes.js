@@ -16,7 +16,7 @@ import {
 } from './constants';
 
 const stringOrArrayOfStringsPropType = (constant) => {
-  const strings = Object.values(constant);
+  const strings = Object.keys(constant);
   return oneOfType([oneOf(strings), arrayOf(oneOf(strings))]);
 };
 

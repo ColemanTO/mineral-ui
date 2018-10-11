@@ -2,16 +2,13 @@
 import React, { PureComponent } from 'react';
 import { Choice as Root, Control, Input, Text } from './styled';
 
-import { choicePropTypes } from './propTypes';
-import type { ChoiceDefaultPropsT, ChoicePropsT } from './types';
+import type { ChoiceDefaultProps, ChoiceProps } from './types';
 
-export default class Choice extends PureComponent<ChoicePropsT> {
-  static defaultProps: ChoiceDefaultPropsT = {
+export default class Choice extends PureComponent<ChoiceProps> {
+  static defaultProps: ChoiceDefaultProps = {
     labelPosition: 'end',
     size: 'large'
   };
-
-  static propTypes = choicePropTypes;
 
   render() {
     const {

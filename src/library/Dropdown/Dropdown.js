@@ -15,19 +15,19 @@ import ItemMatcher from './ItemMatcher';
 import { dropdownPropTypes } from './propTypes';
 import type { Items } from '../Menu/Menu';
 import type {
-  DropdownDefaultPropsT,
-  DropdownPropGetterT,
-  DropdownPropsT,
-  DropdownRenderFnT,
-  DropdownStateAndHelpersT,
-  DropdownStateT
+  DropdownDefaultProps,
+  DropdownPropGetter,
+  DropdownProps,
+  DropdownRenderFn,
+  DropdownStateAndHelpers,
+  DropdownState
 } from './types';
 
 export default class Dropdown extends Component<
-  DropdownPropsT,
-  DropdownStateT
+  DropdownProps,
+  DropdownState
 > {
-  static defaultProps: DropdownDefaultPropsT = {
+  static defaultProps: DropdownDefaultProps = {
     itemKey: 'text',
     placement: PLACEMENT['bottom-start']
   };
@@ -80,7 +80,7 @@ export default class Dropdown extends Component<
     );
   }
 
-  getStateAndHelpers = (): DropdownStateAndHelpersT => {
+  getStateAndHelpers = (): DropdownStateAndHelpers => {
     return {
       state: {
         highlightedIndex: this.getControllableValue('highlightedIndex'),
@@ -98,7 +98,7 @@ export default class Dropdown extends Component<
     this.dropdownTrigger = node;
   };
 
-  getContentProps: DropdownPropGetterT = (props = {}) => {
+  getContentProps: DropdownPropGetter = (props = {}) => {
     const {
       subtitle: ignoreSubtitle,
       title: ignoreTitle,
@@ -117,7 +117,7 @@ export default class Dropdown extends Component<
     };
   };
 
-  renderContent: DropdownRenderFnT = ({ props } = {}) => {
+  renderContent: DropdownRenderFn = ({ props } = {}) => {
     return <DropdownContent {...this.getContentProps(props)} />;
   };
 
@@ -133,7 +133,7 @@ export default class Dropdown extends Component<
     return `${this.id}-item-${index}`;
   };
 
-  getTriggerProps: DropdownPropGetterT = (props = {}) => {
+  getTriggerProps: DropdownPropGetter = (props = {}) => {
     const isOpen = this.getControllableValue('isOpen');
     const contentId = this.getContentId();
     const { children } = this.props;
@@ -155,7 +155,7 @@ export default class Dropdown extends Component<
     };
   };
 
-  renderTrigger: DropdownRenderFnT = ({ props } = {}) => {
+  renderTrigger: DropdownRenderFn = ({ props } = {}) => {
     const { children } = this.props;
 
     if (isRenderProp(children)) {
@@ -169,7 +169,7 @@ export default class Dropdown extends Component<
     return cloneElement(child, this.getTriggerProps(child.props));
   };
 
-  getMenuProps: DropdownPropGetterT = (props = {}) => {
+  getMenuProps: DropdownPropGetter = (props = {}) => {
     const { data, itemKey } = this.props;
 
     return {
@@ -183,7 +183,7 @@ export default class Dropdown extends Component<
     };
   };
 
-  renderMenu: DropdownRenderFnT = ({ props } = {}) => {
+  renderMenu: DropdownRenderFn = ({ props } = {}) => {
     const { menu } = this.props;
 
     if (isRenderProp(menu)) {
@@ -196,7 +196,7 @@ export default class Dropdown extends Component<
     return <Menu {...this.getMenuProps(props)} />;
   };
 
-  getItemProps: DropdownPropGetterT = (props = {}) => {
+  getItemProps: DropdownPropGetter = (props = {}) => {
     const highlightedIndex = this.getControllableValue('highlightedIndex');
     const { props: itemProps } = props;
     const { index, item } = itemProps;
@@ -214,7 +214,7 @@ export default class Dropdown extends Component<
     };
   };
 
-  renderItem: DropdownRenderFnT = (props = {}) => {
+  renderItem: DropdownRenderFn = (props = {}) => {
     const { item } = this.props;
 
     if (isRenderProp(item)) {

@@ -21,7 +21,7 @@ export const itemPropType = shape({
   secondaryText: node,
   text: node,
   value: string,
-  variant: oneOf(Object.values(VARIANT))
+  variant: oneOf(Object.keys(VARIANT))
 });
 
 export const itemGroupPropType = arrayOf(itemPropType);

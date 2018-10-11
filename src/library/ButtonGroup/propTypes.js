@@ -18,9 +18,9 @@ export const buttonGroupPropTypes = {
   defaultChecked: oneOfType([number, arrayOf(number)]),
   disabled: bool,
   fullWidth: bool,
-  mode: oneOf(Object.values(MODE)),
+  mode: oneOf(Object.keys(MODE)),
   onChange: func,
   onClick: func,
-  size: oneOf(Object.values(SIZE)),
-  variant: oneOf(Object.values(VARIANT))
+  size: oneOf(Object.keys(SIZE)),
+  variant: oneOf(Object.keys(VARIANT))
 };

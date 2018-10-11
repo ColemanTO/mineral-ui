@@ -4,10 +4,10 @@ import memoizeOne from 'memoize-one';
 import { createRootNode } from './styled';
 
 import { boxPropTypes } from './propTypes';
-import type { BoxDefaultPropsT, BoxPropsT } from './types';
+import type { BoxDefaultProps, BoxProps } from './types';
 
-export default class Box extends Component<BoxPropsT> {
-  static defaultProps: BoxDefaultPropsT = {
+export default class Box extends Component<BoxProps> {
+  static defaultProps: BoxDefaultProps = {
     element: 'div'
   };
 
@@ -16,7 +16,7 @@ export default class Box extends Component<BoxPropsT> {
   // Must be an instance method to avoid affecting other instances memoized keys
   getRootNode = memoizeOne(
     createRootNode,
-    (nextProps: BoxPropsT, prevProps: BoxPropsT) =>
+    (nextProps: BoxProps, prevProps: BoxProps) =>
       nextProps.element === prevProps.element
   );
 

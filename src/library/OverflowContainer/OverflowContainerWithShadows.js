@@ -7,13 +7,13 @@ import {
 } from './styled';
 
 import type {
-  OverflowContainerWithShadowsPropsT,
-  OverflowContainerWithShadowsStateT
+  OverflowContainerWithShadowsProps,
+  OverflowContainerWithShadowsState
 } from './types';
 
 export default class OverflowContainerWithShadows extends Component<
-  OverflowContainerWithShadowsPropsT,
-  OverflowContainerWithShadowsStateT
+  OverflowContainerWithShadowsProps,
+  OverflowContainerWithShadowsState
 > {
   container: ?HTMLElement;
 

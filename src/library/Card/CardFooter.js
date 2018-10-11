@@ -12,16 +12,16 @@ import {
 
 import { cardFooterPropTypes } from './propTypes';
 import type {
-  CardFooterPropsT,
-  CardFooterDefaultPropsT,
-  CardFooterStateT
+  CardFooterProps,
+  CardFooterDefaultProps,
+  CardFooterState
 } from './types';
 
 export default class CardFooter extends Component<
-  CardFooterPropsT,
-  CardFooterStateT
+  CardFooterProps,
+  CardFooterState
 > {
-  static defaultProps: CardFooterDefaultPropsT = {
+  static defaultProps: CardFooterDefaultProps = {
     triggerTitle: (isOpen: boolean) =>
       isOpen ? 'Collapse contents' : 'Expand contents'
   };

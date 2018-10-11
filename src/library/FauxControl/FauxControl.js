@@ -13,10 +13,9 @@ import {
 } from './styled';
 import { ICON_SIZE, SIZE } from './constants';
 
-import { fauxControlPropTypes } from './propTypes';
-import type { FauxControlPropsT, VariantIconsT } from './types';
+import type { FauxControlProps, VariantIcons } from './types';
 
-const variantIcons: VariantIconsT = {
+const variantIcons: VariantIcons = {
   danger: <IconDanger />,
   success: <IconSuccess />,
   warning: <IconWarning />
@@ -60,13 +59,11 @@ const getIcons = ({
   return [startIcon, endIcon];
 };
 
-export default class FauxControl extends Component<FauxControlPropsT> {
-  static propTypes = fauxControlPropTypes;
-
+export default class FauxControl extends Component<FauxControlProps> {
   // Must be an instance method to avoid affecting other instances memoized keys
   getControlNode = memoizeOne(
     createControlNode,
-    (nextProps: FauxControlPropsT, prevProps: FauxControlPropsT) =>
+    (nextProps: FauxControlProps, prevProps: FauxControlProps) =>
       nextProps.control === prevProps.control
   );
 

@@ -1,7 +1,7 @@
 /* @flow */
 import { createStyledComponent, getResponsiveStyles } from '../styles';
 import Flex, { FlexItem } from '../Flex';
-import type { StyleValueT } from '../Flex/types';
+import type { StyleValue } from '../Flex/types';
 
 export const Grid = createStyledComponent(
   Flex,
@@ -31,7 +31,7 @@ export const GridItem = createStyledComponent(
 
     const mapValueToProperty = (
       property: string,
-      value: StyleValueT
+      value: StyleValue
     ): number | string => {
       const map = {
         flexGrow: getFlexGrow,

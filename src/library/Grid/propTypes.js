@@ -3,7 +3,7 @@ import { arrayOf, node, number, oneOf, oneOfType, string } from 'prop-types';
 import { ALIGN_ITEMS } from './constants';
 
 const stringOrArrayOfStringsPropType = (constant) => {
-  const strings = Object.values(constant);
+  const strings = Object.keys(constant);
   return oneOfType([oneOf(strings), arrayOf(oneOf(strings))]);
 };
 

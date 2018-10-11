@@ -1,11 +1,11 @@
 /* @flow */
-export type EventListenerPropsT = {
-  listeners: ListenersT
+export type EventListenerProps = {
+  listeners: Listeners
 };
 
-export type ListenersT = Array<ListenerT>;
+export type Listeners = Array<Listener>;
 
-export type ListenerT = {
+export type Listener = {
   /** Target on which to add event listener. Can be a global such as `window` or `document` or any CSS selector */
   target: string,
   /** Type of event to listen for, e.g. click */

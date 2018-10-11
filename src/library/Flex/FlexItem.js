@@ -4,10 +4,10 @@ import memoizeOne from 'memoize-one';
 import { createFlexItemRootNode } from './styled';
 
 import { flexItemPropTypes } from './propTypes';
-import type { FlexItemDefaultPropsT, FlexItemPropsT } from './types';
+import type { FlexItemDefaultProps, FlexItemProps } from './types';
 
-export default class FlexItem extends Component<FlexItemPropsT> {
-  static defaultProps: FlexItemDefaultPropsT = {
+export default class FlexItem extends Component<FlexItemProps> {
+  static defaultProps: FlexItemDefaultProps = {
     grow: 0,
     shrink: 1
   };
@@ -17,7 +17,7 @@ export default class FlexItem extends Component<FlexItemPropsT> {
   // Must be an instance method to avoid affecting other instances memoized keys
   getRootNode = memoizeOne(
     createFlexItemRootNode,
-    (nextProps: FlexItemPropsT, prevProps: FlexItemPropsT) =>
+    (nextProps: FlexItemProps, prevProps: FlexItemProps) =>
       nextProps.flex === prevProps.flex
   );
 

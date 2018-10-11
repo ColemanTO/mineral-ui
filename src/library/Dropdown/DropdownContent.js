@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import { DropdownContent as Root } from './styled';
 
 import { dropdownContentPropTypes } from './propTypes';
-import type { DropdownContentPropsT } from './types';
+import type { DropdownContentProps } from './types';
 
-export default class DropdownContent extends Component<DropdownContentPropsT> {
+export default class DropdownContent extends Component<DropdownContentProps> {
   static propTypes = dropdownContentPropTypes;
 
   render() {

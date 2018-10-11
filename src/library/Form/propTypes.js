@@ -22,7 +22,7 @@ export const formFieldPropTypes = {
   required: bool,
   requiredText: oneOfType([string, element]),
   secondaryText: oneOfType([string, element]),
-  variant: oneOf(Object.values(VARIANT))
+  variant: oneOf(Object.keys(VARIANT))
 };
 
 export const formFieldDividerPropTypes = {};

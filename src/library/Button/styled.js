@@ -6,9 +6,9 @@ import Button from './Button';
 import { SIZE } from './constants';
 import { buttonTheme } from './themes';
 
-import type { ButtonPropsT } from './types';
+import type { ButtonProps } from './types';
 
-const chooseColor = ({ disabled, primary, minimal }: ButtonPropsT, theme) => {
+const chooseColor = ({ disabled, primary, minimal }: ButtonProps, theme) => {
   if (disabled) {
     return theme.color_disabled;
   } else if (primary) {
@@ -24,7 +24,7 @@ const isTypeButton = (type: ?string) => {
   return ['button', 'submit', 'reset'].indexOf(type) !== -1;
 };
 
-const filterProps = ({ element, type }: ButtonPropsT) => {
+const filterProps = ({ element, type }: ButtonProps) => {
   // When element is a component, e.g. ReactRouterLink,
   // these are not filtered automatically by rootEl
   const invalidComponentProps = ['primary', 'text', 'variant', 'element'];
@@ -87,7 +87,7 @@ export const Inner = createStyledComponent('span', {
   width: '100%'
 });
 
-export const createRootNode = (props: ButtonPropsT) => {
+export const createRootNode = (props: ButtonProps) => {
   const { element = Button.defaultProps.element } = props;
 
   return createStyledComponent(

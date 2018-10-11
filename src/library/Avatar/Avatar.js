@@ -4,10 +4,10 @@ import { Avatar as Root } from './styled';
 import { ICON_SIZE, SHAPE, SIZE } from './constants';
 
 import { avatarPropTypes } from './propTypes';
-import type { AvatarDefaultPropsT, AvatarPropsT } from './types';
+import type { AvatarDefaultProps, AvatarProps } from './types';
 
-export default class Avatar extends Component<AvatarPropsT> {
-  static defaultProps: AvatarDefaultPropsT = {
+export default class Avatar extends Component<AvatarProps> {
+  static defaultProps: AvatarDefaultProps = {
     shape: SHAPE.circle,
     size: SIZE.large
   };

@@ -1,5 +1,5 @@
 /* @flow */
-export type OverflowContainerPropsT = {
+export type OverflowContainerProps = {
   children?: React$Node,
   containerRef?: (node: HTMLElement) => void,
   hideScrollbars?: boolean,
@@ -8,18 +8,18 @@ export type OverflowContainerPropsT = {
   tabIndex?: number | string
 };
 
-export type OverflowContainerStateT = {
+export type OverflowContainerState = {
   scrollable: boolean
 };
 
-export type OverflowContainerWithShadowsPropsT = {
+export type OverflowContainerWithShadowsProps = {
   children?: React$Node,
   hideScrollbars?: boolean,
   scrollX?: boolean,
   scrollY?: boolean
 };
 
-export type OverflowContainerWithShadowsStateT = {
+export type OverflowContainerWithShadowsState = {
   hasShadowBottom: boolean,
   hasShadowLeft: boolean,
   hasShadowRight: boolean,

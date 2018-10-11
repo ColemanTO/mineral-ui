@@ -7,9 +7,9 @@ import {
 import ModifiersContext from './ModifiersContext';
 
 import { dialogBodyPropTypes } from './propTypes';
-import type { DialogBodyPropsT } from './types';
+import type { DialogBodyProps } from './types';
 
-export default class DialogBody extends Component<DialogBodyPropsT> {
+export default class DialogBody extends Component<DialogBodyProps> {
   static propTypes = dialogBodyPropTypes;
 
   render() {

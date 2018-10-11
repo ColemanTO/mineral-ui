@@ -27,7 +27,7 @@ import DialogHeader from './DialogHeader';
 import DialogTitle from './DialogTitle';
 
 import { dialogPropTypes } from './propTypes';
-import type { DialogDefaultPropsT, DialogPropsT, DialogStateT } from './types';
+import type { DialogDefaultProps, DialogProps, DialogState } from './types';
 
 const Animation = withTheme(({ children, theme, ...restProps }: Object) => {
   return (
@@ -42,8 +42,8 @@ const Animation = withTheme(({ children, theme, ...restProps }: Object) => {
   );
 });
 
-export default class Dialog extends Component<DialogPropsT, DialogStateT> {
-  static defaultProps: DialogDefaultPropsT = {
+export default class Dialog extends Component<DialogProps, DialogState> {
+  static defaultProps: DialogDefaultProps = {
     closeButtonLabel: 'close',
     closeOnClickOutside: true,
     closeOnEscape: true,
@@ -68,7 +68,7 @@ export default class Dialog extends Component<DialogPropsT, DialogStateT> {
 
   lastFocusedElement: ?HTMLElement;
 
-  componentDidUpdate(prevProps: DialogPropsT) {
+  componentDidUpdate(prevProps: DialogProps) {
     if (!prevProps.isOpen && this.props.isOpen) {
       this.open();
     }

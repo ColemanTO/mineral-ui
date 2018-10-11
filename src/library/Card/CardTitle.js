@@ -14,7 +14,7 @@ import {
 } from './styled';
 
 import { cardTitlePropTypes } from './propTypes';
-import type { CardTitlePropsT } from './types';
+import type { CardTitleProps } from './types';
 
 const variantIcons = {
   danger: <IconDanger size="medium" />,
@@ -22,7 +22,7 @@ const variantIcons = {
   warning: <IconWarning size="medium" />
 };
 
-export default function CardTitle(props: CardTitlePropsT) {
+export default function CardTitle(props: CardTitleProps) {
   const {
     actions,
     avatar,

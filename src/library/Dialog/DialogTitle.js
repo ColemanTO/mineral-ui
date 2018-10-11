@@ -10,7 +10,7 @@ import { DialogTitle as Root, DialogTitleTitle } from './styled';
 import { dialogTitleTheme } from './themes';
 
 import { dialogTitlePropTypes } from './propTypes';
-import type { DialogTitleDefaultPropsT, DialogTitlePropsT } from './types';
+import type { DialogTitleDefaultProps, DialogTitleProps } from './types';
 
 const variantIcons = {
   danger: IconDanger,
@@ -23,7 +23,7 @@ const DialogTitle = ({
   theme,
   variant,
   ...restProps
-}: DialogTitlePropsT) => {
+}: DialogTitleProps) => {
   const rootProps = {
     variant,
     ...restProps
@@ -51,7 +51,7 @@ const DialogTitle = ({
   );
 };
 
-const defaultProps: DialogTitleDefaultPropsT = {
+const defaultProps: DialogTitleDefaultProps = {
   appearance: APPEARANCE.h4,
   element: ELEMENT.h1
 };

@@ -16,7 +16,7 @@ export const dialogPropTypes = {
   actions: arrayOf(
     shape({
       text: string.isRequired,
-      size: oneOf(Object.values(ACTIONS_SIZE))
+      size: oneOf(Object.keys(ACTIONS_SIZE))
     })
   ),
   appSelector: string,
@@ -35,15 +35,15 @@ export const dialogPropTypes = {
   onOpen: func,
   preventCloseButtonClose: bool,
   showCloseButton: bool,
-  size: oneOf(Object.values(SIZE)),
+  size: oneOf(Object.keys(SIZE)),
   title: oneOfType([string, element]),
   usePortal: bool,
-  variant: oneOf(Object.values(VARIANT))
+  variant: oneOf(Object.keys(VARIANT))
 };
 
 export const dialogActionsPropTypes = {
   children: oneOfType([element, arrayOf(element)]),
-  variant: oneOf(Object.values(VARIANT))
+  variant: oneOf(Object.keys(VARIANT))
 };
 
 export const dialogBodyPropTypes = {
@@ -60,9 +60,9 @@ export const dialogHeaderPropTypes = {
 };
 
 export const dialogTitlePropTypes = {
-  appearance: oneOf(Object.values(APPEARANCE)),
+  appearance: oneOf(Object.keys(APPEARANCE)),
   children: node.isRequired,
-  element: oneOf(Object.values(ELEMENT)),
+  element: oneOf(Object.keys(ELEMENT)),
   id: string,
-  variant: oneOf(Object.values(VARIANT))
+  variant: oneOf(Object.keys(VARIANT))
 };

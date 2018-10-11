@@ -1,18 +1,18 @@
 /* @flow */
-export type ThemeProviderPropsT = {
+export type ThemeProviderProps = {
   children?: React$Node,
-  theme?: ThemeT<>
+  theme?: Theme<>
 };
 
-export type ThemeT<T: ThemeObjT = ThemeObjT> = T | ThemeFnT<T>;
-export type ThemeObjT = { [key: string]: ThemeValueT };
-export type ThemeFnT<T: ThemeObjT = ThemeObjT> = (
+export type Theme<T: ThemeObj = ThemeObj> = T | ThemeFn<T>;
+export type ThemeObj = { [key: string]: ThemeValue };
+export type ThemeFn<T: ThemeObj = ThemeObj> = (
   props: Object,
   context?: Object
 ) => T;
-export type ThemeValueT = any; // FIXME: string | number | null;
+export type ThemeValue = any; // FIXME: string | number | null;
 
-export type ComponentThemeT<T: ThemeObjT> = T & BaseThemeT;
-export type ComponentThemeFnT<T: ThemeObjT> = (BaseThemeT) => T & BaseThemeT;
+export type ComponentTheme<T: ThemeObj> = T & BaseTheme;
+export type ComponentThemeFn<T: ThemeObj> = (BaseTheme) => T & BaseTheme;
 
-export type BaseThemeT = ThemeObjT; // TODO: Enumerate keys
+export type BaseTheme = ThemeObj; // TODO: Enumerate keys

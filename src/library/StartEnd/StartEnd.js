@@ -2,9 +2,9 @@
 import React, { Children } from 'react';
 import Flex, { FlexItem } from '../Flex';
 
-import type { StartEndPropsT } from './types';
+import type { StartEndProps } from './types';
 
-export default function StartEnd(props: StartEndPropsT) {
+export default function StartEnd(props: StartEndProps) {
   const {
     children,
     justifyContent: ignoreJustifyContent,
@@ -35,5 +35,6 @@ export default function StartEnd(props: StartEndPropsT) {
     throw new Error('StartEnd must have exactly two children.');
   }
 
+  // $FlowFixMe - Reverse directions unsupported here but are supported on Flex
   return <Flex {...rootProps}>{flexItems}</Flex>;
 }

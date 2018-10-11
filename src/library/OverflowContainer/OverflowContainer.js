@@ -4,11 +4,11 @@ import debounce from 'lodash.debounce';
 import EventListener from '../EventListener';
 import { OverflowContainer as Root } from './styled';
 
-import type { OverflowContainerPropsT, OverflowContainerStateT } from './types';
+import type { OverflowContainerProps, OverflowContainerState } from './types';
 
 export default class OverflowContainer extends Component<
-  OverflowContainerPropsT,
-  OverflowContainerStateT
+  OverflowContainerProps,
+  OverflowContainerState
 > {
   state = {
     scrollable: false

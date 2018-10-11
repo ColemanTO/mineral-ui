@@ -11,7 +11,7 @@ import themeFromTokens, {
 } from './themeFromTokens';
 import { PRIMARY_COLOR } from './constants';
 
-import type { ThemeObjT } from './types';
+import type { ThemeObj } from './types';
 
 type PrimaryColor = $Keys<typeof PRIMARY_COLOR>;
 type PrimaryColors = Array<PrimaryColor>;
@@ -113,9 +113,9 @@ const primaryColorsByVariation = (colors?: Colors = {}) => {
 export default function createTheme(
   options: ?{
     colors?: Colors,
-    overrides?: ThemeObjT
+    overrides?: ThemeObj
   }
-): ThemeObjT {
+): ThemeObj {
   const colors = options && options.colors;
 
   const grayRamp =

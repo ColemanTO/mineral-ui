@@ -28,7 +28,7 @@ export const dropdownPropTypes = {
   modifiers: object,
   onClose: func,
   onOpen: func,
-  placement: oneOf(Object.values(PLACEMENT)),
+  placement: oneOf(Object.keys(PLACEMENT)),
   usePortal: bool,
   wide: bool
 };
@@ -37,6 +37,6 @@ export const dropdownContentPropTypes = {
   children: node.isRequired,
   id: string.isRequired,
   modifiers: object,
-  placement: oneOf(Object.values(PLACEMENT)),
+  placement: oneOf(Object.keys(PLACEMENT)),
   wide: bool
 };

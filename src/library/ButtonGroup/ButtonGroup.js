@@ -7,7 +7,7 @@ import { MODE } from './constants';
 import { ButtonGroup as Root } from './styled';
 
 import { buttonGroupPropTypes } from './propTypes';
-import type { ButtonGroupPropsT, ButtonGroupStateT } from './types';
+import type { ButtonGroupProps, ButtonGroupState } from './types';
 
 const isChecked = (checked: number | Array<number> | Set<number>, index) => {
   const isSet = checked instanceof Set;
@@ -16,7 +16,7 @@ const isChecked = (checked: number | Array<number> | Set<number>, index) => {
   return checkedSet.has(index);
 };
 
-const getDefaultCheckedState = (props: ButtonGroupPropsT) => {
+const getDefaultCheckedState = (props: ButtonGroupProps) => {
   const { children: _children, defaultChecked, mode } = props;
   const children = Children.toArray(_children);
 
@@ -49,8 +49,8 @@ const getDefaultCheckedState = (props: ButtonGroupPropsT) => {
 };
 
 export default class ButtonGroup extends Component<
-  ButtonGroupPropsT,
-  ButtonGroupStateT
+  ButtonGroupProps,
+  ButtonGroupState
 > {
   static displayName = 'ButtonGroup';
 

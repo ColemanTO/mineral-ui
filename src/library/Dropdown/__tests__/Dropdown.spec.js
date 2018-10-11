@@ -13,7 +13,7 @@ import testThemeOverrides from '../../../../utils/testThemeOverrides';
 import { getProcessedComponentThemeKeys } from '../../themes/processComponentTheme';
 
 import type { Items } from '../../Menu/Menu';
-import type { DropdownRenderFnT } from '../types';
+import type { DropdownRenderFn } from '../types';
 
 const data: Items = [
   {
@@ -103,7 +103,7 @@ describe('Dropdown', () => {
   });
 
   describe('render props', () => {
-    let renderer: DropdownRenderFnT = jest.fn(() => <div />);
+    let renderer: DropdownRenderFn = jest.fn(() => <div />);
 
     beforeEach(() => {
       renderer.mockClear();

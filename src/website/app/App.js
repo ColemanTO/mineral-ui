@@ -12,7 +12,7 @@ import siteColors from './siteColors';
 
 declare var GOOGLE_TRACKING_ID: string;
 
-import type { ThemeObjT } from '../../library/themes/types';
+import type { ThemeObj } from '../../library/themes/types';
 
 type Props = {
   children?: any,
@@ -23,7 +23,7 @@ type Props = {
   }
 };
 
-const siteTheme: ThemeObjT = {
+const siteTheme: ThemeObj = {
   baseline_1: pxToEm(12),
   baseline_2: pxToEm(12 * 2),
   baseline_3: pxToEm(12 * 3),
