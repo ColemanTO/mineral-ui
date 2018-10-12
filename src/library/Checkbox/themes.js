@@ -2,7 +2,10 @@
 import { mapComponentThemes } from '../themes';
 import { choiceTheme, choiceGroupTheme } from '../Choice';
 
-export const checkboxTheme = (baseTheme: Object) =>
+import type { CheckboxThemeFn, CheckboxGroupThemeFn } from './types';
+
+// $FlowFixMe - strict theme keys
+export const checkboxTheme: CheckboxThemeFn = (baseTheme) =>
   mapComponentThemes(
     {
       name: 'Choice',
@@ -15,7 +18,8 @@ export const checkboxTheme = (baseTheme: Object) =>
     baseTheme
   );
 
-export const checkboxGroupTheme = (baseTheme: Object) =>
+// $FlowFixMe - strict theme keys
+export const checkboxGroupTheme: CheckboxGroupThemeFn = (baseTheme) =>
   mapComponentThemes(
     {
       name: 'ChoiceGroup',

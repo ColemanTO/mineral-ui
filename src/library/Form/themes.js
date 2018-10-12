@@ -1,8 +1,14 @@
 /* @flow */
 
+import type {
+  FormFieldThemeFn,
+  FormFieldDividerThemeFn,
+  FormFieldsetThemeFn
+} from './types';
+
 // [1] This deviates from h6 because it must look right when used both within
 //     and without a FormFieldset
-export const formFieldTheme = (baseTheme: Object) => ({
+export const formFieldTheme: FormFieldThemeFn = (baseTheme) => ({
   FormFieldCaption_color: baseTheme.color_mouse,
   FormFieldCaption_fontSize: baseTheme.fontSize_mouse,
   FormFieldCaption_marginTop: baseTheme.space_stack_xxs,
@@ -21,7 +27,7 @@ export const formFieldTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-export const formFieldDividerTheme = (baseTheme: Object) => ({
+export const formFieldDividerTheme: FormFieldDividerThemeFn = (baseTheme) => ({
   FormFieldDivider_borderColor: baseTheme.borderColor,
   FormFieldDivider_borderWidth: '1px',
   FormFieldDivider_margin: baseTheme.space_stack_sm,
@@ -29,7 +35,7 @@ export const formFieldDividerTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-export const formFieldsetTheme = (baseTheme: Object) => ({
+export const formFieldsetTheme: FormFieldsetThemeFn = (baseTheme) => ({
   FormFieldset_borderColor: baseTheme.borderColor,
 
   FormFieldsetLegend_color: baseTheme.h5_color,

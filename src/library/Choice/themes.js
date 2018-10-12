@@ -1,7 +1,9 @@
 /* @flow */
 import { pxToEm } from '../styles';
 
-export const choiceTheme = (baseTheme: Object) => {
+import type { ChoiceThemeFn, ChoiceGroupThemeFn } from './types';
+
+export const choiceTheme: ChoiceThemeFn = (baseTheme) => {
   const colors = {
     background: baseTheme.input_backgroundColor,
     regular: baseTheme.borderColor,
@@ -33,7 +35,7 @@ export const choiceTheme = (baseTheme: Object) => {
   };
 };
 
-export const choiceGroupTheme = (baseTheme: Object) => ({
+export const choiceGroupTheme: ChoiceGroupThemeFn = (baseTheme) => ({
   ChoiceGroupControl_marginHorizontal_inline: baseTheme.space_inline_xl,
   ChoiceGroupControl_marginVertical_stacked: baseTheme.space_stack_md,
   ChoiceGroupControl_marginVertical_stackedJumbo: baseTheme.space_stack_lg,

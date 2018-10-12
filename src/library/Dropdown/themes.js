@@ -1,10 +1,13 @@
 /* @flow */
-export const dropdownTheme = (baseTheme: Object) => ({
+
+import type { DropdownThemeFn, DropdownContentThemeFn } from './types';
+
+export const dropdownTheme: DropdownThemeFn = (baseTheme) => ({
   ...dropdownContentTheme(baseTheme),
   ...baseTheme
 });
 
-export const dropdownContentTheme = (baseTheme: Object) => ({
+export const dropdownContentTheme: DropdownContentThemeFn = (baseTheme) => ({
   DropdownContent_backgroundColor: baseTheme.panel_backgroundColor,
   DropdownContent_borderColor: baseTheme.panel_borderColor,
   DropdownContent_borderRadius: baseTheme.borderRadius_1,

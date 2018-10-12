@@ -1,8 +1,18 @@
 /* @flow */
 import { pxToEm } from '../styles';
 
+import type {
+  CardThemeFn,
+  CardActionsThemeFn,
+  CardBlockThemeFn,
+  CardDividerThemeFn,
+  CardFooterThemeFn,
+  CardStatusThemeFn,
+  CardTitleThemeFn
+} from './types';
+
 // prettier-ignore
-export const cardTheme = (baseTheme: Object) => ({
+export const cardTheme: CardThemeFn = (baseTheme) => ({
   Card_backgroundColor: baseTheme.panel_backgroundColor,
   Card_borderColor: baseTheme.panel_borderColor,
   Card_borderRadius: baseTheme.borderRadius_1,
@@ -16,27 +26,27 @@ export const cardTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-export const cardActionsTheme = (baseTheme: Object) => ({
+export const cardActionsTheme: CardActionsThemeFn = (baseTheme) => ({
   CardActionsAction_spaceInline: baseTheme.space_inline_sm,
 
   ...baseTheme
 });
 
-export const cardBlockTheme = (baseTheme: Object) => ({
+export const cardBlockTheme: CardBlockThemeFn = (baseTheme) => ({
   CardBlock_fontSize: baseTheme.fontSize_ui,
   CardBlock_lineHeight: baseTheme.lineHeight_prose,
 
   ...baseTheme
 });
 
-export const cardDividerTheme = (baseTheme: Object) => ({
+export const cardDividerTheme: CardDividerThemeFn = (baseTheme) => ({
   CardDivider_borderColor: baseTheme.borderColor,
   CardDivider_borderWidth: '1px',
 
   ...baseTheme
 });
 
-export const cardFooterTheme = (baseTheme: Object) => ({
+export const cardFooterTheme: CardFooterThemeFn = (baseTheme) => ({
   CardFooter_backgroundColor: baseTheme.well_backgroundColor,
   CardFooter_borderColor: baseTheme.borderColor,
 
@@ -50,7 +60,7 @@ export const cardFooterTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-export const cardStatusTheme = (baseTheme: Object) => ({
+export const cardStatusTheme: CardStatusThemeFn = (baseTheme) => ({
   CardStatus_fontSize: baseTheme.fontSize_ui,
   CardStatus_fontWeight: baseTheme.fontWeight_regular,
 
@@ -60,7 +70,7 @@ export const cardStatusTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-export const cardTitleTheme = (baseTheme: Object) => ({
+export const cardTitleTheme: CardTitleThemeFn = (baseTheme) => ({
   CardTitle_color: baseTheme.h4_color,
   CardTitle_fontSize: baseTheme.h4_fontSize,
   CardTitle_fontWeight: baseTheme.h4_fontWeight,

@@ -2,6 +2,11 @@
 import { PLACEMENT } from './constants';
 
 import type { MenuItems, MenuItemGroups } from '../Menu/types';
+import type {
+  ComponentTheme,
+  ComponentThemeFn,
+  ThemeValue
+} from '../themes/types';
 
 type Placement = $Keys<typeof PLACEMENT>;
 
@@ -61,3 +66,18 @@ export type DropdownContentProps = {
   placement?: Placement,
   wide?: boolean
 };
+
+export type DropdownThemeFn = ComponentThemeFn<DropdownTheme>;
+export type DropdownTheme = ComponentTheme<DropdownThemeKeys>;
+type DropdownThemeKeys = DropdownContentThemeKeys;
+
+export type DropdownContentThemeFn = ComponentThemeFn<DropdownContentTheme>;
+export type DropdownContentTheme = ComponentTheme<DropdownContentThemeKeys>;
+type DropdownContentThemeKeys = {|
+  DropdownContent_backgroundColor: ThemeValue,
+  DropdownContent_borderColor: ThemeValue,
+  DropdownContent_borderRadius: ThemeValue,
+  DropdownContent_boxShadow: ThemeValue,
+  DropdownContent_margin: ThemeValue,
+  DropdownContent_zIndex: ThemeValue
+|};

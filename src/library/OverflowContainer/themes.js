@@ -1,15 +1,21 @@
 /* @flow */
 import { mapComponentThemes } from '../themes';
 
+import type {
+  OverflowContainerThemeFn,
+  OverflowContainerWithShadowsThemeFn
+} from './types';
+
 // prettier-ignore
-export const overflowContainerTheme = (baseTheme: Object) => ({
+export const overflowContainerTheme: OverflowContainerThemeFn = (baseTheme) => ({
   OverflowContainer_outline_focus: `1px solid ${baseTheme.borderColor_theme_focus}`,
 
   ...baseTheme
 });
 
 // prettier-ignore
-export const overflowContainerWithShadowsTheme = (baseTheme: Object) =>
+// $FlowFixMe - strict theme keys
+export const overflowContainerWithShadowsTheme: OverflowContainerWithShadowsThemeFn = (baseTheme) =>
   mapComponentThemes(
     {
       name: 'OverflowContainer',

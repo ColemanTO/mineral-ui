@@ -1,5 +1,7 @@
 /* @flow */
-export const avatarTheme = (baseTheme: Object) => ({
+import type { AvatarThemeFn } from './types';
+
+export const avatarTheme: AvatarThemeFn = (baseTheme) => ({
   Avatar_fontSize_small: baseTheme.fontSize_mouse,
   Avatar_fontSize_medium: baseTheme.fontSize_ui,
   Avatar_fontSize_large: baseTheme.h4_fontSize,

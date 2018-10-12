@@ -1,8 +1,10 @@
 /* @flow */
 import { pxToEm } from '../styles';
 
+import type { FauxControlThemeFn } from './types';
+
 // prettier-ignore
-export const fauxControlTheme = (baseTheme: Object) => ({
+export const fauxControlTheme: FauxControlThemeFn = (baseTheme) => ({
   FauxControl_backgroundColor: baseTheme.input_backgroundColor,
   FauxControl_borderColor: baseTheme.borderColor,
   FauxControl_borderColor_active: baseTheme.borderColor,

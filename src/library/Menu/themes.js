@@ -1,6 +1,12 @@
 /* @flow */
+import type {
+  MenuDividerThemeFn,
+  MenuGroupThemeFn,
+  MenuGroupTitleThemeFn,
+  MenuItemThemeFn
+} from './types';
 
-export const menuDividerTheme = (baseTheme: Object) => ({
+export const menuDividerTheme: MenuDividerThemeFn = (baseTheme) => ({
   MenuDivider_borderColor: baseTheme.borderColor,
   MenuDivider_borderWidth: '1px',
   MenuDivider_margin: baseTheme.space_stack_sm,
@@ -8,14 +14,14 @@ export const menuDividerTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-export const menuGroupTheme = (baseTheme: Object) => ({
+export const menuGroupTheme: MenuGroupThemeFn = (baseTheme) => ({
   MenuGroup_margin: baseTheme.space_stack_sm,
 
   ...baseTheme
 });
 
 // [1] Deviation from h5 for optics relative to a MenuItem
-export const menuGroupTitleTheme = (baseTheme: Object) => ({
+export const menuGroupTitleTheme: MenuGroupTitleThemeFn = (baseTheme) => ({
   MenuGroupTitle_fontSize: baseTheme.fontSize_mouse, // [1]
   MenuGroupTitle_fontWeight: baseTheme.h5_fontWeight,
   MenuGroupTitle_paddingTop: baseTheme.space_stack_md,
@@ -27,7 +33,7 @@ export const menuGroupTitleTheme = (baseTheme: Object) => ({
 // Some of these values (all of the margins & paddings and the content fontSize)
 // come from Button (large)
 // prettier-ignore
-export const menuItemTheme = (baseTheme: Object) => ({
+export const menuItemTheme: MenuItemThemeFn = (baseTheme) => ({
   MenuItem_backgroundColor_active: baseTheme.gray_20,
   MenuItem_backgroundColor_focus: baseTheme.gray_10,
   MenuItem_backgroundColor_hover: baseTheme.gray_10,

@@ -3,7 +3,15 @@ import { pxToEm } from '../styles';
 import { mapComponentThemes } from '../themes';
 import { overflowContainerWithShadowsTheme } from '../OverflowContainer/themes';
 
-export const dialogTheme = (baseTheme: Object) => ({
+import type {
+  DialogThemeFn,
+  DialogActionsThemeFn,
+  DialogBodyThemeFn,
+  DialogRowThemeFn,
+  DialogTitleThemeFn
+} from './types';
+
+export const dialogTheme: DialogThemeFn = (baseTheme) => ({
   Dialog_transitionDuration: '250ms',
   Dialog_zIndex: baseTheme.zIndex_1600,
 
@@ -32,13 +40,14 @@ export const dialogTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-export const dialogActionsTheme = (baseTheme: Object) => ({
+export const dialogActionsTheme: DialogActionsThemeFn = (baseTheme) => ({
   DialogActionsItem_margin: baseTheme.space_stack_sm,
 
   ...baseTheme
 });
 
-export const dialogBodyTheme = (baseTheme: Object) =>
+// $FlowFixMe - strict theme keys
+export const dialogBodyTheme: DialogBodyThemeFn = (baseTheme) =>
   mapComponentThemes(
     {
       name: 'OverflowContainerWithShadows',
@@ -51,7 +60,7 @@ export const dialogBodyTheme = (baseTheme: Object) =>
     baseTheme
   );
 
-export const dialogRowTheme = (baseTheme: Object) => ({
+export const dialogRowTheme: DialogRowThemeFn = (baseTheme) => ({
   DialogRow_fontSize: baseTheme.fontSize_ui,
   DialogRow_paddingHorizontal: baseTheme.space_inline_lg,
   DialogRow_marginVertical: baseTheme.space_stack_lg,
@@ -59,7 +68,7 @@ export const dialogRowTheme = (baseTheme: Object) => ({
   ...baseTheme
 });
 
-export const dialogTitleTheme = (baseTheme: Object) => ({
+export const dialogTitleTheme: DialogTitleThemeFn = (baseTheme) => ({
   DialogTitle_color: baseTheme.h4_color,
   DialogTitle_fontSize: baseTheme.h4_fontSize,
   DialogTitle_fontWeight: baseTheme.h4_fontWeight,

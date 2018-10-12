@@ -1,6 +1,12 @@
 /* @flow */
 import { VARIANT } from './constants';
 
+import type {
+  ComponentTheme,
+  ComponentThemeFn,
+  ThemeValue
+} from '../themes/types';
+
 export type MenuProps = {
   children?: React$Node,
   data?: MenuItems | MenuItemGroups,
@@ -63,3 +69,47 @@ type MenuItemRenderFn = (props?: MenuItemRenderProps) => React$Node;
 type MenuItemRenderProps = {
   props: Object
 };
+
+export type MenuDividerThemeFn = ComponentThemeFn<MenuDividerTheme>;
+export type MenuDividerTheme = ComponentTheme<MenuDividerThemeKeys>;
+type MenuDividerThemeKeys = {|
+  MenuDivider_borderColor: ThemeValue,
+  MenuDivider_borderWidth: ThemeValue,
+  MenuDivider_margin: ThemeValue
+|};
+
+export type MenuGroupThemeFn = ComponentThemeFn<MenuGroupTheme>;
+export type MenuGroupTheme = ComponentTheme<MenuGroupThemeKeys>;
+type MenuGroupThemeKeys = {|
+  MenuGroup_margin: ThemeValue
+|};
+
+export type MenuGroupTitleThemeFn = ComponentThemeFn<MenuGroupTitleTheme>;
+export type MenuGroupTitleTheme = ComponentTheme<MenuGroupTitleThemeKeys>;
+type MenuGroupTitleThemeKeys = {|
+  MenuGroupTitle_fontSize: ThemeValue,
+  MenuGroupTitle_fontWeight: ThemeValue,
+  MenuGroupTitle_paddingTop: ThemeValue,
+  MenuGroupTitle_paddingBottom: ThemeValue
+|};
+
+export type MenuItemThemeFn = ComponentThemeFn<MenuItemTheme>;
+export type MenuItemTheme = ComponentTheme<MenuItemThemeKeys>;
+type MenuItemThemeKeys = {|
+  MenuItem_backgroundColor_active: ThemeValue,
+  MenuItem_backgroundColor_focus: ThemeValue,
+  MenuItem_backgroundColor_hover: ThemeValue,
+  MenuItem_backgroundColor_selected: ThemeValue,
+  MenuItem_backgroundColor_selectedActive: ThemeValue,
+  MenuItem_backgroundColor_selectedHover: ThemeValue,
+  MenuItem_color: ThemeValue,
+  MenuItem_fontWeight: ThemeValue,
+  MenuItem_fontWeight_selected: ThemeValue,
+  MenuItem_paddingHorizontal: ThemeValue,
+  MenuItem_paddingVertical: ThemeValue,
+  MenuItemContent_fontSize: ThemeValue,
+  MenuItemIcon_color: ThemeValue,
+  MenuItemIcon_margin: ThemeValue,
+  MenuItemSecondaryText_color: ThemeValue,
+  MenuItemSecondaryText_fontSize: ThemeValue
+|};
