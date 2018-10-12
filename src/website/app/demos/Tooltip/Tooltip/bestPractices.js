@@ -1,9 +1,9 @@
 /* @flow */
 import React from 'react';
-import { createStyledComponent } from '../../../../library/styles';
-import Button from '../../../../library/Button';
-import Card, { CardBlock, CardTitle } from '../../../../library/Card';
-import Tooltip from '../../../../library/Tooltip';
+import { createStyledComponent } from '../../../../../library/styles';
+import Button from '../../../../../library/Button';
+import Card, { CardBlock, CardTitle } from '../../../../../library/Card';
+import Tooltip from '../../../../../library/Tooltip';
 import IconHelp from 'mineral-ui-icons/IconHelp';
 import IconFormatBold from 'mineral-ui-icons/IconFormatBold';
 import IconFormatItalic from 'mineral-ui-icons/IconFormatItalic';
@@ -15,8 +15,10 @@ import IconFormatAlignRight from 'mineral-ui-icons/IconFormatAlignRight';
 import IconKeyboardArrowDown from 'mineral-ui-icons/IconKeyboardArrowDown';
 import IconKeyboardArrowUp from 'mineral-ui-icons/IconKeyboardArrowUp';
 import IconCheck from 'mineral-ui-icons/IconCheck';
-import FormField from '../../../../library/Form/FormField';
-import TextInput from '../../../../library/TextInput/';
+import FormField from '../../../../../library/Form/FormField';
+import TextInput from '../../../../../library/TextInput/';
+
+import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
 
 const DemoCardLayout = createStyledComponent('div', {
   width: '250px'
@@ -63,7 +65,7 @@ const tooltipEveryFifthWord = (words) => {
   }, []);
 };
 
-export default [
+const bestPractices: BestPracticesT = [
   {
     type: 'do',
     description: `Use Tooltips to provide supplemental information
@@ -113,7 +115,7 @@ design doesn't allow space for a text label.`,
   {
     type: 'do',
     description: `Use Tooltips to annotate the controls for rarely used features
-or features that can be interpreted in several ways. For instance, these buttons 
+or features that can be interpreted in several ways. For instance, these buttons
 are for voting, not scrolling or prioritizing.`,
     example: (
       <StackedButtons>
@@ -211,3 +213,5 @@ clutter the text and make it hard to read.`,
     example: <div>{tooltipEveryFifthWord(shortLorem)}</div>
   }
 ];
+
+export default bestPractices;
