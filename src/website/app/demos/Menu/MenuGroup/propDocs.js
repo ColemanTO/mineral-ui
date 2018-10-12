@@ -1,7 +1,7 @@
 /* @flow */
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   children: {
     description: '[MenuItems](/components/menu-item)',
     type: 'React$Node'

@@ -9,7 +9,7 @@ import Card, {
 import loremIpsum from '../common/loremIpsum';
 
 import type { MenuItems } from '../../../../../library/Menu/types';
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
 const backgroundColor = mineralTheme.color_gray_10;
 
@@ -20,7 +20,7 @@ const actionMenuData: MenuItems = [
   { text: 'Delete', variant: 'danger' }
 ];
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     backgroundColor,

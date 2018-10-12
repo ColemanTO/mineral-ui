@@ -3,9 +3,9 @@ import CardFooter from '../../../../../library/Card/CardFooter';
 import { VARIANT } from '../../../../../library/Card/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   children: {
     description: 'Content of CardFooter',
     type: 'React$Node',

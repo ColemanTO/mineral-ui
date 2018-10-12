@@ -18,7 +18,7 @@ import IconCheck from 'mineral-ui-icons/IconCheck';
 import FormField from '../../../../../library/Form/FormField';
 import TextInput from '../../../../../library/TextInput/';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
 const DemoCardLayout = createStyledComponent('div', {
   width: '250px'
@@ -65,7 +65,7 @@ const tooltipEveryFifthWord = (words) => {
   }, []);
 };
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Use Tooltips to provide supplemental information

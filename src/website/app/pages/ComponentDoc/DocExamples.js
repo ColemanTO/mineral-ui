@@ -3,10 +3,10 @@ import React from 'react';
 import ComponentDocExample from '../../ComponentDocExample';
 import Section from './DocSection';
 
-import type { ExamplesT } from './types';
+import type { Examples } from './types';
 
 type Props = {
-  examples: ExamplesT,
+  examples: Examples,
   slug: string
 };
 

@@ -1,8 +1,8 @@
 /* @flow */
 import dropdownDoc from './Dropdown';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [dropdownDoc];
+const componentDocs: ComponentDocs = [dropdownDoc];
 
 export default componentDocs;

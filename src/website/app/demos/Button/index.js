@@ -1,8 +1,8 @@
 /* @flow */
 import buttonDoc from './Button';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [buttonDoc];
+const componentDocs: ComponentDocs = [buttonDoc];
 
 export default componentDocs;

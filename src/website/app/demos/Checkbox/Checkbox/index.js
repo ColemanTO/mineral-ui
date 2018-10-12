@@ -7,9 +7,9 @@ import whenHowToUse from './whenHowToUse';
 import bestPractices from './bestPractices';
 import examples from './examples';
 
-import type { ComponentDocT } from '../../../pages/ComponentDoc/types';
+import type { ComponentDocType } from '../../../pages/ComponentDoc/types';
 
-const componentDoc: ComponentDocT = {
+const componentDoc: ComponentDocType = {
   title: 'Checkbox',
   slug: 'checkbox',
   description,

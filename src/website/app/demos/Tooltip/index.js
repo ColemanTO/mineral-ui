@@ -1,8 +1,8 @@
 /* @flow */
 import tooltipDoc from './Tooltip';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [tooltipDoc];
+const componentDocs: ComponentDocs = [tooltipDoc];
 
 export default componentDocs;

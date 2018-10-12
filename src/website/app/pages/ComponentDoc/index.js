@@ -16,10 +16,10 @@ import DocSubNav from './DocSubNav';
 import DocThemeVariables from './DocThemeVariables';
 import DocWhenHowToUse from './DocWhenHowToUse';
 
-import type { ComponentDocT } from './types';
+import type { ComponentDocType } from './types';
 
 type ComponentDocPropsT = {
-  componentDoc: ComponentDocT
+  componentDoc: ComponentDocType
 };
 
 const StyledDocHeading = createStyledComponent(

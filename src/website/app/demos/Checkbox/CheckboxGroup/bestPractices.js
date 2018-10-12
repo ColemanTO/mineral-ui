@@ -5,9 +5,9 @@ import { FormField } from '../../../../../library/Form';
 import Checkbox from '../../../../../library/Checkbox';
 import { CheckboxGroup } from '../../../../../library/Checkbox';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Use when the number of choices is relatively small.`,

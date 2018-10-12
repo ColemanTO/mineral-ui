@@ -4,7 +4,7 @@ import { createStyledComponent, pxToEm } from '../../../../../library/styles';
 import { mineralTheme } from '../../../../../library/themes';
 import Menu, { MenuDivider, MenuItem } from '../../../../../library/Menu';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
 const DemoLayout = createStyledComponent('div', {
   '& > div': {
@@ -15,7 +15,7 @@ const DemoLayout = createStyledComponent('div', {
 
 const backgroundColor = mineralTheme.color_gray_10;
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     backgroundColor,

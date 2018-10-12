@@ -2,8 +2,8 @@
 import flexDoc from './Flex';
 import flexItemDoc from './FlexItem';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [flexDoc, flexItemDoc];
+const componentDocs: ComponentDocs = [flexDoc, flexItemDoc];
 
 export default componentDocs;

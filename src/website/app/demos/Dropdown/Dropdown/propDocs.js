@@ -3,9 +3,9 @@ import Dropdown from '../../../../../library/Dropdown';
 import { PLACEMENT } from '../../../../../library/Dropdown/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   children: {
     description:
       'Trigger for the Dropdown. Optionally provides custom rendering control. See the [custom trigger example](/components/dropdown#custom-trigger) and our [render props guide](/render-props).',

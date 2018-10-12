@@ -3,9 +3,9 @@ import Avatar from '../../../../../library/Avatar';
 import { SHAPE, SIZE } from '../../../../../library/Avatar/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   abbr: {
     description: 'When `children` is a string, this will be the rendered text',
     type: 'string'

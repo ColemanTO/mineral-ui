@@ -8,9 +8,9 @@ import cardImageDoc from './CardImage';
 import cardStatusDoc from './CardStatus';
 import cardTitleDoc from './CardTitle';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [
+const componentDocs: ComponentDocs = [
   cardDoc,
   cardActionsDoc,
   cardBlockDoc,

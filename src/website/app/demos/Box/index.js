@@ -1,8 +1,8 @@
 /* @flow */
 import boxDoc from './Box';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [boxDoc];
+const componentDocs: ComponentDocs = [boxDoc];
 
 export default componentDocs;

@@ -2,7 +2,7 @@
 import React from 'react';
 import _Link from '../../../../../library/Link';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
 const Link = ({ href, ...restProps }: { href?: string }) => (
   <_Link
@@ -11,7 +11,7 @@ const Link = ({ href, ...restProps }: { href?: string }) => (
   />
 );
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description:

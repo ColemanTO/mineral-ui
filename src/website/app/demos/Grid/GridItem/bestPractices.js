@@ -3,9 +3,9 @@ import React from 'react';
 import Grid, { GridItem } from '../../../../../library/Grid';
 import Link from '../../../../../library/Link';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Use GridItem within [Grid](/components/grid) to align

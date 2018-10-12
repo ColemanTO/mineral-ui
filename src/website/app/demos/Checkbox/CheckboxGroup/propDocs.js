@@ -1,7 +1,7 @@
 /* @flow */
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   checked: {
     description:
       'Array of values of the selected Checkboxes; primarily for use with controlled components. If this prop is specified, an `onChange` handler must also be specified. See also: `defaultChecked`.',

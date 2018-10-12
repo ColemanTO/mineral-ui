@@ -4,9 +4,9 @@ import { FormField, FormFieldset } from '../../../../../library/Form';
 import TextInput from '../../../../../library/TextInput/';
 import DemoLayout from '../../common/DemoLayout';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Wrap multiple, related inputs in a FormFieldset and provide

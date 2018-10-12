@@ -5,9 +5,9 @@ import { mineralTheme } from '../../../../../library/themes';
 import Grid, { GridItem } from '../../../../../library/Grid';
 import Button from '../../../../../library/Button';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Use Grid and [GridItem](/components/grid-item) to align

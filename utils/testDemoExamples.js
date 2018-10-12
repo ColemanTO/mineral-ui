@@ -5,11 +5,11 @@ import { LiveProvider, LivePreview } from 'react-live';
 import { mountInThemeProvider, ssrInThemeProvider } from '../utils/enzymeUtils';
 
 import type {
-  ExampleT,
-  ExamplesT
+  Example,
+  Examples
 } from '../src/website/app/pages/ComponentDoc/types';
 
-const mountExample = (example: ExampleT) => {
+const mountExample = (example: Example) => {
   const [, wrapper] = mountInThemeProvider(
     <LiveProvider
       code={example.source}
@@ -31,7 +31,7 @@ const mountExample = (example: ExampleT) => {
   return component;
 };
 
-const ssrExample = (example: ExampleT) => {
+const ssrExample = (example: Example) => {
   return ssrInThemeProvider(
     <LiveProvider
       code={example.source}
@@ -43,7 +43,7 @@ const ssrExample = (example: ExampleT) => {
 };
 
 export default function testDemoExamples(
-  examples: ExamplesT,
+  examples: Examples,
   options: {
     exclude?: Array<string>, // Example id
     contextPolyfill?: boolean

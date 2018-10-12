@@ -9,7 +9,7 @@ import Card, {
 } from '../../../../../library/Card';
 import loremIpsum from '../common/loremIpsum';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
 const CardList = createStyledComponent('div', ({ theme }) => ({
   '& > div': {
@@ -19,7 +19,7 @@ const CardList = createStyledComponent('div', ({ theme }) => ({
 
 const backgroundColor = mineralTheme.color_gray_10;
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     backgroundColor,

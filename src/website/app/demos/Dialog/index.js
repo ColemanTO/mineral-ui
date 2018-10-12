@@ -6,9 +6,9 @@ import dialogFooterDoc from './DialogFooter';
 import dialogHeaderDoc from './DialogHeader';
 import dialogTitleDoc from './DialogTitle';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [
+const componentDocs: ComponentDocs = [
   dialogDoc,
   dialogActionsDoc,
   dialogBodyDoc,

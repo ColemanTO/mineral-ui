@@ -5,7 +5,7 @@ import Avatar from '../../../../../library/Avatar';
 import { createStyledComponent } from '../../../../../library/styles';
 import DemoLayout from '../../common/DemoLayout';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
 const Name = createStyledComponent('div', ({ theme }) => ({
   alignItems: 'center',
@@ -16,7 +16,7 @@ const Name = createStyledComponent('div', ({ theme }) => ({
   }
 }));
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description:

@@ -3,9 +3,9 @@ import Link from '../../../../../library/Link';
 import { VARIANT } from '../../../../../library/Link/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   children: {
     description: 'Content of the Link',
     type: 'React$Node'

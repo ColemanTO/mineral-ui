@@ -2,7 +2,7 @@
 import { DIRECTION, PRIORITY } from '../../../../../library/StartEnd/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const stringOrArrayOfStringsType = (constant) => {
   const strings = joinQuoted(Object.values(constant));
@@ -12,7 +12,7 @@ const stringOrArrayOfStringsType = (constant) => {
   };
 };
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   breakpoints: {
     description:
       'Media query (min-width) breakpoints along which to apply props marked "&#xfeff;[[Responsive-capable]](#responsive)&#xfeff;"',

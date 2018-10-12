@@ -3,9 +3,9 @@ import React from 'react';
 import DemoForm from '../common/DemoForm';
 import CheckboxGroup from '../../../../../library/Checkbox/CheckboxGroup';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Begin labels with a capital letter.`,

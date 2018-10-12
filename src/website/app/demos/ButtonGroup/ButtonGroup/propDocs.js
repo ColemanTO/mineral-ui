@@ -6,9 +6,9 @@ import {
 } from '../../../../../library/ButtonGroup/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   'aria-label': {
     description: 'Accessible label',
     type: 'string',

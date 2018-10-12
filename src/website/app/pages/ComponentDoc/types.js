@@ -1,17 +1,17 @@
 /* @flow */
 import type { ThemeFn } from '../../../../library/themes/types';
 
-export type BestPracticeT = {
+export type BestPractice = {
   backgroundColor?: string,
   description: string,
   example: React$Node,
   type: string
 };
-export type BestPracticesT = Array<BestPracticeT>;
+export type BestPractices = Array<BestPractice>;
 
-type ThemesFnT = Array<ThemeFn<>>;
+type ThemesFn = Array<ThemeFn<>>;
 
-export type ExampleT = {
+export type Example = {
   backgroundColor?: string,
   description?: React$Node,
   hideFromProd?: boolean,
@@ -22,35 +22,35 @@ export type ExampleT = {
   source?: string,
   title: React$Node
 };
-export type ExamplesT = Array<ExampleT>;
+export type Examples = Array<Example>;
 
-type AdditionalPropDocT = {
+type AdditionalPropDoc = {
   title: string,
   description: React$Node,
-  propDocs: ComponentPropDocsT
+  propDocs: ComponentPropDocs
 };
-type AdditionalPropDocsT = Array<AdditionalPropDocT>;
+type AdditionalPropDocs = Array<AdditionalPropDoc>;
 
-export type ComponentDocT = {
+export type ComponentDocType = {
   title: string,
   slug: string,
   description?: React$Node,
-  examples?: ExamplesT,
-  propDocs?: ComponentPropDocsT,
+  examples?: Examples,
+  propDocs?: ComponentPropDocs,
   propsComment?: string | React$Element<*>,
-  additionalPropDocs?: AdditionalPropDocsT,
-  theme?: ThemeFn<> | ThemesFnT,
+  additionalPropDocs?: AdditionalPropDocs,
+  theme?: ThemeFn<> | ThemesFn,
   whenHowToUse?: string,
-  bestPractices?: BestPracticesT
+  bestPractices?: BestPractices
 };
 
-export type ComponentDocsT = Array<ComponentDocT>;
+export type ComponentDocs = Array<ComponentDocType>;
 
-export type ComponentPropDocsT = {
-  [key: string]: ComponentPropDocT
+export type ComponentPropDocs = {
+  [key: string]: ComponentPropDoc
 };
 
-export type ComponentPropDocT = {
+export type ComponentPropDoc = {
   description: string,
   defaultValue?: string,
   required?: boolean,

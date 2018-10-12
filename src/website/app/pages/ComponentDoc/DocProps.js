@@ -7,10 +7,10 @@ import PropTable from '../../PropTable';
 import Section from './DocSection';
 import DocSectionTitle from './DocSectionTitle';
 
-import type { ComponentDocT } from './types';
+import type { ComponentDocType } from './types';
 
 type DocPropsPropsT = {
-  componentDoc: ComponentDocT
+  componentDoc: ComponentDocType
 };
 
 const Callout = createStyledComponent(_Callout, ({ theme }) => ({

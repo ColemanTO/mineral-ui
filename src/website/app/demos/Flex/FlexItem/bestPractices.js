@@ -4,9 +4,9 @@ import Flex, { FlexItem } from '../../../../../library/Flex';
 import Button from '../../../../../library/Button';
 import Link from '../../../../../library/Link';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Use FlexItem within [Flex](/components/flex) to align components

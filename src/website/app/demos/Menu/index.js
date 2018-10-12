@@ -4,9 +4,9 @@ import menuDividerDoc from './MenuDivider';
 import menuGroupDoc from './MenuGroup';
 import menuItemDoc from './MenuItem';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [
+const componentDocs: ComponentDocs = [
   menuDoc,
   menuDividerDoc,
   menuGroupDoc,

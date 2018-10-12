@@ -3,7 +3,7 @@ import React from 'react';
 import { FormField } from '../../../../../library/Form';
 import TextInput from '../../../../../library/TextInput/';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
 const forgotPassword = (
   <a
@@ -29,7 +29,7 @@ const longCaption = (
   </div>
 );
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description:

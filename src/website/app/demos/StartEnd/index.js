@@ -1,8 +1,8 @@
 /* @flow */
 import startEndDoc from './StartEnd';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [startEndDoc];
+const componentDocs: ComponentDocs = [startEndDoc];
 
 export default componentDocs;

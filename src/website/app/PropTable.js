@@ -8,12 +8,12 @@ import Markdown from './Markdown';
 import { Table, TableCell, TableHeaderCell, TableRow } from './Table';
 
 import type {
-  ComponentPropDocsT,
-  ComponentPropDocT
+  ComponentPropDocs,
+  ComponentPropDoc
 } from './pages/ComponentDoc/types';
 
 type PropsTablePropsT = {
-  propDocs: ComponentPropDocsT
+  propDocs: ComponentPropDocs
 };
 
 type DefaultValuePropsT = {
@@ -168,7 +168,7 @@ export default class PropTable extends Component<PropsTablePropsT> {
       });
   };
 
-  getDefaultValue = (propDoc: ComponentPropDocT): ?React$Node => {
+  getDefaultValue = (propDoc: ComponentPropDoc): ?React$Node => {
     const { defaultValue, type } = propDoc;
 
     const name = typeof type === 'string' ? type : type.name;
@@ -184,7 +184,7 @@ export default class PropTable extends Component<PropsTablePropsT> {
     );
   };
 
-  getType(propDoc: ComponentPropDocT): ?React$Node {
+  getType(propDoc: ComponentPropDoc): ?React$Node {
     const { type } = propDoc;
     const name = typeof type === 'string' ? type : type.name;
     let value = typeof type === 'string' ? undefined : type.value;

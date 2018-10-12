@@ -4,10 +4,10 @@ import { createStyledComponent, pxToEm } from '../../../../library/styles';
 import Link from '../../SiteLink';
 import Section from './DocSection';
 
-import type { ComponentDocT } from './types';
+import type { ComponentDocType } from './types';
 
 type DocSubNavPropsT = {
-  componentDoc: ComponentDocT
+  componentDoc: ComponentDocType
 };
 
 const styles = {

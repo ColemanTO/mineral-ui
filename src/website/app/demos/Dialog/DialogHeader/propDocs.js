@@ -1,7 +1,7 @@
 /* @flow */
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   children: {
     description:
       'Rendered Dialog title; use of [DialogTitle](/components/dialog-title) is recommended',

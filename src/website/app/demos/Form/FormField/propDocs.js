@@ -3,7 +3,7 @@ import { FormField } from '../../../../../library/Form';
 import { VARIANT } from '../../../../../library/Form/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const getDefaultTextValue = (prop) => {
   const value = FormField.defaultProps[prop];
@@ -12,7 +12,7 @@ const getDefaultTextValue = (prop) => {
   }
 };
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   caption: {
     description:
       'Caption associated with the input element; commonly used to provide help text',

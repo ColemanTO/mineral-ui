@@ -5,9 +5,9 @@ import Text from '../../../../../library/Text';
 import DemoLayout from '../common/DemoLayout';
 import Dialog from '../common/DemoDialog';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Use clear and concise language for titles and actions. The

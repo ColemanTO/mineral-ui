@@ -4,9 +4,9 @@ import { FormField, FormFieldDivider } from '../../../../../library/Form';
 import TextInput from '../../../../../library/TextInput/';
 import DemoLayout from '../../common/DemoLayout';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'dont',
     description: `Don't separate every [FormField](/components/form-field) with a

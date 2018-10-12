@@ -4,9 +4,9 @@ import description from './description';
 import propDocs from './propDocs';
 import examples from './examples';
 
-import type { ComponentDocT } from '../../../pages/ComponentDoc/types';
+import type { ComponentDocType } from '../../../pages/ComponentDoc/types';
 
-const componentDoc: ComponentDocT = {
+const componentDoc: ComponentDocType = {
   title: 'DialogActions',
   slug: 'dialog-actions',
   description,

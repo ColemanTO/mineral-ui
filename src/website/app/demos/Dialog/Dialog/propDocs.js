@@ -3,12 +3,12 @@ import Dialog from '../../../../../library/Dialog';
 import { SIZE, VARIANT } from '../../../../../library/Dialog/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const getDefaultBooleanValue = (prop) =>
   Dialog.defaultProps[prop] ? 'true' : 'false';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   actions: {
     description:
       'Configuration for the [Buttons](/components/button) rendered at the bottom of Dialog; accepts all Button props',

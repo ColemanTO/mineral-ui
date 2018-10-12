@@ -10,12 +10,12 @@ import Card, {
 } from '../../../../../library/Card';
 import loremIpsum from '../common/loremIpsum';
 
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
 const backgroundColor = mineralTheme.color_gray_10;
 const Link = (props) => <_Link {...props} target="_blank" />;
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     backgroundColor,

@@ -3,9 +3,9 @@ import Button from '../../../../../library/Button';
 import { SIZE, VARIANT } from '../../../../../library/Button/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   children: {
     description: 'Rendered content of the component',
     type: 'React$Node'

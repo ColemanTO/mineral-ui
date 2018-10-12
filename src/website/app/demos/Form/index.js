@@ -3,9 +3,9 @@ import formFieldDoc from './FormField';
 import formFieldsetDoc from './FormFieldset';
 import formFieldDividerDoc from './FormFieldDivider';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [
+const componentDocs: ComponentDocs = [
   formFieldDoc,
   formFieldsetDoc,
   formFieldDividerDoc

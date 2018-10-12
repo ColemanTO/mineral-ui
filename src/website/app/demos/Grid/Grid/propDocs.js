@@ -6,7 +6,7 @@ import {
 } from '../../../../../library/Grid/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const stringOrArrayOfStringsType = (constant) => {
   const strings = joinQuoted(Object.values(constant));
@@ -23,7 +23,7 @@ const getDefaultValue = (prop) => {
   }
 };
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   alignItems: {
     description:
       'Align grid items vertically [[Responsive-capable]](#responsive)',

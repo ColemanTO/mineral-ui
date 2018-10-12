@@ -5,7 +5,7 @@ import {
 } from '../../../../../library/Box/constants';
 import joinQuoted from '../../../utils/joinQuoted';
 
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
 const spacingSizes = joinQuoted(Object.values(SPACING_SIZE));
 const spacingType = {
@@ -22,7 +22,7 @@ const heightOrWidthType = {
   value: 'number | string | Array<number | string | null>'
 };
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   breakpoints: {
     description:
       'Media query (min-width) breakpoints along which to apply props marked "&#xfeff;[[Responsive-capable]](#responsive)&#xfeff;',

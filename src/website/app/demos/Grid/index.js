@@ -2,8 +2,8 @@
 import gridDoc from './Grid';
 import gridItemDoc from './GridItem';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [gridDoc, gridItemDoc];
+const componentDocs: ComponentDocs = [gridDoc, gridItemDoc];
 
 export default componentDocs;

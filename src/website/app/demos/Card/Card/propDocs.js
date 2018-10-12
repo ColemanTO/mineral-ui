@@ -1,7 +1,7 @@
 /* @flow */
-import type { ComponentPropDocsT } from '../../../pages/ComponentDoc/types';
+import type { ComponentPropDocs } from '../../../pages/ComponentDoc/types';
 
-const propDocs: ComponentPropDocsT = {
+const propDocs: ComponentPropDocs = {
   children: {
     description:
       'Content of Card; see the [Basic](#basic) example for more details',

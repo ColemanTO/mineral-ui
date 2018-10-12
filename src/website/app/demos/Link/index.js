@@ -1,8 +1,8 @@
 /* @flow */
 import linkDoc from './Link';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [linkDoc];
+const componentDocs: ComponentDocs = [linkDoc];
 
 export default componentDocs;

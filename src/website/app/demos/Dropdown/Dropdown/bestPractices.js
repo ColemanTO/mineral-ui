@@ -5,7 +5,7 @@ import Button from '../../../../../library/Button';
 import Dropdown from '../../../../../library/Dropdown';
 
 import type { MenuItems } from '../../../../../library/Menu/types';
-import type { BestPracticesT } from '../../../pages/ComponentDoc/types';
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
 const data: MenuItems = [
   { text: 'Settings' },
@@ -25,7 +25,7 @@ const navData: MenuItems = [
   { text: 'Log in' }
 ];
 
-const bestPractices: BestPracticesT = [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Populate Dropdown with options that are related to the trigger,

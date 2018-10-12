@@ -2,8 +2,8 @@
 import checkboxDoc from './Checkbox';
 import checkboxGroupDoc from './CheckboxGroup';
 
-import type { ComponentDocsT } from '../../pages/ComponentDoc/types';
+import type { ComponentDocs } from '../../pages/ComponentDoc/types';
 
-const componentDocs: ComponentDocsT = [checkboxDoc, checkboxGroupDoc];
+const componentDocs: ComponentDocs = [checkboxDoc, checkboxGroupDoc];
 
 export default componentDocs;
