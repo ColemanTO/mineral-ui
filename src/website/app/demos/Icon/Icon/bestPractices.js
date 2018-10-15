@@ -1,6 +1,6 @@
 /* @flow */
 import React from 'react';
-import Button from '../../../../library/Button';
+import Button from '../../../../../library/Button';
 import IconRefresh from 'mineral-ui-icons/IconRefresh';
 import IconLocalPlay from 'mineral-ui-icons/IconLocalPlay';
 import IconLocalOffer from 'mineral-ui-icons/IconLocalOffer';
@@ -8,7 +8,9 @@ import IconLocalLaundryService from 'mineral-ui-icons/IconLocalLaundryService';
 import IconStoreMallDirectory from 'mineral-ui-icons/IconStoreMallDirectory';
 import IconStreetview from 'mineral-ui-icons/IconStreetview';
 
-export default [
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
+
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description:
@@ -47,3 +49,5 @@ avoid using Icons on all elements, as they become visual noise.`,
     )
   }
 ];
+
+export default bestPractices;

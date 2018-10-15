@@ -1,8 +1,8 @@
 /* @flow */
-import Loadable from '../../../Loadable';
+import Loadable from '../../../../Loadable';
 
 const IconsByCategory = Loadable({
-  loader: () => import('../components/IconsByCategory')
+  loader: () => import('../../common/IconsByCategory')
 });
 
 export default {

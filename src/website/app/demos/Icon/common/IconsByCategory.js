@@ -2,9 +2,9 @@
 import React from 'react';
 import * as Icons from 'mineral-ui-icons';
 import { createStyledComponent } from '../../../../../library/styles';
-import Figure from '../components/Figure';
-import FigCaption from '../components/FigCaption';
-import FigContainer from '../components/FigContainer';
+import Figure from '../common/Figure';
+import FigCaption from '../common/FigCaption';
+import FigContainer from '../common/FigContainer';
 import Heading from '../../../SiteHeading';
 
 const CategoryHeading = createStyledComponent(
