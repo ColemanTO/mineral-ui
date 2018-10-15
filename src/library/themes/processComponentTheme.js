@@ -21,7 +21,7 @@ export const getProcessedComponentThemeKeys = (
     excludeKeys?: Array<string>,
     includeBaseTheme?: boolean
   } = {}
-) => {
+): Array<string> => {
   return Object.keys(processComponentTheme(componentTheme, options));
 };
 

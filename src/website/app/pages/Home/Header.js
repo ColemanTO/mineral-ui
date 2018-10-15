@@ -170,7 +170,9 @@ const Nav = ({
       <Media
         query="(max-width: 38.999em)"
         render={() =>
-          latestPost && <Link href={latestPost.url}>Latest Blog Post</Link>
+          latestPost ? (
+            <Link href={latestPost.url}>Latest Blog Post</Link>
+          ) : null
         }
       />
       <Media

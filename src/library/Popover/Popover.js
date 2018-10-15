@@ -153,18 +153,17 @@ export default class Popover extends Component<Props, State> {
   popoverTrigger: ?React$Component<*, *>;
 
   render() {
-    const { modifiers, ...restProps } = this.props;
-    const isOpen = this.getControllableValue('isOpen');
-
-    const rootProps = {
-      ...restProps,
-      tag: 'span'
-    };
-
     return (
       <ModifiersContext.Consumer>
         {(contextModifiers) => {
-          rootProps.modifiers = modifiers || contextModifiers;
+          const { modifiers, ...restProps } = this.props;
+          const isOpen = this.getControllableValue('isOpen');
+
+          const rootProps = {
+            ...restProps,
+            modifiers: modifiers || contextModifiers,
+            tag: 'span'
+          };
 
           return (
             <Root {...rootProps}>

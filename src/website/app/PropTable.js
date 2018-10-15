@@ -138,7 +138,7 @@ export default class PropTable extends Component<PropsTablePropsT> {
     );
   }
 
-  renderRows = () => {
+  renderRows = (): Array<React$Element<*>> => {
     const { propDocs } = this.props;
 
     return Object.keys(propDocs)

@@ -222,37 +222,36 @@ export default class Select extends Component<Props, State> {
   selectTrigger: ?React$Component<*, *>;
 
   render() {
-    const {
-      data,
-      disabled,
-      modifiers,
-      readOnly,
-      trigger,
-      ...restProps
-    } = this.props;
-
-    const isOpen = this.getControllableValue('isOpen');
-
-    this.items = this.getItems(data);
-
-    const rootProps = {
-      ...restProps,
-      id: this.id,
-      data,
-      disabled: disabled || readOnly,
-      highlightedIndex: this.getHighlightedOrSelectedIndex(),
-      isOpen,
-      onClose: this.close,
-      onOpen: this.open,
-      menu: this.renderMenu
-    };
-
     return (
       <ModifiersContext.Consumer>
         {(contextModifiers) => {
-          rootProps.modifiers = {
-            contentWidth: contentWidthModifier,
-            ...(modifiers || contextModifiers)
+          const {
+            data,
+            disabled,
+            modifiers,
+            readOnly,
+            trigger,
+            ...restProps
+          } = this.props;
+
+          const isOpen = this.getControllableValue('isOpen');
+
+          this.items = this.getItems(data);
+
+          const rootProps = {
+            ...restProps,
+            id: this.id,
+            data,
+            disabled: disabled || readOnly,
+            highlightedIndex: this.getHighlightedOrSelectedIndex(),
+            isOpen,
+            modifiers: {
+              contentWidth: contentWidthModifier,
+              ...(modifiers || contextModifiers)
+            },
+            onClose: this.close,
+            onOpen: this.open,
+            menu: this.renderMenu
           };
 
           return (

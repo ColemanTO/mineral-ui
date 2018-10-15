@@ -1,10 +1,13 @@
 /* @flow */
 import React, { PureComponent } from 'react';
 import { createStyledComponent } from '../../../../../library/styles';
-import { type Columns } from '../../../../../library/Table/Table';
 import { countRender } from '../../../RenderCounter';
 
-import { type RenderProps } from '../../../../../library/Table/Table';
+import type {
+  Columns,
+  RenderProps,
+  Rows
+} from '../../../../../library/Table/Table';
 
 const CellRoot = createStyledComponent('td', ({ theme }) => ({
   background: theme.color_theme_20,
@@ -20,7 +23,7 @@ class Cell extends PureComponent<*> {
 
 const cell = ({ props }: RenderProps) => <Cell {...props} />;
 
-const generateColumns = (count: number) => {
+const generateColumns = (count: number): Columns => {
   const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
   const depth = alphabet.length;
   const width = Math.ceil(count / depth);
@@ -53,7 +56,7 @@ const generateColumns = (count: number) => {
   }, []);
 };
 
-const generateRows = (count: number, columns: Columns) => {
+const generateRows = (count: number, columns: Columns): Rows => {
   return [...Array(count).keys()].map((i) => {
     return columns.reduce((acc, column) => {
       acc[column.key] = column.key + i;

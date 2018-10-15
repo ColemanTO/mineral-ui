@@ -2,6 +2,5 @@
 import tabExamples from './Tab';
 import tabsExamples from './Tabs';
 
-const examples = [].concat(tabExamples, tabsExamples);
-
-export default examples;
+// $FlowFixMe - Delete file when convert Tabs component
+export default [].concat(tabExamples, tabsExamples);
