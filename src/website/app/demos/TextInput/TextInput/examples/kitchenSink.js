@@ -2,9 +2,9 @@
 import React from 'react';
 import IconBackspace from 'mineral-ui-icons/IconBackspace';
 import IconCloud from 'mineral-ui-icons/IconCloud';
-import TextInput from '../../../../../library/TextInput';
-import { ThemeProvider } from '../../../../../library/themes';
-import DemoLayout from '../../common/DemoLayout';
+import TextInput from '../../../../../../library/TextInput';
+import { ThemeProvider } from '../../../../../../library/themes';
+import DemoLayout from '../../../common/DemoLayout';
 
 const iconStart = <IconCloud />;
 const iconEnd = <IconBackspace />;

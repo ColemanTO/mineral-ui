@@ -9,7 +9,7 @@ import { createThemedComponent, mapComponentThemes } from '../themes';
 import IconArrowDropdownUp from '../Icon/IconArrowDropdownUp';
 import IconArrowDropdownDown from '../Icon/IconArrowDropdownDown';
 import FauxControl from '../FauxControl';
-import { componentTheme as textInputComponentTheme } from '../TextInput/TextInput';
+import { textInputTheme } from '../TextInput';
 
 import type { MenuItemType } from '../Menu/types';
 
@@ -40,7 +40,7 @@ export const componentTheme = (baseTheme: Object) =>
   mapComponentThemes(
     {
       name: 'TextInput',
-      theme: textInputComponentTheme(baseTheme)
+      theme: textInputTheme(baseTheme)
     },
     {
       name: 'Select',

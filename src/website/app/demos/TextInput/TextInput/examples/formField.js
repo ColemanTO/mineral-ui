@@ -1,8 +1,8 @@
 /* @flow */
 import IconAccountBox from 'mineral-ui-icons/IconAccountBox';
-import { FormField } from '../../../../../library/Form';
-import TextInput from '../../../../../library/TextInput/';
-import DemoLayout from '../../common/DemoLayout';
+import { FormField } from '../../../../../../library/Form';
+import TextInput from '../../../../../../library/TextInput/';
+import DemoLayout from '../../../common/DemoLayout';
 
 export default {
   id: 'form-field',

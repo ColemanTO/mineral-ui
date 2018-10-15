@@ -1,5 +1,5 @@
 /* @flow */
-import TextInput from '../../../../../library/TextInput/';
+import TextInput from '../../../../../../library/TextInput/';
 
 export default {
   id: 'read-only',

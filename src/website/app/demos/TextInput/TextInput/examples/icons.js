@@ -1,7 +1,7 @@
 /* @flow */
 import IconCloud from 'mineral-ui-icons/IconCloud';
-import TextInput from '../../../../../library/TextInput/';
-import DemoLayout from '../../common/DemoLayout';
+import TextInput from '../../../../../../library/TextInput/';
+import DemoLayout from '../../../common/DemoLayout';
 
 export default {
   id: 'icons',

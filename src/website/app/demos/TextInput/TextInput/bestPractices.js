@@ -1,10 +1,12 @@
 /* @flow */
 import React from 'react';
-import FormField from '../../../../library/Form/FormField';
-import TextInput from '../../../../library/TextInput/';
-import DemoLayout from '../common/DemoLayout';
+import FormField from '../../../../../library/Form/FormField';
+import TextInput from '../../../../../library/TextInput/';
+import DemoLayout from '../../common/DemoLayout';
 
-export default [
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
+
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Wrap TextInput in a [FormField](/components/form-field) and provide a
@@ -66,3 +68,5 @@ especially useful on mobile devices, as a specialized keyboard will be used.`,
     )
   }
 ];
+
+export default bestPractices;

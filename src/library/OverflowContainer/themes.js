@@ -14,7 +14,7 @@ export const overflowContainerTheme: OverflowContainerThemeFn = (baseTheme) => (
 });
 
 // prettier-ignore
-// $FlowFixMe - strict theme keys
+// $FlowFixMe - strict theme keys incompatible with mapComponentThemes
 export const overflowContainerWithShadowsTheme: OverflowContainerWithShadowsThemeFn = (baseTheme) =>
   mapComponentThemes(
     {

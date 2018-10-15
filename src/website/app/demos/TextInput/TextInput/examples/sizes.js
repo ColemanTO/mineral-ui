@@ -1,6 +1,6 @@
 /* @flow */
-import TextInput from '../../../../../library/TextInput/';
-import DemoLayout from '../../common/DemoLayout';
+import TextInput from '../../../../../../library/TextInput/';
+import DemoLayout from '../../../common/DemoLayout';
 
 export default {
   id: 'size',

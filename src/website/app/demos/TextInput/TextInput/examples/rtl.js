@@ -1,8 +1,8 @@
 /* @flow */
 import IconBackspace from 'mineral-ui-icons/IconBackspace';
-import TextInput from '../../../../../library/TextInput/';
-import { ThemeProvider } from '../../../../../library/themes';
-import DemoLayout from '../../common/DemoLayout';
+import TextInput from '../../../../../../library/TextInput/';
+import { ThemeProvider } from '../../../../../../library/themes';
+import DemoLayout from '../../../common/DemoLayout';
 
 /*
  * Note: The sample text used in the example is Arabic.
