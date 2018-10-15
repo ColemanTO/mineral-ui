@@ -1,9 +1,9 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../library/styles';
-import Button from '../../../../../library/Button';
-import TextArea from '../../../../../library/TextArea';
-import TextInput from '../../../../../library/TextInput/';
-import _DemoLayout from '../../common/DemoLayout';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button';
+import TextArea from '../../../../../../library/TextArea';
+import TextInput from '../../../../../../library/TextInput/';
+import _DemoLayout from '../../../common/DemoLayout';
 
 const DemoLayout = createStyledComponent(_DemoLayout, {
   '& > *': {

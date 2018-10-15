@@ -1,6 +1,6 @@
 /* @flow */
-import TextArea from '../../../../../library/TextArea';
-import DemoLayout from '../../common/DemoLayout';
+import TextArea from '../../../../../../library/TextArea';
+import DemoLayout from '../../../common/DemoLayout';
 
 export default {
   id: 'variants',

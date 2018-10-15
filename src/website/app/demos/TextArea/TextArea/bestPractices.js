@@ -1,9 +1,11 @@
 /* @flow */
 import React from 'react';
-import FormField from '../../../../library/Form/FormField';
-import TextArea from '../../../../library/TextArea';
+import FormField from '../../../../../library/Form/FormField';
+import TextArea from '../../../../../library/TextArea';
 
-export default [
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
+
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Wrap TextArea in a [FormField](/components/form-field) and provide a
@@ -28,3 +30,5 @@ accessible and a poor experience.`,
     example: <TextArea placeholder="Comments" />
   }
 ];
+
+export default bestPractices;
