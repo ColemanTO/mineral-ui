@@ -5,17 +5,21 @@ import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 import { isRenderProp, rtlTextAlign } from '../utils';
 import { TableContext } from './TableBase';
 
-import { type RenderFn } from './Table';
+import type { RenderFn, Row } from './Table';
 
 type Props = {
   /** Rendered content */
   children?: React$Node,
+  /** Column key - for use with rowData */
+  columnKey?: string,
   /** @Private Rendered element */
   element?: string,
   /** Remove padding */
   noPadding?: boolean,
   /** See Table's Column type */
   primary?: boolean,
+  /** Row data - for use with custom render */
+  rowData?: Row,
   /**
    * Provides custom rendering control. See the
    * [custom cell example](/components/table/#custom-cell) and

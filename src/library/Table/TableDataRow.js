@@ -40,6 +40,8 @@ export default class TableDataRow extends Component<Props> {
     const cells = columns.map(({ cell: render, key, ...restColumn }) => {
       const cellProps = {
         children: data[key],
+        columnKey: key,
+        rowData: data,
         key,
         render,
         ...restColumn
