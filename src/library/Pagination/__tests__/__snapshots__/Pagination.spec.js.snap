@@ -16331,14 +16331,34 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                             className="emotion-27"
                                           >
                                             <TableCell
+                                              columnKey="name"
                                               content="Mineral"
                                               element="td"
                                               key="name"
+                                              rowData={
+                                                Object {
+                                                  "color": "green",
+                                                  "crystalHabit": "botryoidal, stalactitic",
+                                                  "crystalSystem": "monoclinic",
+                                                  "luster": "adamantine",
+                                                  "name": "Malachite",
+                                                }
+                                              }
                                             >
                                               <TableCell
+                                                columnKey="name"
                                                 content="Mineral"
                                                 density="compact"
                                                 element="td"
+                                                rowData={
+                                                  Object {
+                                                    "color": "green",
+                                                    "crystalHabit": "botryoidal, stalactitic",
+                                                    "crystalSystem": "monoclinic",
+                                                    "luster": "adamantine",
+                                                    "name": "Malachite",
+                                                  }
+                                                }
                                               >
                                                 <td
                                                   className="emotion-29"
@@ -16348,14 +16368,34 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                               </TableCell>
                                             </TableCell>
                                             <TableCell
+                                              columnKey="color"
                                               content="Color"
                                               element="td"
                                               key="color"
+                                              rowData={
+                                                Object {
+                                                  "color": "green",
+                                                  "crystalHabit": "botryoidal, stalactitic",
+                                                  "crystalSystem": "monoclinic",
+                                                  "luster": "adamantine",
+                                                  "name": "Malachite",
+                                                }
+                                              }
                                             >
                                               <TableCell
+                                                columnKey="color"
                                                 content="Color"
                                                 density="compact"
                                                 element="td"
+                                                rowData={
+                                                  Object {
+                                                    "color": "green",
+                                                    "crystalHabit": "botryoidal, stalactitic",
+                                                    "crystalSystem": "monoclinic",
+                                                    "luster": "adamantine",
+                                                    "name": "Malachite",
+                                                  }
+                                                }
                                               >
                                                 <td
                                                   className="emotion-29"
@@ -16365,14 +16405,34 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                               </TableCell>
                                             </TableCell>
                                             <TableCell
+                                              columnKey="luster"
                                               content="Luster"
                                               element="td"
                                               key="luster"
+                                              rowData={
+                                                Object {
+                                                  "color": "green",
+                                                  "crystalHabit": "botryoidal, stalactitic",
+                                                  "crystalSystem": "monoclinic",
+                                                  "luster": "adamantine",
+                                                  "name": "Malachite",
+                                                }
+                                              }
                                             >
                                               <TableCell
+                                                columnKey="luster"
                                                 content="Luster"
                                                 density="compact"
                                                 element="td"
+                                                rowData={
+                                                  Object {
+                                                    "color": "green",
+                                                    "crystalHabit": "botryoidal, stalactitic",
+                                                    "crystalSystem": "monoclinic",
+                                                    "luster": "adamantine",
+                                                    "name": "Malachite",
+                                                  }
+                                                }
                                               >
                                                 <td
                                                   className="emotion-29"
@@ -16382,14 +16442,34 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                               </TableCell>
                                             </TableCell>
                                             <TableCell
+                                              columnKey="crystalSystem"
                                               content="Crystal System"
                                               element="td"
                                               key="crystalSystem"
+                                              rowData={
+                                                Object {
+                                                  "color": "green",
+                                                  "crystalHabit": "botryoidal, stalactitic",
+                                                  "crystalSystem": "monoclinic",
+                                                  "luster": "adamantine",
+                                                  "name": "Malachite",
+                                                }
+                                              }
                                             >
                                               <TableCell
+                                                columnKey="crystalSystem"
                                                 content="Crystal System"
                                                 density="compact"
                                                 element="td"
+                                                rowData={
+                                                  Object {
+                                                    "color": "green",
+                                                    "crystalHabit": "botryoidal, stalactitic",
+                                                    "crystalSystem": "monoclinic",
+                                                    "luster": "adamantine",
+                                                    "name": "Malachite",
+                                                  }
+                                                }
                                               >
                                                 <td
                                                   className="emotion-29"
@@ -16399,14 +16479,34 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                               </TableCell>
                                             </TableCell>
                                             <TableCell
+                                              columnKey="crystalHabit"
                                               content="Crystal Habit"
                                               element="td"
                                               key="crystalHabit"
+                                              rowData={
+                                                Object {
+                                                  "color": "green",
+                                                  "crystalHabit": "botryoidal, stalactitic",
+                                                  "crystalSystem": "monoclinic",
+                                                  "luster": "adamantine",
+                                                  "name": "Malachite",
+                                                }
+                                              }
                                             >
                                               <TableCell
+                                                columnKey="crystalHabit"
                                                 content="Crystal Habit"
                                                 density="compact"
                                                 element="td"
+                                                rowData={
+                                                  Object {
+                                                    "color": "green",
+                                                    "crystalHabit": "botryoidal, stalactitic",
+                                                    "crystalSystem": "monoclinic",
+                                                    "luster": "adamantine",
+                                                    "name": "Malachite",
+                                                  }
+                                                }
                                               >
                                                 <td
                                                   className="emotion-29"
@@ -16477,14 +16577,34 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                             className="emotion-27"
                                           >
                                             <TableCell
+                                              columnKey="name"
                                               content="Mineral"
                                               element="td"
                                               key="name"
+                                              rowData={
+                                                Object {
+                                                  "color": "colorless",
+                                                  "crystalHabit": "coarse, granular",
+                                                  "crystalSystem": "isometric",
+                                                  "luster": "vitreous",
+                                                  "name": "Fluorite",
+                                                }
+                                              }
                                             >
                                               <TableCell
+                                                columnKey="name"
                                                 content="Mineral"
                                                 density="compact"
                                                 element="td"
+                                                rowData={
+                                                  Object {
+                                                    "color": "colorless",
+                                                    "crystalHabit": "coarse, granular",
+                                                    "crystalSystem": "isometric",
+                                                    "luster": "vitreous",
+                                                    "name": "Fluorite",
+                                                  }
+                                                }
                                               >
                                                 <td
                                                   className="emotion-29"
@@ -16494,14 +16614,34 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                               </TableCell>
                                             </TableCell>
                                             <TableCell
+                                              columnKey="color"
                                               content="Color"
                                               element="td"
                                               key="color"
+                                              rowData={
+                                                Object {
+                                                  "color": "colorless",
+                                                  "crystalHabit": "coarse, granular",
+                                                  "crystalSystem": "isometric",
+                                                  "luster": "vitreous",
+                                                  "name": "Fluorite",
+                                                }
+                                              }
                                             >
                                               <TableCell
+                                                columnKey="color"
                                                 content="Color"
                                                 density="compact"
                                                 element="td"
+                                                rowData={
+                                                  Object {
+                                                    "color": "colorless",
+                                                    "crystalHabit": "coarse, granular",
+                                                    "crystalSystem": "isometric",
+                                                    "luster": "vitreous",
+                                                    "name": "Fluorite",
+                                                  }
+                                                }
                                               >
                                                 <td
                                                   className="emotion-29"
@@ -16511,14 +16651,34 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                               </TableCell>
                                             </TableCell>
                                             <TableCell
+                                              columnKey="luster"
                                               content="Luster"
                                               element="td"
                                               key="luster"
+                                              rowData={
+                                                Object {
+                                                  "color": "colorless",
+                                                  "crystalHabit": "coarse, granular",
+                                                  "crystalSystem": "isometric",
+                                                  "luster": "vitreous",
+                                                  "name": "Fluorite",
+                                                }
+                                              }
                                             >
                                               <TableCell
+                                                columnKey="luster"
                                                 content="Luster"
                                                 density="compact"
                                                 element="td"
+                                                rowData={
+                                                  Object {
+                                                    "color": "colorless",
+                                                    "crystalHabit": "coarse, granular",
+                                                    "crystalSystem": "isometric",
+                                                    "luster": "vitreous",
+                                                    "name": "Fluorite",
+                                                  }
+                                                }
                                               >
                                                 <td
                                                   className="emotion-29"
@@ -16528,14 +16688,34 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                               </TableCell>
                                             </TableCell>
                                             <TableCell
+                                              columnKey="crystalSystem"
                                               content="Crystal System"
                                               element="td"
                                               key="crystalSystem"
+                                              rowData={
+                                                Object {
+                                                  "color": "colorless",
+                                                  "crystalHabit": "coarse, granular",
+                                                  "crystalSystem": "isometric",
+                                                  "luster": "vitreous",
+                                                  "name": "Fluorite",
+                                                }
+                                              }
                                             >
                                               <TableCell
+                                                columnKey="crystalSystem"
                                                 content="Crystal System"
                                                 density="compact"
                                                 element="td"
+                                                rowData={
+                                                  Object {
+                                                    "color": "colorless",
+                                                    "crystalHabit": "coarse, granular",
+                                                    "crystalSystem": "isometric",
+                                                    "luster": "vitreous",
+                                                    "name": "Fluorite",
+                                                  }
+                                                }
                                               >
                                                 <td
                                                   className="emotion-29"
@@ -16545,14 +16725,34 @@ exports[`Pagination demo examples Snapshots: page-sizer 1`] = `
                                               </TableCell>
                                             </TableCell>
                                             <TableCell
+                                              columnKey="crystalHabit"
                                               content="Crystal Habit"
                                               element="td"
                                               key="crystalHabit"
+                                              rowData={
+                                                Object {
+                                                  "color": "colorless",
+                                                  "crystalHabit": "coarse, granular",
+                                                  "crystalSystem": "isometric",
+                                                  "luster": "vitreous",
+                                                  "name": "Fluorite",
+                                                }
+                                              }
                                             >
                                               <TableCell
+                                                columnKey="crystalHabit"
                                                 content="Crystal Habit"
                                                 density="compact"
                                                 element="td"
+                                                rowData={
+                                                  Object {
+                                                    "color": "colorless",
+                                                    "crystalHabit": "coarse, granular",
+                                                    "crystalSystem": "isometric",
+                                                    "luster": "vitreous",
+                                                    "name": "Fluorite",
+                                                  }
+                                                }
                                               >
                                                 <td
                                                   className="emotion-29"
@@ -21439,14 +21639,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                   className="emotion-27"
                                                 >
                                                   <TableCell
+                                                    columnKey="اسم"
                                                     content="معدني"
                                                     element="td"
                                                     key="اسم"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "الملكيت",
+                                                        "اللون": "الخضر المختلفة",
+                                                        "النظام": "أحادي الميلان",
+                                                        "بريق": "الأسمنت المسلح",
+                                                        "عادة": "إبري",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="اسم"
                                                       content="معدني"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "الملكيت",
+                                                          "اللون": "الخضر المختلفة",
+                                                          "النظام": "أحادي الميلان",
+                                                          "بريق": "الأسمنت المسلح",
+                                                          "عادة": "إبري",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21456,14 +21676,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="اللون"
                                                     content="اللون"
                                                     element="td"
                                                     key="اللون"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "الملكيت",
+                                                        "اللون": "الخضر المختلفة",
+                                                        "النظام": "أحادي الميلان",
+                                                        "بريق": "الأسمنت المسلح",
+                                                        "عادة": "إبري",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="اللون"
                                                       content="اللون"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "الملكيت",
+                                                          "اللون": "الخضر المختلفة",
+                                                          "النظام": "أحادي الميلان",
+                                                          "بريق": "الأسمنت المسلح",
+                                                          "عادة": "إبري",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21473,14 +21713,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="بريق"
                                                     content="بريق"
                                                     element="td"
                                                     key="بريق"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "الملكيت",
+                                                        "اللون": "الخضر المختلفة",
+                                                        "النظام": "أحادي الميلان",
+                                                        "بريق": "الأسمنت المسلح",
+                                                        "عادة": "إبري",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="بريق"
                                                       content="بريق"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "الملكيت",
+                                                          "اللون": "الخضر المختلفة",
+                                                          "النظام": "أحادي الميلان",
+                                                          "بريق": "الأسمنت المسلح",
+                                                          "عادة": "إبري",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21490,14 +21750,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="النظام"
                                                     content="نظام الكريستال"
                                                     element="td"
                                                     key="النظام"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "الملكيت",
+                                                        "اللون": "الخضر المختلفة",
+                                                        "النظام": "أحادي الميلان",
+                                                        "بريق": "الأسمنت المسلح",
+                                                        "عادة": "إبري",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="النظام"
                                                       content="نظام الكريستال"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "الملكيت",
+                                                          "اللون": "الخضر المختلفة",
+                                                          "النظام": "أحادي الميلان",
+                                                          "بريق": "الأسمنت المسلح",
+                                                          "عادة": "إبري",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21507,14 +21787,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="عادة"
                                                     content="الكريستال العادة"
                                                     element="td"
                                                     key="عادة"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "الملكيت",
+                                                        "اللون": "الخضر المختلفة",
+                                                        "النظام": "أحادي الميلان",
+                                                        "بريق": "الأسمنت المسلح",
+                                                        "عادة": "إبري",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="عادة"
                                                       content="الكريستال العادة"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "الملكيت",
+                                                          "اللون": "الخضر المختلفة",
+                                                          "النظام": "أحادي الميلان",
+                                                          "بريق": "الأسمنت المسلح",
+                                                          "عادة": "إبري",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21585,14 +21885,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                   className="emotion-27"
                                                 >
                                                   <TableCell
+                                                    columnKey="اسم"
                                                     content="معدني"
                                                     element="td"
                                                     key="اسم"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "الفلوريت معدن متبلور",
+                                                        "اللون": "عديم اللون",
+                                                        "النظام": "متساوي القياس",
+                                                        "بريق": "زجاجي",
+                                                        "عادة": "عقدي",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="اسم"
                                                       content="معدني"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "الفلوريت معدن متبلور",
+                                                          "اللون": "عديم اللون",
+                                                          "النظام": "متساوي القياس",
+                                                          "بريق": "زجاجي",
+                                                          "عادة": "عقدي",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21602,14 +21922,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="اللون"
                                                     content="اللون"
                                                     element="td"
                                                     key="اللون"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "الفلوريت معدن متبلور",
+                                                        "اللون": "عديم اللون",
+                                                        "النظام": "متساوي القياس",
+                                                        "بريق": "زجاجي",
+                                                        "عادة": "عقدي",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="اللون"
                                                       content="اللون"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "الفلوريت معدن متبلور",
+                                                          "اللون": "عديم اللون",
+                                                          "النظام": "متساوي القياس",
+                                                          "بريق": "زجاجي",
+                                                          "عادة": "عقدي",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21619,14 +21959,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="بريق"
                                                     content="بريق"
                                                     element="td"
                                                     key="بريق"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "الفلوريت معدن متبلور",
+                                                        "اللون": "عديم اللون",
+                                                        "النظام": "متساوي القياس",
+                                                        "بريق": "زجاجي",
+                                                        "عادة": "عقدي",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="بريق"
                                                       content="بريق"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "الفلوريت معدن متبلور",
+                                                          "اللون": "عديم اللون",
+                                                          "النظام": "متساوي القياس",
+                                                          "بريق": "زجاجي",
+                                                          "عادة": "عقدي",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21636,14 +21996,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="النظام"
                                                     content="نظام الكريستال"
                                                     element="td"
                                                     key="النظام"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "الفلوريت معدن متبلور",
+                                                        "اللون": "عديم اللون",
+                                                        "النظام": "متساوي القياس",
+                                                        "بريق": "زجاجي",
+                                                        "عادة": "عقدي",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="النظام"
                                                       content="نظام الكريستال"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "الفلوريت معدن متبلور",
+                                                          "اللون": "عديم اللون",
+                                                          "النظام": "متساوي القياس",
+                                                          "بريق": "زجاجي",
+                                                          "عادة": "عقدي",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21653,14 +22033,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="عادة"
                                                     content="الكريستال العادة"
                                                     element="td"
                                                     key="عادة"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "الفلوريت معدن متبلور",
+                                                        "اللون": "عديم اللون",
+                                                        "النظام": "متساوي القياس",
+                                                        "بريق": "زجاجي",
+                                                        "عادة": "عقدي",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="عادة"
                                                       content="الكريستال العادة"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "الفلوريت معدن متبلور",
+                                                          "اللون": "عديم اللون",
+                                                          "النظام": "متساوي القياس",
+                                                          "بريق": "زجاجي",
+                                                          "عادة": "عقدي",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21731,14 +22131,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                   className="emotion-27"
                                                 >
                                                   <TableCell
+                                                    columnKey="اسم"
                                                     content="معدني"
                                                     element="td"
                                                     key="اسم"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "المغنتيت",
+                                                        "اللون": "أسود",
+                                                        "النظام": "متساوي القياس",
+                                                        "بريق": "معدني",
+                                                        "عادة": "ثماني السطوح",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="اسم"
                                                       content="معدني"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "المغنتيت",
+                                                          "اللون": "أسود",
+                                                          "النظام": "متساوي القياس",
+                                                          "بريق": "معدني",
+                                                          "عادة": "ثماني السطوح",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21748,14 +22168,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="اللون"
                                                     content="اللون"
                                                     element="td"
                                                     key="اللون"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "المغنتيت",
+                                                        "اللون": "أسود",
+                                                        "النظام": "متساوي القياس",
+                                                        "بريق": "معدني",
+                                                        "عادة": "ثماني السطوح",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="اللون"
                                                       content="اللون"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "المغنتيت",
+                                                          "اللون": "أسود",
+                                                          "النظام": "متساوي القياس",
+                                                          "بريق": "معدني",
+                                                          "عادة": "ثماني السطوح",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21765,14 +22205,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="بريق"
                                                     content="بريق"
                                                     element="td"
                                                     key="بريق"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "المغنتيت",
+                                                        "اللون": "أسود",
+                                                        "النظام": "متساوي القياس",
+                                                        "بريق": "معدني",
+                                                        "عادة": "ثماني السطوح",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="بريق"
                                                       content="بريق"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "المغنتيت",
+                                                          "اللون": "أسود",
+                                                          "النظام": "متساوي القياس",
+                                                          "بريق": "معدني",
+                                                          "عادة": "ثماني السطوح",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21782,14 +22242,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="النظام"
                                                     content="نظام الكريستال"
                                                     element="td"
                                                     key="النظام"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "المغنتيت",
+                                                        "اللون": "أسود",
+                                                        "النظام": "متساوي القياس",
+                                                        "بريق": "معدني",
+                                                        "عادة": "ثماني السطوح",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="النظام"
                                                       content="نظام الكريستال"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "المغنتيت",
+                                                          "اللون": "أسود",
+                                                          "النظام": "متساوي القياس",
+                                                          "بريق": "معدني",
+                                                          "عادة": "ثماني السطوح",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
@@ -21799,14 +22279,34 @@ exports[`Pagination demo examples Snapshots: rtl 1`] = `
                                                     </TableCell>
                                                   </TableCell>
                                                   <TableCell
+                                                    columnKey="عادة"
                                                     content="الكريستال العادة"
                                                     element="td"
                                                     key="عادة"
+                                                    rowData={
+                                                      Object {
+                                                        "اسم": "المغنتيت",
+                                                        "اللون": "أسود",
+                                                        "النظام": "متساوي القياس",
+                                                        "بريق": "معدني",
+                                                        "عادة": "ثماني السطوح",
+                                                      }
+                                                    }
                                                   >
                                                     <TableCell
+                                                      columnKey="عادة"
                                                       content="الكريستال العادة"
                                                       density="compact"
                                                       element="td"
+                                                      rowData={
+                                                        Object {
+                                                          "اسم": "المغنتيت",
+                                                          "اللون": "أسود",
+                                                          "النظام": "متساوي القياس",
+                                                          "بريق": "معدني",
+                                                          "عادة": "ثماني السطوح",
+                                                        }
+                                                      }
                                                     >
                                                       <td
                                                         className="emotion-29"
