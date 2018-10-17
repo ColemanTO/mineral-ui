@@ -1,10 +1,12 @@
 /* @flow */
 import React, { Component } from 'react';
 import { findDOMNode } from 'react-dom';
-import { createStyledComponent } from '../../../../library/styles';
-import Button from '../../../../library/Button';
-import Heading from '../../SiteHeading';
-import Popover from '../../../../library/Popover';
+import { createStyledComponent } from '../../../../../library/styles';
+import Button from '../../../../../library/Button';
+import Heading from '../../../SiteHeading';
+import Popover from '../../../../../library/Popover';
+
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
 
 const styles = {
   badContentLayout: {
@@ -156,7 +158,7 @@ const BadContent = (
   </BadContentLayout>
 );
 
-export default [
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description:
@@ -175,3 +177,5 @@ must display wide content, add a \`max-width\` value to constrain the layout.`,
     )
   }
 ];
+
+export default bestPractices;

@@ -1,9 +1,9 @@
 /* @flow */
-import { createStyledComponent, pxToEm } from '../../../../../library/styles';
-import Button from '../../../../../library/Button';
-import DemoContent from '../components/DemoContent';
-import Popover from '../../../../../library/Popover';
-import { ThemeProvider } from '../../../../../library/themes';
+import { createStyledComponent, pxToEm } from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button';
+import DemoContent from '../../common/DemoContent';
+import Popover from '../../../../../../library/Popover';
+import { ThemeProvider } from '../../../../../../library/themes';
 
 const DemoLayout = createStyledComponent('div', {
   paddingBottom: pxToEm(130)

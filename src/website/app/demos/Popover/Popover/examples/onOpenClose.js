@@ -1,7 +1,7 @@
 /* @flow */
-import Button from '../../../../../library/Button';
-import Popover from '../../../../../library/Popover';
-import DemoContent from '../components/DemoContent';
+import Button from '../../../../../../library/Button';
+import Popover from '../../../../../../library/Popover';
+import DemoContent from '../../common/DemoContent';
 
 export default {
   id: 'on-open-close',

@@ -7,7 +7,7 @@ import Popover from '../../../../../../library/Popover';
 import { createStyledComponent } from '../../../../../../library/styles';
 import Tooltip from '../../../../../../library/Tooltip';
 import data from '../../../Menu/common/menuData';
-import DemoContent from '../../../Popover/components/DemoContent';
+import DemoContent from '../../../Popover/common/DemoContent';
 
 const FixedWidthLayout = createStyledComponent('div', {
   '@media only screen and (max-width: 450px)': {

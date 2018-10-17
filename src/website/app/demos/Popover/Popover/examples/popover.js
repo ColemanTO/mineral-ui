@@ -1,7 +1,7 @@
 /* @flow */
-import Button from '../../../../../library/Button';
-import DemoContent from '../components/DemoContent';
-import Popover from '../../../../../library/Popover';
+import Button from '../../../../../../library/Button';
+import DemoContent from '../../common/DemoContent';
+import Popover from '../../../../../../library/Popover';
 
 export default {
   id: 'basic',

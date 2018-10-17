@@ -1,12 +1,10 @@
 /* @flow */
-type OptionsT = {
-  delimiter: string,
-  quote: string
-};
-
 export default (
   array: Array<any>,
-  options?: OptionsT = {
+  options?: {
+    delimiter: string,
+    quote: string
+  } = {
     delimiter: ' | ',
     quote: `'`
   }

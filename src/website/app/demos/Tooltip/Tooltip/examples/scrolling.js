@@ -1,6 +1,6 @@
 /* @flow */
 import Button from '../../../../../../library/Button';
-import ScrollParent from '../../../Popover/components/ScrollBox';
+import ScrollParent from '../../../Popover/common/ScrollBox';
 import Tooltip from '../../../../../../library/Tooltip';
 
 export default {

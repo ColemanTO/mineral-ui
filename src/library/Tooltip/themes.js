@@ -1,6 +1,6 @@
 /* @flow */
 import { mapComponentThemes } from '../themes';
-import { componentTheme as popoverComponentTheme } from '../Popover/Popover';
+import { popoverTheme } from '../Popover/themes';
 
 import type { TooltipThemeFn } from './types';
 
@@ -9,7 +9,7 @@ export const tooltipTheme: TooltipThemeFn = (baseTheme) =>
   mapComponentThemes(
     {
       name: 'Popover',
-      theme: popoverComponentTheme(baseTheme)
+      theme: popoverTheme(baseTheme)
     },
     {
       name: 'Tooltip',

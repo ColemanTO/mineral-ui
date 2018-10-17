@@ -1,8 +1,8 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../library/styles';
-import Button from '../../../../../library/Button';
-import DemoContent from '../components/DemoContent';
-import Popover from '../../../../../library/Popover';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button';
+import DemoContent from '../../common/DemoContent';
+import Popover from '../../../../../../library/Popover';
 
 const DemoLayout = createStyledComponent('div', {
   padding: '5em 0'

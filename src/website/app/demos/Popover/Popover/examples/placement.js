@@ -1,8 +1,8 @@
 /* @flow */
-import Button from '../../../../../library/Button';
-import { createStyledComponent } from '../../../../../library/styles';
-import DemoContent from '../components/DemoContent';
-import Popover from '../../../../../library/Popover';
+import Button from '../../../../../../library/Button';
+import { createStyledComponent } from '../../../../../../library/styles';
+import DemoContent from '../../common/DemoContent';
+import Popover from '../../../../../../library/Popover';
 
 const DemoLayout = createStyledComponent('div', {
   height: '350px',

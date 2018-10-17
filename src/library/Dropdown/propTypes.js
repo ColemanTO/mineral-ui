@@ -10,7 +10,6 @@ import {
   string
 } from 'prop-types';
 import { PLACEMENT } from './constants';
-
 import { menuItemsPropType, menuItemGroupsPropType } from '../Menu/propTypes';
 
 export const dropdownPropTypes = {
@@ -30,13 +29,5 @@ export const dropdownPropTypes = {
   onOpen: func,
   placement: oneOf(Object.keys(PLACEMENT)),
   usePortal: bool,
-  wide: bool
-};
-
-export const dropdownContentPropTypes = {
-  children: node.isRequired,
-  id: string.isRequired,
-  modifiers: object,
-  placement: oneOf(Object.keys(PLACEMENT)),
   wide: bool
 };

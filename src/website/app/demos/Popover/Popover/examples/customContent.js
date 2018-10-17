@@ -1,11 +1,11 @@
 /* @flow */
 
-import { createStyledComponent } from '../../../../../library/styles';
-import Button from '../../../../../library/Button';
-import Popover from '../../../../../library/Popover';
-import Popper from '../../../../../library/Popover/RtlPopper';
-import DemoContent from '../components/DemoContent';
-import renderPropsDescription from '../../common/renderPropsDescription';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Button from '../../../../../../library/Button';
+import Popover from '../../../../../../library/Popover';
+import Popper from '../../../../../../library/Popover/RtlPopper';
+import DemoContent from '../../common/DemoContent';
+import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {
   id: 'custom-content',
