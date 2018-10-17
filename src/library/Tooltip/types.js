@@ -33,9 +33,9 @@ export type TooltipState = {
   isOpen: boolean
 };
 
-export type PropGetter = (props?: Object) => Object;
-export type RenderFn = (props?: RenderProps) => React$Node;
-type RenderProps = {
+export type TooltipPropGetter = (props?: Object) => Object;
+export type TooltipRenderFn = (props?: TooltipRenderProps) => React$Node;
+type TooltipRenderProps = {
   props: Object
 };
 

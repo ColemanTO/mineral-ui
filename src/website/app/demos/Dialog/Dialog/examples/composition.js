@@ -8,7 +8,7 @@ import Popover from '../../../../../../library/Popover';
 import Select from '../../../../../../library/Select';
 import Text from '../../../../../../library/Text';
 import Tooltip from '../../../../../../library/Tooltip';
-import { statesData as data } from '../../../Select/components/selectData';
+import { statesData as data } from '../../../Select/common/selectData';
 
 export default {
   id: 'composition',

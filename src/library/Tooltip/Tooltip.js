@@ -10,8 +10,8 @@ import type {
   TooltipDefaultProps,
   TooltipProps,
   TooltipState,
-  RenderFn,
-  PropGetter
+  TooltipRenderFn,
+  TooltipPropGetter
 } from './types';
 
 export default class Tooltip extends Component<TooltipProps, TooltipState> {
@@ -63,7 +63,7 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
     return <Root {...popoverProps} />;
   }
 
-  getTriggerProps: PropGetter = (props = {}) => {
+  getTriggerProps: TooltipPropGetter = (props = {}) => {
     return {
       ...props,
       'aria-expanded': undefined,
@@ -93,7 +93,7 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
     return cloneElement(child, this.getTriggerProps(child.props));
   };
 
-  getContentProps: PropGetter = (props = {}) => {
+  getContentProps: TooltipPropGetter = (props = {}) => {
     const { content } = this.props;
     const { tabIndex: ignoreTabIndex, ...restProps } = props;
 
@@ -105,7 +105,7 @@ export default class Tooltip extends Component<TooltipProps, TooltipState> {
     };
   };
 
-  renderContent: RenderFn = ({ props } = {}) => {
+  renderContent: TooltipRenderFn = ({ props } = {}) => {
     return <PopoverContent {...this.getContentProps(props)} />;
   };
 

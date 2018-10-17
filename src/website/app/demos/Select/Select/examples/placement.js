@@ -1,7 +1,7 @@
 /* @flow */
-import { createStyledComponent } from '../../../../../library/styles';
-import Select from '../../../../../library/Select';
-import { basicData as data } from '../components/selectData';
+import { createStyledComponent } from '../../../../../../library/styles';
+import Select from '../../../../../../library/Select';
+import { basicData as data } from '../../common/selectData';
 
 const DemoLayout = createStyledComponent('div', {
   height: '175px',

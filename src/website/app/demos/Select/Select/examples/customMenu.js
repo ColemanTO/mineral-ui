@@ -1,14 +1,14 @@
 /* @flow */
 
-import { createStyledComponent } from '../../../../../library/styles';
-import FormField from '../../../../../library/Form/FormField';
+import { createStyledComponent } from '../../../../../../library/styles';
+import FormField from '../../../../../../library/Form/FormField';
 import IconSearch from 'mineral-ui-icons/IconSearch';
-import Select from '../../../../../library/Select';
-import Menu from '../../../../../library/Menu';
-import TextInput from '../../../../../library/TextInput';
-import Text from '../../../../../library/Text';
-import { basicData as data } from '../components/selectData';
-import renderPropsDescription from '../../common/renderPropsDescription';
+import Select from '../../../../../../library/Select';
+import Menu from '../../../../../../library/Menu';
+import TextInput from '../../../../../../library/TextInput';
+import Text from '../../../../../../library/Text';
+import { basicData as data } from '../../common/selectData';
+import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {
   id: 'custom-menu',

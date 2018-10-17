@@ -1,9 +1,9 @@
 /* @flow */
 import { Component } from 'react';
-import Select from '../../../../../library/Select';
-import Button from '../../../../../library/Button';
-import DemoLayout from '../components/DemoLayout';
-import { basicData as data } from '../components/selectData';
+import Select from '../../../../../../library/Select';
+import Button from '../../../../../../library/Button';
+import DemoLayout from '../../common/DemoLayout';
+import { basicData as data } from '../../common/selectData';
 
 export default {
   id: 'trigger-ref',

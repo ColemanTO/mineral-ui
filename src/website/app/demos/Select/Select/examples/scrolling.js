@@ -1,9 +1,9 @@
 /* @flow */
 import React, { Component } from 'react';
-import { pxToEm } from '../../../../../library/styles';
-import ScrollParent from '../../Popover/common/ScrollBox';
-import _Select from '../../../../../library/Select';
-import { basicData as data } from '../components/selectData';
+import { pxToEm } from '../../../../../../library/styles';
+import ScrollParent from '../../../Popover/common/ScrollBox';
+import _Select from '../../../../../../library/Select';
+import { basicData as data } from '../../common/selectData';
 
 type Props = any;
 

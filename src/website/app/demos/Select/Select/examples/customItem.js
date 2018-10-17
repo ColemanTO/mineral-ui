@@ -1,8 +1,8 @@
 /* @flow */
 
-import Select from '../../../../../library/Select';
-import item from '../../Menu/common/customItem';
-import renderPropsDescription from '../../common/renderPropsDescription';
+import Select from '../../../../../../library/Select';
+import item from '../../../Menu/common/customItem';
+import renderPropsDescription from '../../../common/renderPropsDescription';
 
 export default {
   id: 'custom-item',

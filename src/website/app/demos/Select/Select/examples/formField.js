@@ -1,8 +1,8 @@
 /* @flow */
-import { FormField } from '../../../../../library/Form';
-import Select from '../../../../../library/Select';
-import DemoLayout from '../components/DemoLayout';
-import { statesData as data } from '../components/selectData';
+import { FormField } from '../../../../../../library/Form';
+import Select from '../../../../../../library/Select';
+import DemoLayout from '../../common/DemoLayout';
+import { statesData as data } from '../../common/selectData';
 
 export default {
   id: 'form-field',

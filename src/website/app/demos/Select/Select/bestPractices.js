@@ -1,10 +1,10 @@
 /* @flow */
 import React from 'react';
-import Box from '../../../../library/Box';
-import Flex, { FlexItem } from '../../../../library/Flex';
-import Select from '../../../../library/Select';
-import TextInput from '../../../../library/TextInput/';
-import { FormField } from '../../../../library/Form';
+import Box from '../../../../../library/Box';
+import Flex, { FlexItem } from '../../../../../library/Flex';
+import Select from '../../../../../library/Select';
+import TextInput from '../../../../../library/TextInput/';
+import { FormField } from '../../../../../library/Form';
 import {
   basicData,
   currencyData,
@@ -12,9 +12,11 @@ import {
   mineralData,
   sizeData,
   wrappingData
-} from './components/selectData';
+} from '../common/selectData';
 
-export default [
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
+
+const bestPractices: BestPractices = [
   {
     type: 'dont',
     description: `Don't rely on placeholder text alone to communicate purpose as
@@ -96,3 +98,5 @@ options of differing size can cause confusion for users.`,
     )
   }
 ];
+
+export default bestPractices;

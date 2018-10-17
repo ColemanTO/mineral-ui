@@ -1,7 +1,7 @@
 /* @flow */
-import DemoLayout from '../components/DemoLayout';
-import Select from '../../../../../library/Select';
-import { basicData as data } from '../components/selectData';
+import DemoLayout from '../../common/DemoLayout';
+import Select from '../../../../../../library/Select';
+import { basicData as data } from '../../common/selectData';
 
 export default {
   id: 'variants',

@@ -8,6 +8,7 @@ import Portal from '../Portal';
 import PopoverTrigger from './PopoverTrigger';
 import PopoverContent from './PopoverContent';
 import { Popover as Root } from './styled';
+import { PLACEMENT } from './constants';
 
 import { popoverPropTypes } from './propTypes';
 import type {
@@ -23,7 +24,7 @@ export default class Popover extends Component<PopoverProps, PopoverState> {
   static defaultProps: PopoverDefaultProps = {
     focusTriggerOnClose: true,
     hasArrow: true,
-    placement: 'bottom'
+    placement: PLACEMENT.bottom
   };
 
   static propTypes = popoverPropTypes;

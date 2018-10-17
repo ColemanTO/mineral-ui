@@ -1,7 +1,7 @@
 /* @flow */
 import { Component } from 'react';
-import Select from '../../../../../library/Select';
-import { basicData as data } from '../components/selectData';
+import Select from '../../../../../../library/Select';
+import { basicData as data } from '../../common/selectData';
 
 export default {
   id: 'controlled',

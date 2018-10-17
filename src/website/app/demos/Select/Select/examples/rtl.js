@@ -1,8 +1,8 @@
 /* @flow */
-import { ThemeProvider } from '../../../../../library/themes';
-import Select from '../../../../../library/Select';
-import DemoLayout from '../components/DemoLayout';
-import { rtlData as data } from '../components/selectData';
+import { ThemeProvider } from '../../../../../../library/themes';
+import Select from '../../../../../../library/Select';
+import DemoLayout from '../../common/DemoLayout';
+import { rtlData as data } from '../../common/selectData';
 
 /*
  * Note: The sample text used in the example is Arabic.

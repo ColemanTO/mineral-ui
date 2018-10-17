@@ -4,208 +4,37 @@ import { findDOMNode } from 'react-dom';
 import deepEqual from 'react-fast-compare';
 import memoizeOne from 'memoize-one';
 import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
-import { createStyledComponent, pxToEm } from '../styles';
-import { createThemedComponent, mapComponentThemes } from '../themes';
 import { composeEventHandlers, generateId, isRenderProp } from '../utils';
 import ModifiersContext from '../Dialog/ModifiersContext';
-import { dropdownTheme } from '../Dropdown/themes';
-import Dropdown from '../Dropdown/Dropdown';
 import ItemMatcher from '../Dropdown/ItemMatcher';
 import Menu, { getItems } from '../Menu/Menu';
 import MenuItem from '../Menu/MenuItem';
-import SelectTrigger, {
-  componentTheme as selectTriggerComponentTheme
-} from './SelectTrigger';
+import SelectTrigger from './SelectTrigger';
+import { PLACEMENT, SIZE } from './constants';
+import { Select as Root, contentWidthModifier } from './styled';
 
-import type { MenuItemType, MenuItems, MenuItemGroups } from '../Menu/types';
+import { selectPropTypes } from './propTypes';
+import type { MenuItemType, MenuItems } from '../Menu/types';
+import type {
+  SelectProps,
+  SelectDefaultProps,
+  SelectPropGetter,
+  SelectRenderFn,
+  SelectState,
+  SelectStateAndHelpers
+} from './types';
 
-type Props = {
-  /**
-   * Data from which the [Menu](/components/menu#data) will be constructed
-   * (see [example](#data))
-   */
-  data: MenuItems | MenuItemGroups,
-  /**
-   * Index of item to be highlighted upon initialization. Primarily for
-   * use with uncontrolled components.
-   */
-  defaultHighlightedIndex?: number,
-  /**
-   * Open the Select upon initialization. Primarily for use with uncontrolled
-   * components.
-   */
-  defaultIsOpen?: boolean,
-  /**
-   * Item selected upon initialization. Primarily for use with uncontrolled
-   * components.
-   */
-  defaultSelectedItem?: MenuItemType,
-  /** Disables the control */
-  disabled?: boolean,
-  /** Index of the highlighted item. For use with controlled components. */
-  highlightedIndex?: number,
-  /** Id of the Select */
-  id?: string,
-  /** Indicates that the value of the element is invalid */
-  invalid?: boolean,
-  /** Determines whether the Select is open. For use with controlled components. */
-  isOpen?: boolean,
-  /**
-   * Provides custom rendering control for the items. See the
-   * [custom item example](/components/select#custom-item) and
-   * our [render props guide](/render-props).
-   */
-  item?: RenderFn,
-  /**
-   * Specifies a key in the item data that gives an item its unique identity. See
-   * the [React docs](https://reactjs.org/docs/lists-and-keys.html#keys).
-   */
-  itemKey?: string,
-  /**
-   * Provides custom rendering control for the menu. See the
-   * [custom menu example](/components/select#custom-menu) and
-   * our [render props guide](/render-props).
-   */
-  menu?: RenderFn,
-  /**
-   * Plugins that are used to alter behavior. See
-   * [PopperJS docs](https://popper.js.org/popper-documentation.html#modifiers)
-   * for options.
-   */
-  modifiers?: Object,
-  /** Name of the field when submitted in a form */
-  name?: string,
-  /**
-   * Called when an item is selected and it is different than the previously
-   * selected item.
-   */
-  onChange?: (item: MenuItemType, event: SyntheticEvent<>) => void,
-  /** Called when Select is closed */
-  onClose?: (event: SyntheticEvent<>) => void,
-  /** Called when Select is opened */
-  onOpen?: (event: SyntheticEvent<>) => void,
-  /** Called when an item is selected */
-  onSelect?: (item: MenuItemType, event: SyntheticEvent<>) => void,
-  /** Text displayed when there is no item selected */
-  placeholder?: string,
-  /** Placement of the Select menu */
-  placement?: 'bottom-end' | 'bottom-start' | 'top-end' | 'top-start',
-  /** Indicates that the user cannot modify the value of the control */
-  readOnly?: boolean,
-  /** Indicates that the user must select a value before submitting a form */
-  required?: boolean,
-  /** The selected item. For use with controlled components. */
-  selectedItem?: MenuItemType,
-  /** Available sizes */
-  size?: 'small' | 'medium' | 'large' | 'jumbo',
-  /**
-   * Provides custom rendering control for the trigger. See the
-   * [custom trigger example](/components/select#custom-trigger) and
-   * our [render props guide](/render-props).
-   */
-  trigger?: RenderFn,
-  /** Ref for the trigger */
-  triggerRef?: (node: ?React$Component<*, *>) => void,
-  /**
-   * Use a Portal to render the Select menu to the body rather than as a sibling
-   * to the trigger
-   */
-  usePortal?: boolean,
-  /** Available variants */
-  variant?: 'danger' | 'success' | 'warning'
-};
-
-type State = {
-  highlightedIndex: ?number,
-  isOpen: boolean,
-  selectedItem: ?MenuItemType
-};
-
-type Helpers = {
-  close: (event: SyntheticEvent<>) => void,
-  focusTrigger: () => void,
-  open: (event: SyntheticEvent<>) => void
-};
-
-type StateAndHelpers = {
-  state: State,
-  helpers: Helpers
-};
-
-type PropGetter = (props?: Object) => Object;
-type RenderFn = (props?: RenderProps) => React$Node;
-type RenderProps = {
-  props: Object
-} & StateAndHelpers;
-
-export const componentTheme = (baseTheme: Object) =>
-  mapComponentThemes(
-    {
-      name: 'Dropdown',
-      theme: dropdownTheme(baseTheme)
-    },
-    {
-      name: 'Select',
-      theme: {}
-    },
-    {
-      ...selectTriggerComponentTheme(baseTheme),
-      ...baseTheme
-    }
-  );
-
-const ThemedDropdown = createThemedComponent(Dropdown, ({ theme: baseTheme }) =>
-  mapComponentThemes(
-    {
-      name: 'Select',
-      theme: componentTheme(baseTheme)
-    },
-    {
-      name: 'Dropdown',
-      theme: {}
-    },
-    baseTheme
-  )
-);
-
-const Root = createStyledComponent(
-  ThemedDropdown,
-  {
-    width: '100%',
-
-    '& > span': {
-      width: '100%'
-    }
-  },
-  {
-    displayName: 'Select'
-  }
-);
-
-const contentWidthModifier = {
-  enabled: true,
-  fn: (data) => {
-    data.styles.minWidth = pxToEm(224);
-    data.styles.width = pxToEm(data.offsets.reference.width);
-    return data;
-  }
-};
-
-/**
- * Select is a form control that provides users with a list of options.
- * The selected option is always visible and the others become visible upon user
- * interaction. Once open, users can scroll or type to cycle through matching
- * options.
- */
-export default class Select extends Component<Props, State> {
-  static defaultProps = {
+export default class Select extends Component<SelectProps, SelectState> {
+  static defaultProps: SelectDefaultProps = {
     itemKey: 'value',
     placeholder: 'Select...',
-    placement: 'bottom-start',
-    size: 'large'
+    placement: PLACEMENT['bottom-start'],
+    size: SIZE.large
   };
 
-  state: State = {
+  static propTypes = selectPropTypes;
+
+  state = {
     highlightedIndex: this.props.defaultHighlightedIndex,
     isOpen: Boolean(this.props.defaultIsOpen),
     selectedItem: this.props.defaultSelectedItem
@@ -266,7 +95,7 @@ export default class Select extends Component<Props, State> {
     );
   }
 
-  getStateAndHelpers = (): StateAndHelpers => {
+  getStateAndHelpers = (): SelectStateAndHelpers => {
     return {
       state: {
         highlightedIndex: this.getControllableValue('highlightedIndex'),
@@ -292,7 +121,7 @@ export default class Select extends Component<Props, State> {
     return `${this.id}-item-${index}`;
   };
 
-  getTriggerProps: PropGetter = (props = {}) => {
+  getTriggerProps: SelectPropGetter = (props = {}) => {
     const isOpen = this.getControllableValue('isOpen');
     const selectedItem = this.getControllableValue('selectedItem');
     const {
@@ -330,7 +159,7 @@ export default class Select extends Component<Props, State> {
     };
   };
 
-  renderTrigger: RenderFn = ({ props } = {}) => {
+  renderTrigger: SelectRenderFn = ({ props } = {}) => {
     const { trigger } = this.props;
 
     if (isRenderProp(trigger)) {
@@ -343,7 +172,7 @@ export default class Select extends Component<Props, State> {
     return <SelectTrigger {...this.getTriggerProps(props)} />;
   };
 
-  getMenuProps: PropGetter = (props = {}) => {
+  getMenuProps: SelectPropGetter = (props = {}) => {
     const { itemKey } = this.props;
 
     return {
@@ -354,7 +183,7 @@ export default class Select extends Component<Props, State> {
     };
   };
 
-  renderMenu: RenderFn = ({ props } = {}) => {
+  renderMenu: SelectRenderFn = ({ props } = {}) => {
     const { menu } = this.props;
 
     if (isRenderProp(menu)) {
@@ -367,7 +196,7 @@ export default class Select extends Component<Props, State> {
     return <Menu {...this.getMenuProps(props)} />;
   };
 
-  getItemProps: PropGetter = (props = {}) => {
+  getItemProps: SelectPropGetter = (props = {}) => {
     const highlightedIndex = this.getControllableValue('highlightedIndex');
     const selectedItem = this.getControllableValue('selectedItem');
     const { props: itemProps } = props;
@@ -390,7 +219,7 @@ export default class Select extends Component<Props, State> {
     };
   };
 
-  renderItem: RenderFn = (props = {}) => {
+  renderItem: SelectRenderFn = (props = {}) => {
     const { item } = this.props;
 
     if (isRenderProp(item)) {
