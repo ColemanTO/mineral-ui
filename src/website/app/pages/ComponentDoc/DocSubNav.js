@@ -6,7 +6,7 @@ import Section from './DocSection';
 
 import type { ComponentDocType } from './types';
 
-type DocSubNavPropsT = {
+type DocSubNavProps = {
   componentDoc: ComponentDocType
 };
 
@@ -47,7 +47,7 @@ const Root = createStyledComponent(Section, styles.subnav, {
 });
 const NavElement = createStyledComponent(Link, styles.navElement);
 
-export default function DocSubNav(props: DocSubNavPropsT) {
+export default function DocSubNav(props: DocSubNavProps) {
   const { componentDoc, ...rootProps } = props;
   const { bestPractices, examples, whenHowToUse } = componentDoc;
   // there is no Examples h2, so we just link to the first example.

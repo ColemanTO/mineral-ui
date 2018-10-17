@@ -18,7 +18,7 @@ import DocWhenHowToUse from './DocWhenHowToUse';
 
 import type { ComponentDocType } from './types';
 
-type ComponentDocPropsT = {
+type ComponentDocProps = {
   componentDoc: ComponentDocType
 };
 
@@ -60,7 +60,7 @@ const DocIntro = ({ children }: { children: React$Node }) => (
   </DocSection>
 );
 
-export default function ComponentDoc(props: ComponentDocPropsT) {
+export default function ComponentDoc(props: ComponentDocProps) {
   const { componentDoc, ...rootProps } = props;
   const {
     bestPractices,

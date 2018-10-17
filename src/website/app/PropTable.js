@@ -12,16 +12,16 @@ import type {
   ComponentPropDoc
 } from './pages/ComponentDoc/types';
 
-type PropsTablePropsT = {
+type PropsTableProps = {
   propDocs: ComponentPropDocs
 };
 
-type DefaultValuePropsT = {
+type DefaultValueProps = {
   defaultValue?: React$Node,
   required?: boolean
 };
 
-type PropTypePopoverPropsT = {
+type PropTypePopoverProps = {
   children: React$Node,
   content: React$Node
 };
@@ -93,7 +93,7 @@ const PropTypePopoverContent = createStyledComponent(
   styles.propTypePopoverContent
 );
 
-const PropTypePopover = ({ content, children }: PropTypePopoverPropsT) => (
+const PropTypePopover = ({ content, children }: PropTypePopoverProps) => (
   <Popover content={<PropTypePopoverContent>{content}</PropTypePopoverContent>}>
     <PropTypeButton iconEnd={<IconInfo />} minimal size="medium">
       {children}
@@ -101,7 +101,7 @@ const PropTypePopover = ({ content, children }: PropTypePopoverPropsT) => (
   </Popover>
 );
 
-const DefaultValue = ({ defaultValue, required }: DefaultValuePropsT) => {
+const DefaultValue = ({ defaultValue, required }: DefaultValueProps) => {
   return required ? (
     <PropRequired>required</PropRequired>
   ) : (
@@ -109,7 +109,7 @@ const DefaultValue = ({ defaultValue, required }: DefaultValuePropsT) => {
   );
 };
 
-export default class PropTable extends Component<PropsTablePropsT> {
+export default class PropTable extends Component<PropsTableProps> {
   static defaultProps = {
     propDocs: {}
   };

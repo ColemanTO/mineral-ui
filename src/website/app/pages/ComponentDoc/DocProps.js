@@ -9,7 +9,7 @@ import DocSectionTitle from './DocSectionTitle';
 
 import type { ComponentDocType } from './types';
 
-type DocPropsPropsT = {
+type DocPropsProps = {
   componentDoc: ComponentDocType
 };
 
@@ -20,7 +20,7 @@ const PropsComment = createStyledComponent('p', {
   fontStyle: 'italic'
 });
 
-export default function DocProps(props: DocPropsPropsT) {
+export default function DocProps(props: DocPropsProps) {
   const {
     additionalPropDocs,
     propDocs,
