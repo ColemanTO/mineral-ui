@@ -3,7 +3,8 @@ import { createStyledComponent, getResponsiveStyles } from '../styles';
 import Box from '../Box';
 import ActualFlex from './Flex';
 
-import type { FlexItemProps, StyleValue } from './types';
+import type { StyleValue } from '../styles/types';
+import type { FlexItemProps } from './types';
 
 const getAlignment = (value: string): string =>
   ['start', 'end'].indexOf(value) !== -1 ? `flex-${value}` : value;

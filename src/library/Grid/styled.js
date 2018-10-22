@@ -1,7 +1,8 @@
 /* @flow */
 import { createStyledComponent, getResponsiveStyles } from '../styles';
 import Flex, { FlexItem } from '../Flex';
-import type { StyleValue } from '../Flex/types';
+
+import type { StyleValue } from '../styles/types';
 
 export const Grid = createStyledComponent(
   Flex,

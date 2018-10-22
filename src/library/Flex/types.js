@@ -45,5 +45,3 @@ export type FlexItemDefaultProps = {
   grow: GrowOrShrink,
   shrink: GrowOrShrink
 };
-
-export type StyleValue = boolean | null | number | string;

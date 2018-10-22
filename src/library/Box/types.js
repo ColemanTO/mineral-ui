@@ -1,6 +1,8 @@
 /* @flow */
 import { SPACING_SIZE, INSET_SPACING_SIZE } from './constants';
 
+import type { StyleValue } from '../styles/types';
+
 export type BoxProps = {
   breakpoints?: Array<number | string>,
   element?: string,
@@ -35,12 +37,7 @@ export type SpacingStyles = {
   [string]: Array<SpacingValue> | SpacingValue
 };
 
-export type SpacingValue =
-  | boolean
-  | null
-  | number
-  | string
-  | $Keys<typeof SPACING_SIZE>;
+export type SpacingValue = StyleValue | $Keys<typeof SPACING_SIZE>;
 
 type HeightOrWidthProp = number | string | Array<number | string | null>;
 
