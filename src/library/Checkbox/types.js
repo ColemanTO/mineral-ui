@@ -7,6 +7,9 @@ import type {
   ThemeValue
 } from '../themes/types';
 
+type labelPosition = $Keys<typeof LABEL_POSITION>;
+type size = $Keys<typeof SIZE>;
+
 export type CheckboxProps = {
   checked?: boolean,
   className?: string,
@@ -19,19 +22,19 @@ export type CheckboxProps = {
   invalid?: boolean,
   justify?: boolean,
   label: string | React$Element<*>,
-  labelPosition?: $Keys<typeof LABEL_POSITION>,
+  labelPosition?: labelPosition,
   name?: string,
   onChange?: (event: SyntheticInputEvent<>) => void,
   onClick?: (event: SyntheticInputEvent<>) => void,
   required?: boolean,
   rootProps?: Object,
-  size?: $Keys<typeof SIZE>,
+  size?: size,
   value?: string
 };
 
 export type CheckboxDefaultProps = {
-  labelPosition: $Keys<typeof LABEL_POSITION>,
-  size: $Keys<typeof SIZE>
+  labelPosition: labelPosition,
+  size: size
 };
 
 export type CheckboxGroupProps = {

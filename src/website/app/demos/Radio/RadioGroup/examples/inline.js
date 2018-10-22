@@ -1,16 +1,17 @@
 /* @flow */
 import { RadioGroup } from '../../../../../../library/Radio';
-import DemoForm from '../../components/DemoForm';
+import DemoForm from '../../common/DemoForm';
 
 export default {
-  id: 'uncontrolled',
-  title: 'Uncontrolled',
-  description: `Create an uncontrolled RadioGroup by using the
-\`defaultChecked\` prop rather than the \`checked\` prop.`,
+  id: 'inline',
+  title: 'Inline',
+  description: `Use the \`inline\` prop to display choices inline horizontally
+rather than stacked vertically.`,
   scope: { DemoForm, RadioGroup },
   source: `
     <DemoForm>
       <RadioGroup
+        inline
         name="mineral"
         defaultChecked="quartz"
         data={[

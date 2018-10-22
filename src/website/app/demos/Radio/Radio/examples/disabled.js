@@ -1,6 +1,6 @@
 /* @flow */
 import Radio from '../../../../../../library/Radio';
-import DemoForm from '../../components/DemoForm';
+import DemoForm from '../../common/DemoForm';
 
 export default {
   id: 'disabled',
