@@ -15,6 +15,9 @@ import {
 } from './themes';
 import DialogRow from './DialogRow';
 
+import type { CreateRootNode } from '../styles/types';
+import type { DialogRowProps } from './types';
+
 export const Dialog = createStyledComponent(
   'div',
   ({ modeless }) => ({
@@ -269,6 +272,36 @@ export const DialogOverlay = createStyledComponent(
     displayName: 'Overlay'
   }
 );
+
+export const createDialogRowRootNode: CreateRootNode<DialogRowProps> = (
+  props
+) => {
+  const { element = DialogRow.defaultProps.element } = props;
+  return createStyledComponent(
+    element,
+    ({ theme: baseTheme }) => {
+      const theme = dialogRowTheme(baseTheme);
+      const fontSize = theme.DialogRow_fontSize;
+
+      return {
+        fontSize,
+        margin: `${getNormalizedValue(
+          theme.DialogRow_marginVertical,
+          fontSize
+        )} 0`,
+        outline: 0,
+        padding: `0 ${getNormalizedValue(
+          theme.DialogRow_paddingHorizontal,
+          fontSize
+        )}`
+      };
+    },
+    {
+      includeStyleReset: true,
+      rootEl: element
+    }
+  );
+};
 
 export const DialogTitle = createStyledComponent(
   'div',

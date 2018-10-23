@@ -1,11 +1,14 @@
 /* @flow */
 import { ACTIONS_SIZE, APPEARANCE, ELEMENT, SIZE, VARIANT } from './constants';
 
+import { type Context } from 'create-react-context';
 import type {
   ComponentTheme,
   ComponentThemeFn,
   ThemeValue
 } from '../themes/types';
+
+export type ModifiersContextType = Context<Object | typeof undefined>;
 
 export type DialogProps = {
   actions?: Array<{
@@ -64,6 +67,15 @@ export type DialogHeaderProps = {
   children?: React$Node,
   closeButton?: React$Node,
   titleProps?: Object
+};
+
+export type DialogRowProps = {
+  children?: React$Node,
+  element?: string
+};
+
+export type DialogRowDefaultProps = {
+  element: string
 };
 
 export type DialogTitleProps = {
