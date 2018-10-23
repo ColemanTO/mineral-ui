@@ -4,7 +4,7 @@ import { CardDivider } from '../../../../../../library/Card';
 import Tabs, { Tab } from '../../../../../../library/Tabs';
 import Text from '../../../../../../library/Text';
 import DemoLayout from '../../../common/DemoLayout';
-import content from '../../shared/content';
+import content from '../../common/content';
 
 export default {
   id: 'position',

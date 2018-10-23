@@ -1,11 +1,13 @@
 /* @flow */
 import React from 'react';
 import IconBlurOn from 'mineral-ui-icons/IconBlurOn';
-import Tabs, { Tab } from '../../../../library/Tabs';
-import Text from '../../../../library/Text';
-import content from './shared/content';
+import Tabs, { Tab } from '../../../../../library/Tabs';
+import Text from '../../../../../library/Text';
+import content from '../common/content';
 
-export default [
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
+
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Apply a \`height\` to Tabs if \`position="bottom"\` and
@@ -117,3 +119,5 @@ confusing to users.`,
     )
   }
 ];
+
+export default bestPractices;

@@ -1,6 +1,5 @@
 /* @flow */
 import React, { PureComponent } from 'react';
-import debounce from 'lodash.debounce';
 import { Truncate as Root, Tooltip } from './styled';
 
 import type { TruncateProps, TruncateState } from './types';
@@ -41,8 +40,6 @@ export default class Truncate extends PureComponent<
   setRootRef = (node: ?HTMLElement) => {
     this.root = node;
   };
-
-  handleWindowResize = debounce(this.toggleTooltip, 100);
 
   toggleTooltip = () => {
     const rootNode = this.root;

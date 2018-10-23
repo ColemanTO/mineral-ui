@@ -1,7 +1,7 @@
 /* @flow */
 import Tabs, { Tab } from '../../../../../../library/Tabs';
 import Text from '../../../../../../library/Text';
-import content from '../../shared/content';
+import content from '../../common/content';
 
 export default {
   id: 'max-tab-width',

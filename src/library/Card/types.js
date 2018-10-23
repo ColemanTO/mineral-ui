@@ -65,7 +65,7 @@ export type CardTitleMenuProps = {
 };
 
 export type CardTitleMenuDefaultProps = {
-  triggerTitle?: string
+  triggerTitle: string
 };
 
 export type CardThemeFn = ComponentThemeFn<CardTheme>;
