@@ -1,6 +1,6 @@
 /* @flow */
 import IconCloud from 'mineral-ui-icons/IconCloud';
-import Text from '../../../../../library/Text';
+import Text from '../../../../../../library/Text';
 
 export default {
   id: 'basic',

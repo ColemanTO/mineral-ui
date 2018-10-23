@@ -9,6 +9,7 @@ import TableCell, {
 } from './TableCell';
 import { TableContext } from './TableBase';
 
+import type { CreateRootNode } from '../styles/types';
 import { type RenderFn } from './Table';
 
 type Props = {
@@ -126,7 +127,7 @@ const styles = ({
   };
 };
 
-const createRootNode = (props: Props) => {
+const createRootNode: CreateRootNode<Props> = (props) => {
   const { element = TableHeaderCell.defaultProps.element } = props;
 
   return createStyledComponent(ThemedTableCell, styles, {

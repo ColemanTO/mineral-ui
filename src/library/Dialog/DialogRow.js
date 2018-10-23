@@ -4,6 +4,8 @@ import memoizeOne from 'memoize-one';
 import { createStyledComponent, getNormalizedValue } from '../styles';
 import { dialogRowTheme } from './themes';
 
+import type { CreateRootNode } from '../styles/types';
+
 type Props = {
   children?: React$Node,
   element?: string
@@ -29,7 +31,7 @@ const styles = {
   }
 };
 
-const createRootNode = (props: Props) => {
+const createRootNode: CreateRootNode<Props> = (props) => {
   const { element = DialogRow.defaultProps.element } = props;
   return createStyledComponent(element, styles.root, {
     includeStyleReset: true,

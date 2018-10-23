@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import memoizeOne from 'memoize-one';
 import { createStyledComponent } from '../../library/styles';
 
+import type { CreateRootNode } from '../../library/styles/types';
+
 type Props = {
   angles?: Array<number>,
   element?: string,
@@ -100,7 +102,7 @@ const styles = {
 
 const Inner = createStyledComponent('div', styles.inner);
 
-const createRootNode = (props: Props) => {
+const createRootNode: CreateRootNode<Props> = (props) => {
   const { element = Section.defaultProps.element } = props;
 
   return createStyledComponent(element, styles.root, {

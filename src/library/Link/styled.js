@@ -3,9 +3,10 @@ import { createStyledComponent } from '../styles';
 import { linkTheme } from './themes';
 import Link from './Link';
 
+import type { CreateRootNode } from '../styles/types';
 import type { LinkProps } from './types';
 
-export const createRootNode = (props: LinkProps) => {
+export const createRootNode: CreateRootNode<LinkProps> = (props) => {
   const { element = Link.defaultProps.element } = props;
 
   return createStyledComponent(

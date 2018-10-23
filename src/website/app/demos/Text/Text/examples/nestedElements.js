@@ -1,6 +1,6 @@
 /* @flow */
-import Text from '../../../../../library/Text';
-import Link from '../../../../../library/Link';
+import Text from '../../../../../../library/Text';
+import Link from '../../../../../../library/Link';
 
 export default {
   id: 'nested-elements',

@@ -5,6 +5,7 @@ import { createStyledComponent, getNormalizedValue, pxToEm } from '../styles';
 import { isRenderProp, rtlTextAlign } from '../utils';
 import { TableContext } from './TableBase';
 
+import type { CreateRootNode } from '../styles/types';
 import type { RenderFn } from './Table';
 
 type Props = {
@@ -80,7 +81,7 @@ const styles = ({
   };
 };
 
-const createRootNode = (props: Props) => {
+const createRootNode: CreateRootNode<Props> = (props) => {
   const defaultElement = TableCell.defaultProps.element;
   const element =
     props.element && props.element !== defaultElement

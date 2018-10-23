@@ -1,8 +1,10 @@
 /* @flow */
 import React from 'react';
-import Text from '../../../../library/Text';
+import Text from '../../../../../library/Text';
 
-export default [
+import type { BestPractices } from '../../../pages/ComponentDoc/types';
+
+const bestPractices: BestPractices = [
   {
     type: 'do',
     description: `Use a
@@ -81,3 +83,5 @@ heading \`element\` or a 'strong' \`element\` instead.`,
     )
   }
 ];
+
+export default bestPractices;

@@ -1,6 +1,6 @@
 /* @flow */
-import Text from '../../../../../library/Text';
-import { ThemeProvider } from '../../../../../library/themes';
+import Text from '../../../../../../library/Text';
+import { ThemeProvider } from '../../../../../../library/themes';
 
 export default {
   id: 'alignment',

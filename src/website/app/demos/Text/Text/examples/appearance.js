@@ -1,5 +1,5 @@
 /* @flow */
-import Text from '../../../../../library/Text';
+import Text from '../../../../../../library/Text';
 
 export default {
   id: 'appearance',

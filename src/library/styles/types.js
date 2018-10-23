@@ -28,6 +28,8 @@ export type CreateStyledComponent = (
   }
 ) => React$ComponentType<*>;
 
+export type CreateRootNode<T> = (props: T) => React$ComponentType<*>;
+
 export type PxToEm = (value: number | string) => string;
 
 export type GetNormalizedValue = (

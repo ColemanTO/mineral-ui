@@ -3,6 +3,7 @@ import { createStyledComponent, getResponsiveStyles } from '../styles';
 import { SPACING_TYPES } from './constants';
 import Box from './Box';
 
+import type { CreateRootNode } from '../styles/types';
 import type { BoxProps, SpacingStyles, SpacingValue } from './types';
 
 const getMeasurement = (value: number | string) =>
@@ -55,7 +56,7 @@ const getSpacingStyles = (
   }, {});
 };
 
-export const createRootNode = (props: BoxProps) => {
+export const createRootNode: CreateRootNode<BoxProps> = (props) => {
   const { element = Box.defaultProps.element } = props;
 
   return createStyledComponent(

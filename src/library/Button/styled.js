@@ -6,6 +6,7 @@ import Button from './Button';
 import { SIZE } from './constants';
 import { buttonTheme } from './themes';
 
+import type { CreateRootNode } from '../styles/types';
 import type { ButtonProps } from './types';
 
 const chooseColor = ({ disabled, primary, minimal }: ButtonProps, theme) => {
@@ -87,7 +88,7 @@ export const Inner = createStyledComponent('span', {
   width: '100%'
 });
 
-export const createRootNode = (props: ButtonProps) => {
+export const createRootNode: CreateRootNode<ButtonProps> = (props) => {
   const { element = Button.defaultProps.element } = props;
 
   return createStyledComponent(
